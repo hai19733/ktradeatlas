@@ -1,0 +1,5 @@
+# 调试截图（只排除 assets 根目录下的 PNG，logos/ 里的官方 logo 保留）
+/assets/*.png
+
+# 开发工具脚本（不部署）
+/tools/

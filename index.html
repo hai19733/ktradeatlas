@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KTradeAtlas — 글로벌 암호화폐 거래 &amp; 전송 가이드</title>
+  <meta name="description" content="업비트·빗썸에서 바이낸스·OKX까지 — 입출금, 트래블룰, USDT, 수수료와 보안을 실제 사용 흐름에 맞춰 설명합니다.">
+  <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="%23133A7A"/><path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="%23fff"/><path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="%23fff"/><circle cx="16" cy="16" r="2.6" fill="%23F0A500"/></svg>'>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://ktradeatlas.com/">
+  <meta property="og:site_name" content="KTradeAtlas">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="KTradeAtlas — 글로벌 암호화폐 거래 &amp; 전송 가이드">
+  <meta property="og:description" content="업비트·빗썸에서 바이낸스·OKX까지 — 입출금, 트래블룰, USDT, 수수료와 보안을 실제 사용 흐름에 맞춰 설명합니다.">
+  <meta property="og:url" content="https://ktradeatlas.com/">
+</head>
+<body>
+
+  <!-- ============ Header ============ -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="logo" aria-label="KTradeAtlas 홈">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+          <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+          <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+          <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+        </svg>
+        <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links">
+        <li><a href="/start/">시작하기</a></li>
+        <li class="has-dropdown"><a href="/exchanges/upbit/">국내 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/upbit/">업비트</a></li>
+            <li><a href="/exchanges/bithumb/">빗썸</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="/exchanges/binance/">해외 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/binance/">바이낸스</a></li>
+            <li><a href="/exchanges/okx/">OKX</a></li>
+          </ul>
+        </li>
+        <li><a href="/transfer/">입출금 &amp; 트래블룰</a></li>
+        <li><a href="/usdt-network/">USDT &amp; 네트워크</a></li>
+        <li><a href="/security/">보안</a></li>
+        <li class="nav-cta"><a href="/transfer/">전송 경로 보기</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="hero-badge"><span class="dot"></span>국내 ↔ 해외 거래소 실전 가이드</span>
+          <h1>글로벌 암호화폐 거래를<br>더 쉽게 <span class="hl">이해</span>하세요</h1>
+          <p class="lead">업비트·빗썸에서 바이낸스·OKX까지 — 입출금, 트래블룰, USDT, 수수료와 보안을 실제 사용 흐름에 맞춰 설명합니다.</p>
+          <div class="hero-actions">
+            <a href="#routes" class="btn btn-primary">주요 전송 경로 보기</a>
+            <a href="#start" class="btn btn-ghost">처음부터 시작하기</a>
+          </div>
+          <p class="hero-note">ℹ️ 정보 제공용 가이드이며, 투자 권유가 아닙니다.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hv-stack">
+            <div class="hv-card">
+              <div class="hv-card-head">
+                <span class="hv-flag">🇰🇷</span>
+                <span class="hv-label">국내 거래소</span>
+              </div>
+              <div class="hv-exchanges">
+                <span class="hv-ex">업비트</span>
+                <span class="hv-ex">빗썸</span>
+              </div>
+            </div>
+            <div class="hv-connector">
+              <span class="hv-vline"></span>
+              <span class="hv-rule">↕ 계정 확인 · 트래블룰</span>
+              <span class="hv-vline"></span>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-head">
+                <span class="hv-flag">🌎</span>
+                <span class="hv-label">글로벌 거래소</span>
+              </div>
+              <div class="hv-exchanges">
+                <span class="hv-ex">바이낸스</span>
+                <span class="hv-ex">OKX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="hero-search" action="/search/" method="get" role="search">
+        <span class="search-icon" aria-hidden="true">🔍</span>
+        <input type="search" name="q" placeholder="무엇이 궁금하신가요? (예: 업비트 입금 안됨)" aria-label="검색어 입력">
+        <button type="submit">검색</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ Entry cards (4) ============ -->
+  <section class="section" id="start">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">어디서 시작할까요</span>
+        <h2>하고 싶은 일부터 고르세요</h2>
+        <p>국내 거래소와 해외 거래소의 차이, 자금을 옮기는 방법, 문제가 생겼을 때 해결법까지 — 목적별로 바로 연결해 드립니다.</p>
+      </div>
+      <div class="entry-grid">
+        <a href="/exchanges/upbit/" class="entry-card">
+          <div class="entry-icon">🇰🇷</div>
+          <h3>국내 거래소</h3>
+          <span class="entry-sub">업비트 · 빗썸</span>
+          <p>원화 입출금과 국내 거래소 사용법을 확인하세요.</p>
+          <span class="entry-link">국내 거래소 가이드 →</span>
+        </a>
+        <a href="/exchanges/binance/" class="entry-card">
+          <div class="entry-icon">🌎</div>
+          <h3>해외 거래소</h3>
+          <span class="entry-sub">바이낸스 · OKX</span>
+          <p>가입과 KYC부터 USDT 마켓 활용법까지.</p>
+          <span class="entry-link">해외 거래소 가이드 →</span>
+        </a>
+        <a href="/transfer/" class="entry-card">
+          <div class="entry-icon">↔️</div>
+          <h3>입출금 &amp; 트래블룰</h3>
+          <span class="entry-sub">국내 ↔ 해외 송금</span>
+          <p>트래블룰, 출금 주소, 영문 이름까지 정리.</p>
+          <span class="entry-link">전송 경로 보기 →</span>
+        </a>
+        <a href="/security/" class="entry-card">
+          <div class="entry-icon">🛡️</div>
+          <h3>보안 &amp; 문제 해결</h3>
+          <span class="entry-sub">입금 안 됨 · 네트워크 오류</span>
+          <p>송금 실패와 계정 보안 문제를 원인별로 해결.</p>
+          <span class="entry-link">문제 해결 가이드 →</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Transfer routes ============ -->
+  <section class="section section-alt" id="routes">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">자주 찾는 경로</span>
+        <h2>주요 전송 경로</h2>
+        <p>가장 많이 검색되는 국내 ↔ 해외 거래소 송금 경로입니다. 각 경로의 절차와 주의점을 따로 정리해 두었습니다.</p>
+      </div>
+      <div class="routes-grid">
+        <a href="/transfer/upbit-to-binance/" class="route-card">
+          <span class="from-to">업비트 <span class="arrow">→</span> 바이낸스</span>
+          <span class="route-tag">트래블룰</span>
+        </a>
+        <a href="/transfer/binance-to-upbit/" class="route-card">
+          <span class="from-to">바이낸스 <span class="arrow">→</span> 업비트</span>
+          <span class="route-tag">추가확인</span>
+        </a>
+        <a href="/transfer/upbit-to-okx/" class="route-card">
+          <span class="from-to">업비트 <span class="arrow">→</span> OKX</span>
+          <span class="route-tag">트래블룰</span>
+        </a>
+        <a href="/transfer/okx-to-upbit/" class="route-card">
+          <span class="from-to">OKX <span class="arrow">→</span> 업비트</span>
+          <span class="route-tag">추가확인</span>
+        </a>
+        <a href="/transfer/bithumb-to-binance/" class="route-card">
+          <span class="from-to">빗썸 <span class="arrow">→</span> 바이낸스</span>
+          <span class="route-tag">트래블룰</span>
+        </a>
+        <a href="/transfer/bithumb-to-okx/" class="route-card">
+          <span class="from-to">빗썸 <span class="arrow">→</span> OKX</span>
+          <span class="route-tag">트래블룰</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Exchange cards ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">거래소 한눈에</span>
+        <h2>국내 · 해외 주요 거래소</h2>
+        <p>국내 거래소는 원화 입출금, 해외 거래소는 글로벌 유동성과 USDT 마켓이 핵심입니다. 자주 쓰는 기능부터 바로 들어가세요.</p>
+      </div>
+      <div class="exchange-grid">
+        <div class="exchange-card">
+          <div class="exchange-top">
+            <span class="exchange-logo" style="background:#133A7A">U</span>
+            <div>
+              <h3>업비트</h3>
+              <span class="ex-region domestic">국내 거래소</span>
+            </div>
+          </div>
+          <p class="ex-role">원화 거래 · 국내 대표 거래소</p>
+          <ul class="ex-links">
+            <li><a href="#">출금 방법</a></li>
+            <li><a href="/transfer/upbit-to-binance/">바이낸스로 전송</a></li>
+            <li><a href="/travel-rule/">트래블룰</a></li>
+          </ul>
+        </div>
+        <div class="exchange-card">
+          <div class="exchange-top">
+            <span class="exchange-logo" style="background:#D91E2E">B</span>
+            <div>
+              <h3>빗썸</h3>
+              <span class="ex-region domestic">국내 거래소</span>
+            </div>
+          </div>
+          <p class="ex-role">원화 거래 · 다양한 자산</p>
+          <ul class="ex-links">
+            <li><a href="#">출금 방법</a></li>
+            <li><a href="/transfer/bithumb-to-binance/">바이낸스로 전송</a></li>
+            <li><a href="/travel-rule/">트래블룰</a></li>
+          </ul>
+        </div>
+        <div class="exchange-card">
+          <div class="exchange-top">
+            <span class="exchange-logo" style="background:#F0B90B; color:#1a1a1a">B</span>
+            <div>
+              <h3>바이낸스</h3>
+              <span class="ex-region global">해외 거래소</span>
+            </div>
+          </div>
+          <p class="ex-role">글로벌 시장 · USDT 거래</p>
+          <ul class="ex-links">
+            <li><a href="#">가입 방법</a></li>
+            <li><a href="/transfer/upbit-to-binance/">업비트 입출금</a></li>
+            <li><a href="#">수수료</a></li>
+          </ul>
+        </div>
+        <div class="exchange-card">
+          <div class="exchange-top">
+            <span class="exchange-logo" style="background:#0E0E0E">OK</span>
+            <div>
+              <h3>OKX</h3>
+              <span class="ex-region global">해외 거래소</span>
+            </div>
+          </div>
+          <p class="ex-role">파생상품 · Web3 지갑</p>
+          <ul class="ex-links">
+            <li><a href="#">가입 방법</a></li>
+            <li><a href="/transfer/upbit-to-okx/">업비트 입출금</a></li>
+            <li><a href="#">수수료</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Travel Rule module ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="travelrule-card">
+        <h2>트래블룰이란? 한국 투자자가 꼭 알아야 할 것</h2>
+        <p class="tr-lead">100만원 이상 송금 시 거래소 간에 송·수신자의 신원 정보가 함께 전송됩니다. 영문 이름이나 생년월일이 다르면 입금이 반려될 수 있어요.</p>
+        <div class="tr-points">
+          <div class="tr-point">
+            <span class="tr-num">01 · 기준</span>
+            <h4>100만원 기준</h4>
+            <p>원화 환산 100만원 이상부터 적용됩니다. 미만은 기존과 동일하게 송금할 수 있어요.</p>
+          </div>
+          <div class="tr-point">
+            <span class="tr-num">02 · 신원 일치</span>
+            <h4>영문 이름 · 생년월일</h4>
+            <p>업비트와 해외 거래소의 영문 이름, 생년월일이 동일해야 출금·입금이 반영됩니다.</p>
+          </div>
+          <div class="tr-point">
+            <span class="tr-num">03 · 본인계정</span>
+            <h4>계정주 확인 VASP</h4>
+            <p>바이낸스·OKX는 '계정주 확인' VASP로, 본인 명의 계정 간 송금만 가능합니다.</p>
+          </div>
+        </div>
+        <div class="tr-links">
+          <a href="/transfer/upbit-to-binance/">업비트 → 바이낸스 트래블룰</a>
+          <a href="/transfer/binance-to-upbit/">바이낸스 → 업비트 추가확인</a>
+          <a href="#">영문 이름 불일치 해결</a>
+          <a href="/travel-rule/">트래블룰 완전 가이드</a>
+        </div>
+        <p class="tr-source">공식 자료 기준 · 최신 확인 2026.09</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Trust module ============ -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">왜 신뢰할 수 있나요</span>
+        <h2>KTradeAtlas는 이렇게 확인합니다</h2>
+        <p>트래블룰, 수수료, 거래소 규칙처럼 자주 바뀌는 정보일수록, 근거를 확인하고 날짜를 남깁니다.</p>
+      </div>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <div class="trust-icon">📄</div>
+          <h3>공식 자료 확인</h3>
+          <p>거래소 및 규제기관의 공식 문서를 기준으로 확인합니다.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">🔍</div>
+          <h3>실제 화면 검증</h3>
+          <p>가능한 경우 실제 앱 화면과 절차를 직접 확인합니다.</p>
+        </div>
+        <div class="trust-item">
+          <div class="trust-icon">📅</div>
+          <h3>업데이트 날짜 표시</h3>
+          <p>변경 가능성이 있는 정보는 확인 날짜를 함께 표시합니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Latest guides ============ -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">최신 콘텐츠</span>
+        <h2>최신 가이드</h2>
+        <p>국내 ↔ 해외 거래소 전송과 트래블룰을 중심으로, 실제로 많이 검색되는 주제를 계속 업데이트합니다.</p>
+      </div>
+      <div class="latest-grid">
+        <a href="/transfer/upbit-to-binance/" class="latest-card">
+          <span class="latest-cat">입출금</span>
+          <h3>업비트에서 바이낸스로 보내는 방법</h3>
+          <p>트래블룰 절차와 네트워크 선택까지 단계별로.</p>
+          <span class="latest-date">2026.09.15 업데이트</span>
+        </a>
+        <a href="/transfer/binance-to-upbit/" class="latest-card">
+          <span class="latest-cat">입출금</span>
+          <h3>바이낸스에서 업비트로 출금하기</h3>
+          <p>추가확인 절차와 도착 확인까지 정리합니다.</p>
+          <span class="latest-date">2026.09.14 업데이트</span>
+        </a>
+        <a href="/transfer/upbit-to-okx/" class="latest-card">
+          <span class="latest-cat">입출금</span>
+          <h3>업비트에서 OKX로 보내는 방법</h3>
+          <p>계정주 확인과 출금 주소 등록을 다룹니다.</p>
+          <span class="latest-date">2026.09.12 업데이트</span>
+        </a>
+        <a href="/travel-rule/" class="latest-card">
+          <span class="latest-cat">트래블룰</span>
+          <h3>트래블룰 100만원 기준 정리</h3>
+          <p>기준선과 예외 상황을 쉽게 설명합니다.</p>
+          <span class="latest-date">2026.09.10 업데이트</span>
+        </a>
+        <a href="#" class="latest-card">
+          <span class="latest-cat">트래블룰</span>
+          <h3>바이낸스 영문 이름 확인</h3>
+          <p>업비트와 이름·생년월일이 다를 때 해결법.</p>
+          <span class="latest-date">2026.09.08 업데이트</span>
+        </a>
+        <a href="/usdt-network/" class="latest-card">
+          <span class="latest-cat">USDT</span>
+          <h3>USDT 네트워크 선택 방법</h3>
+          <p>TRC20·ERC20 등 네트워크 차이와 주의점.</p>
+          <span class="latest-date">2026.09.05 업데이트</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Footer ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+              <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+              <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+              <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+            </svg>
+            <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+          </a>
+          <p>한국 투자자를 위한 글로벌 암호화폐 거래 · 전송 가이드. 업비트·빗썸에서 바이낸스·OKX까지, 실제 사용 흐름에 맞춰 설명합니다.</p>
+        </div>
+        <div class="footer-col">
+          <h4>거래소</h4>
+          <a href="/exchanges/upbit/">업비트</a>
+          <a href="/exchanges/bithumb/">빗썸</a>
+          <a href="/exchanges/binance/">바이낸스</a>
+          <a href="/exchanges/okx/">OKX</a>
+        </div>
+        <div class="footer-col">
+          <h4>가이드</h4>
+          <a href="/start/">시작하기</a>
+          <a href="/transfer/">입출금 &amp; 트래블룰</a>
+          <a href="/usdt-network/">USDT &amp; 네트워크</a>
+          <a href="/security/">보안</a>
+        </div>
+        <div class="footer-col">
+          <h4>사이트 &amp; 정책</h4>
+          <a href="#">소개</a>
+          <a href="#">편집 정책</a>
+          <a href="#">정보 검증 방식</a>
+          <a href="#">제휴 공개</a>
+          <a href="#">면책조항</a>
+          <a href="#">개인정보처리방침</a>
+          <a href="#">문의</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KTradeAtlas. 정보 제공용이며 투자 권유가 아닙니다.</span>
+        <span>암호화폐는 변동성이 크며 원금 손실 위험이 있습니다.</span>
+        <span>모든 상표 및 로고는 각 소유자의 자산입니다.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
