@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>업비트에서 바이낸스로 코인 보내는 방법 | KTradeAtlas</title>
-  <meta name="description" content="업비트에서 바이낸스로 코인을 보내는 전체 흐름을 정리했습니다.">
+  <title>업비트에서 바이낸스로 코인 보내는 방법 (트래블룰·수수료·네트워크) | KTradeAtlas</title>
+  <meta name="description" content="업비트에서 바이낸스로 코인을 보내는 전체 과정을 입금 주소 확인부터 트래블룰, 네트워크 선택, 수수료까지 순서대로 정리했습니다.">
   <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><circle cx="16" cy="16" r="15" fill="%23133A7A"/><path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="%23fff"/><path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="%23fff"/><circle cx="16" cy="16" r="2.6" fill="%23F0A500"/></svg>'>
   <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
@@ -12,8 +12,8 @@
   <link rel="canonical" href="https://ktradeatlas.com/transfer/upbit-to-binance/">
   <meta property="og:site_name" content="KTradeAtlas">
   <meta property="og:type" content="article">
-  <meta property="og:title" content="업비트에서 바이낸스로 코인 보내는 방법 | KTradeAtlas">
-  <meta property="og:description" content="업비트에서 바이낸스로 코인을 보내는 전체 흐름을 정리했습니다.">
+  <meta property="og:title" content="업비트에서 바이낸스로 코인 보내는 방법 (트래블룰·수수료·네트워크) | KTradeAtlas">
+  <meta property="og:description" content="업비트에서 바이낸스로 코인을 보내는 전체 과정을 입금 주소 확인부터 트래블룰, 네트워크 선택, 수수료까지 순서대로 정리했습니다.">
   <meta property="og:url" content="https://ktradeatlas.com/transfer/upbit-to-binance/">
 </head>
 <body>
@@ -65,67 +65,124 @@
         <header class="article-header">
           <span class="article-cat">입출금 가이드</span>
           <h1>업비트에서 바이낸스로 코인 보내는 방법</h1>
-          <p class="article-lead">업비트에서 바이낸스로 코인을 보내는 전체 흐름을 정리했습니다.</p>
+          <p class="article-lead">업비트에서 바이낸스로 코인을 보내려면, 바이낸스에서 입금 주소를 먼저 받아 업비트 출금 화면에 붙여넣고 <strong>양쪽 네트워크를 같게</strong> 맞춘 뒤 2채널 인증으로 출금하면 됩니다. 100만원 이상은 <a href="/travel-rule/">트래블룰</a>에 따라 본인 명의 계정 간에만 전송할 수 있습니다.</p>
           <div class="article-facts">
             <span>마지막 확인 <b>2026.09.15</b></span>
             <span>난이도 <b>초보자</b></span>
             <span>예상 읽기 시간 <b>5분</b></span>
           </div>
           <div class="disclaimer">이 글은 투자 권유가 아니라 실제 사용 절차와 위험을 설명하기 위한 정보입니다.</div>
-        </header>        <div class="quick-answer">
+        </header>
+        <div class="quick-answer">
           <strong>빠른 답변</strong>
           <ul>
-            <li>핵심 요약 1 (본문 준비 중)</li>
-            <li>핵심 요약 2 (본문 준비 중)</li>
-            <li>핵심 요약 3 (본문 준비 중)</li>
+            <li>가장 중요한 건 <strong>네트워크를 양쪽에서 동일하게</strong> 맞추는 일입니다. 다르면 자산을 잃을 수 있습니다.</li>
+            <li>100만원 이상은 <strong>본인 명의 계정 간에만</strong> 전송되며, 양쪽 영문 이름이 일치해야 합니다.</li>
+            <li>수수료가 낮고 빠른 <strong>USDT(TRC-20)·리플(XRP)·트론(TRX)</strong>을 전송용으로 쓰는 편이 낫습니다.</li>
+            <li>처음 보낼 때는 <strong>소액으로 테스트</strong>한 뒤 전체 금액을 보내세요.</li>
           </ul>
         </div>
         <div class="article-prose">
           <h2>먼저 확인할 것</h2>
-          <ul><li class="ph">본문은 준비 중입니다.</li></ul>
+          <ul>
+            <li><strong>바이낸스 KYC(신원 인증) 완료</strong> — 미완료면 입금 주소가 생성되지 않습니다.</li>
+            <li><strong>양쪽 영문 이름·생년월일 일치</strong> — 업비트와 바이낸스에 등록된 영문명이 띄어쓰기·대소문자까지 같아야 합니다.</li>
+            <li><strong>보낼 코인과 네트워크</strong> — USDT라면 어떤 네트워크(TRC-20 등)로 받을지 미리 정해 둡니다.</li>
+            <li><strong>업비트 출금 가능 상태</strong> — 첫 원화 입금 후 72시간, 보안 설정 변경 후 24~72시간은 출금이 제한될 수 있습니다.</li>
+          </ul>
+
           <h2>전체 과정 한눈에 보기</h2>
           <div class="steps">
-            <div class="step"><h3>입금 주소 확인</h3><p class="ph">본문은 준비 중입니다.</p></div>
-            <div class="step"><h3>네트워크 확인</h3><p class="ph">본문은 준비 중입니다.</p></div>
-            <div class="step"><h3>출금 화면 열기</h3><p class="ph">본문은 준비 중입니다.</p></div>
-            <div class="step"><h3>주소 입력</h3><p class="ph">본문은 준비 중입니다.</p></div>
-            <div class="step"><h3>트래블룰 · 계정 정보 확인</h3><p class="ph">본문은 준비 중입니다.</p></div>
-            <div class="step"><h3>출금 신청</h3><p class="ph">본문은 준비 중입니다.</p></div>
-            <div class="step"><h3>입금 확인</h3><p class="ph">본문은 준비 중입니다.</p></div>
+            <div class="step"><h3>1. 입금 주소 확인</h3><p>바이낸스에서 받을 코인과 네트워크를 고르고 입금 주소를 복사합니다.</p></div>
+            <div class="step"><h3>2. 코인 준비</h3><p>업비트에서 보낼 코인(USDT·XRP·TRX 등)을 준비합니다.</p></div>
+            <div class="step"><h3>3. 네트워크 맞추기</h3><p>업비트 출금 네트워크를 바이낸스와 동일하게 선택합니다.</p></div>
+            <div class="step"><h3>4. 주소 입력</h3><p>복사한 주소(필요 시 태그·MEMO)를 업비트 출금 화면에 붙여넣습니다.</p></div>
+            <div class="step"><h3>5. 트래블룰 · 계정 정보</h3><p>수취 거래소를 '바이낸스'로 선택하고 본인 정보를 확인합니다.</p></div>
+            <div class="step"><h3>6. 출금 신청</h3><p>2채널 인증을 완료하면 출금이 진행됩니다.</p></div>
+            <div class="step"><h3>7. 입금 확인</h3><p>바이낸스 지갑에서 도착 여부를 확인합니다.</p></div>
           </div>
+
           <h2>1단계: 바이낸스 입금 주소 확인</h2>
-          <p class="ph">본문은 준비 중입니다.</p>
+          <p>바이낸스 앱이나 웹에서 <strong>지갑(Wallet) → 입금(Deposit)</strong>으로 들어갑니다. 받을 코인(예: USDT)을 고르고, <strong>네트워크를 선택</strong>한 뒤 입금 주소를 복사하세요. 이때 선택한 네트워크를 기억해 둬야 합니다.</p>
+          <p>리플(XRP)처럼 <strong>태그(Tag) 또는 MEMO</strong>가 필요한 코인은 주소와 함께 태그까지 복사해 두세요. 태그를 빼먹으면 입금이 내 계정에 붙지 않고 반환 처리되거나 지연될 수 있습니다. 자세한 입금 절차는 <a href="https://www.binance.com/en/support/faq/list/2" target="_blank" rel="noopener">바이낸스 공식 입출금 FAQ</a>를 참고하세요.</p>
+
           <h2>2단계: 업비트에서 출금할 코인 선택</h2>
-          <p class="ph">본문은 준비 중입니다.</p>
+          <p>업비트에서 <strong>입출금 → 해당 코인 → 출금</strong>으로 이동합니다. 전송용으로는 수수료가 낮고 도착이 빠른 코인이 유리합니다.</p>
+          <ul>
+            <li><strong>USDT(TRC-20)</strong> — 가장 보편적이고, 도착 즉시 USDT로 거래할 수 있습니다.</li>
+            <li><strong>리플(XRP)</strong> — 전송이 빠르고 수수료가 낮지만, 태그 입력이 필수입니다.</li>
+            <li><strong>트론(TRX)</strong> — 전송이 빠르고 수수료가 가장 낮은 편입니다.</li>
+          </ul>
+          <p>비트코인(BTC)이나 이더리움(ETH)은 전송 수수료가 상대적으로 높고 도착도 느릴 수 있어, 단순 이동 목적에는 비효율적입니다.</p>
+
           <h2>3단계: 네트워크를 반드시 맞추세요</h2>
-          <p class="ph">본문은 준비 중입니다.</p>
+          <p>업비트 출금 화면에서 네트워크를 고를 때 <strong>1단계에서 바이낸스가 선택한 네트워크와 동일하게</strong> 맞춥니다. 예를 들어 바이낸스에서 USDT를 TRC-20으로 받기로 했다면, 업비트에서도 TRC-20으로 출금해야 합니다.</p>
+          <p><strong>네트워크 불일치는 코인 유실의 가장 큰 원인</strong>입니다. 주소 형식이 같아 보여도 체인이 다르면 찾기 어려울 수 있으니, 출금 버튼을 누르기 전에 반드시 한 번 더 확인하세요. 네트워크 선택 기준은 <a href="/usdt-network/">USDT &amp; 네트워크</a> 가이드에서 정리해 두었습니다.</p>
+
           <h2>4단계: 트래블룰 확인</h2>
-          <p class="ph">본문은 준비 중입니다.</p>
+          <p>업비트 출금 시 수취 거래소를 <strong>'바이낸스(Binance)'</strong>로 선택합니다. 이때 금액에 따라 절차가 달라집니다.</p>
+          <ul>
+            <li><strong>100만원 이상</strong> — <a href="/travel-rule/">트래블룰</a>에 따라 송·수신인 정보 확인이 필요하며, <strong>본인 명의 계정 간에만</strong> 전송됩니다. 업비트와 바이낸스의 영문 이름·생년월일이 일치해야 합니다.</li>
+            <li><strong>100만원 미만</strong> — 현재는 별도 계정 확인 없이 보낼 수 있지만, 업비트는 2025년 2월부터 입금처가 확인되지 않는 출금을 제한하고 있습니다.</li>
+          </ul>
+          <p>참고로 트래블룰의 100만원 기준은 <strong>2027년 2월경 폐지될 예정</strong>입니다. 금융위원회가 2026년 8월 특금법 시행령 개정안을 의결하면서, 앞으로는 금액과 무관하게 모든 가상자산 이전에 정보 제공 의무가 적용됩니다. 이 글은 2026년 9월 기준이며, 시행 시점이 가까워지면 업데이트하겠습니다. 관련 보도는 <a href="https://www.edaily.co.kr/News/Read?newsId=02420646645546008" target="_blank" rel="noopener">이데일리 기사</a>를 참고하세요.</p>
+
           <h2>5단계: 출금 완료 후 입금 확인</h2>
-          <p class="ph">본문은 준비 중입니다.</p>
+          <p>출금 수량을 입력하고 카카오톡·네이버 등 <strong>2채널 인증</strong>을 완료하면 출금이 진행됩니다. 완료 후 바이낸스 <strong>Spot 지갑</strong>에서 도착 여부를 확인하세요. 거래 내역의 <strong>TXID(트랜잭션 ID)</strong>를 블록체인 탐색기에서 조회하면 진행 상황을 정확히 확인할 수 있습니다.</p>
+
           <h2>수수료는 얼마인가요?</h2>
           <table>
             <thead><tr><th>항목</th><th>내용</th></tr></thead>
             <tbody>
-              <tr><td>출금 수수료</td><td class="ph">본문 준비 중</td></tr>
-              <tr><td>입금 수수료</td><td class="ph">본문 준비 중</td></tr>
-              <tr><td>네트워크 수수료</td><td class="ph">본문 준비 중</td></tr>
+              <tr><td>출금 수수료</td><td>코인·체인별로 다르며 자주 변경됩니다. 출금 전 화면에서 최종 금액을 확인하세요.</td></tr>
+              <tr><td>입금 수수료</td><td>바이낸스 입금은 무료입니다. (네트워크 수수료는 보내는 쪽에서 부담)</td></tr>
+              <tr><td>네트워크 수수료</td><td>체인별로 다릅니다. XRP·TRX는 낮은 편, BTC·ETH는 상대적으로 높습니다.</td></tr>
             </tbody>
           </table>
+
           <h2>얼마나 걸리나요?</h2>
-          <p class="ph">본문은 준비 중입니다.</p>
+          <p>보통 <strong>수분~수십 분</strong> 안에 도착하지만, 네트워크가 혼잡하면 더 걸릴 수 있습니다. 도착 여부는 시간이 아니라 <strong>블록체인 컨펌(확정) 수</strong>를 기준으로 판단하는 게 정확합니다.</p>
+
           <h2>입금이 안 들어올 때</h2>
-          <ul><li class="ph">본문은 준비 중입니다.</li></ul>
+          <ul>
+            <li><strong>TXID로 확인</strong> — 출금이 실제로 전송됐는지 블록체인 탐색기에서 먼저 확인합니다.</li>
+            <li><strong>네트워크 불일치</strong> — 업비트와 바이낸스가 같은 네트워크인지 다시 확인합니다.</li>
+            <li><strong>태그·MEMO 누락</strong> — XRP 등 태그가 필요한 코인은 태그가 빠지지 않았는지 확인합니다.</li>
+            <li><strong>바이낸스 점검 여부</strong> — 해당 코인의 입금이 일시 중단됐는지 바이낸스 공지를 확인합니다.</li>
+          </ul>
+          <p>자세한 원인별 대응은 <a href="/transfer/binance-deposit-not-arrived/">바이낸스 입금이 안 될 때</a> 가이드에서 정리했습니다.</p>
         </div>
         <section>
           <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">자주 묻는 질문</h2>
           <div class="faq-list">
             <details class="faq-item">
-              <summary>본문은 준비 중입니다.</summary>
-              <div class="faq-body">곧 실제 FAQ로 채워집니다.</div>
+              <summary>100만원 미만이면 트래블룰 확인 없이 보낼 수 있나요?</summary>
+              <div class="faq-body">현재(2026년 9월)는 100만원 미만이면 별도 계정 확인 없이 보낼 수 있습니다. 다만 업비트는 입금처가 확인되지 않는 출금을 제한하고 있고, 2027년 2월경부터는 금액과 무관하게 모든 이전에 트래블룰이 적용될 예정입니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>영문 이름이 다르면 어떻게 되나요?</summary>
+              <div class="faq-body">100만원 이상 전송이 거절되거나 입금이 보류될 수 있습니다. 업비트·바이낸스 양쪽의 영문 이름이 띄어쓰기·대소문자까지 일치하는지 확인하고, 다르면 먼저 정정하세요.</div>
+            </details>
+            <details class="faq-item">
+              <summary>어떤 코인으로 보내는 게 좋나요?</summary>
+              <div class="faq-body">수수료와 속도를 기준으로 USDT(TRC-20), 리플(XRP), 트론(TRX)이 무난합니다. 목적지에서 바로 USDT로 쓸 계획이라면 USDT(TRC-20)가 가장 편합니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>네트워크를 잘못 선택하면 어떻게 되나요?</summary>
+              <div class="faq-body">자산이 잘못된 체인으로 보내져 회수하기 어려울 수 있습니다. 출금 전에 양쪽 네트워크를 반드시 일치시키고, 처음에는 소액으로 테스트하세요.</div>
             </details>
           </div>
-        </section>        <section>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">공식 출처</h2>
+          <ul class="article-prose">
+            <li><a href="https://www.upbit.com/service_center/guide" target="_blank" rel="noopener">업비트 고객센터 — 입출금 안내</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/sections/5127058731033" target="_blank" rel="noopener">업비트 고객센터 — 입출금 FAQ</a></li>
+            <li><a href="https://www.binance.com/en/support/faq/list/2" target="_blank" rel="noopener">바이낸스 지원 — 암호화폐 입출금 FAQ</a></li>
+            <li><a href="https://www.edaily.co.kr/News/Read?newsId=02420646645546008" target="_blank" rel="noopener">이데일리 — 가상자산 트래블룰 금액 기준 폐지 보도</a></li>
+          </ul>
+        </section>
+        <section>
           <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">관련 가이드</h2>
           <div class="related-grid">
             <a href="/transfer/upbit-to-okx/" class="related-card">
