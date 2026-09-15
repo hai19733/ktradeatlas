@@ -285,7 +285,7 @@ ul { list-style: none; }
   gap: 9px;
   margin-bottom: 10px;
 }
-.hv-flag { font-size: 18px; }
+.hv-flag { font-size: 18px; color: #fff; }
 .hv-label { font-size: 13px; font-weight: 700; color: rgba(255,255,255,.72); letter-spacing: .02em; }
 .hv-exchanges { display: flex; gap: 8px; }
 .hv-ex {
@@ -575,6 +575,16 @@ ul { list-style: none; }
   background: var(--blue-50);
   border: 1px solid var(--blue-100);
   margin-bottom: 16px;
+}
+
+/* 통일된 선형 SVG 아이콘 크기 (1em = 부모 font-size) */
+.entry-icon svg,
+.trust-icon svg,
+.hv-flag svg,
+.search-icon svg {
+  width: 1em;
+  height: 1em;
+  display: block;
 }
 .trust-item h3 { font-size: 18px; font-weight: 800; margin-bottom: 8px; }
 .trust-item p { font-size: 16px; color: var(--muted); line-height: 1.6; }
@@ -1049,7 +1059,7 @@ ul { list-style: none; }
   display: flex; align-items: center; gap: 8px;
   font-size: 15.5px; font-weight: 800; color: var(--blue-800); margin-bottom: 10px;
 }
-.quick-answer strong::before { content: "⚡"; }
+.quick-answer strong::before { content: "\26A1\FE0E"; }
 .quick-answer ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .quick-answer li {
   font-size: 15px; line-height: 1.6; padding-left: 16px; position: relative;
