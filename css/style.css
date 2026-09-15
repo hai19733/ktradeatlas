@@ -1056,6 +1056,7 @@ ul { list-style: none; }
   border-radius: 999px;
 }
 .article-facts b { color: var(--blue-700); font-weight: 700; }
+.article-facts .fact-sep { background: none; border: 0; padding: 0; color: var(--muted); }
 
 /* 빠른 답변 */
 .quick-answer {
