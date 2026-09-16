@@ -1,0 +1,49 @@
+# KTradeAtlas
+
+> 글로벌 가상자산 거래소 간 입출금 · 트래블룰 · USDT · 수수료 · 보안 가이드
+
+한국 이용자가 업비트·빗썸(국내)과 바이낸스·OKX(해외) 사이에서 가상자산을 주고받을 때 필요한 절차를 실제 사용 흐름에 맞춰 설명하는 정적 문서 사이트입니다. 계정주 확인, 트래블룰 100만원 기준, 입금 지연, 이름 불일치, 수수료, 보안을 다룹니다.
+
+## 핵심 페이지
+
+- [홈](https://ktradeatlas.com/): 사이트 개요와 전체 카테고리
+- [입출금 & 트래블룰](https://ktradeatlas.com/transfer/): 국내↔해외 거래소 전송 경로 허브
+- [트래블룰 100만원 기준 총정리](https://ktradeatlas.com/travel-rule/): 트래블룰 적용 기준·예외·향후 폐지 예정
+- [USDT & 네트워크](https://ktradeatlas.com/usdt-network/): 스테이블코인과 네트워크(TRC20·ERC20 등) 선택
+- [거래소 신원 확인(계정주 확인)](https://ktradeatlas.com/verification/): 계정주 확인 서비스 안내
+
+## 주요 전송 가이드
+
+- [업비트 → 바이낸스](https://ktradeatlas.com/transfer/upbit-to-binance/)
+- [업비트 → OKX](https://ktradeatlas.com/transfer/upbit-to-okx/)
+- [빗썸 → 바이낸스](https://ktradeatlas.com/transfer/bithumb-to-binance/)
+- [빗썸 → OKX](https://ktradeatlas.com/transfer/bithumb-to-okx/)
+- [바이낸스 → 업비트](https://ktradeatlas.com/transfer/binance-to-upbit/)
+- [바이낸스 → 빗썸](https://ktradeatlas.com/transfer/binance-to-bithumb/)
+- [OKX → 업비트](https://ktradeatlas.com/transfer/okx-to-upbit/)
+- [OKX → 빗썸](https://ktradeatlas.com/transfer/okx-to-bithumb/)
+
+## 문제 해결
+
+- [영문 이름 불일치로 송금이 막혔을 때](https://ktradeatlas.com/transfer/english-name-mismatch/): 계정주 확인 실패·입금대기 원인과 이름 수정 순서
+- [바이낸스 입금이 안 들어올 때](https://ktradeatlas.com/transfer/binance-deposit-not-arrived/)
+
+## 거래소 안내
+
+- [바이낸스](https://ktradeatlas.com/exchanges/binance/)
+- [업비트](https://ktradeatlas.com/exchanges/upbit/)
+- [빗썸](https://ktradeatlas.com/exchanges/bithumb/)
+- [OKX](https://ktradeatlas.com/exchanges/okx/)
+
+## 비교
+
+- [바이낸스 vs OKX](https://ktradeatlas.com/compare/binance-vs-okx/)
+
+## 문서
+
+- [면책조항](https://ktradeatlas.com/disclaimer/)
+- [개인정보처리방침](https://ktradeatlas.com/privacy/)
+- [편집 정책](https://ktradeatlas.com/editorial-policy/)
+- [제휴 고지](https://ktradeatlas.com/affiliate-disclosure/)
+- [보안 안내](https://ktradeatlas.com/security/)
+- [소개](https://ktradeatlas.com/about/)
