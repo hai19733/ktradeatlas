@@ -31,6 +31,7 @@
 ## 거래소 안내
 
 - [바이낸스](https://ktradeatlas.com/exchanges/binance/)
+- [바이낸스 가입 방법](https://ktradeatlas.com/exchanges/binance/signup/): 이메일 가입부터 KYC·2FA 설정까지
 - [업비트](https://ktradeatlas.com/exchanges/upbit/)
 - [빗썸](https://ktradeatlas.com/exchanges/bithumb/)
 - [OKX](https://ktradeatlas.com/exchanges/okx/)
