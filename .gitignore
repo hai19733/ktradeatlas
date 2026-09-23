@@ -4,6 +4,7 @@
 # 品牌资产例外（必须部署）
 !/assets/og-image.png
 !/assets/apple-touch-icon.png
+!/assets/author-minjun.png
 
 # 开发工具脚本（不部署）
 /tools/
