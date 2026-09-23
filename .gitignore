@@ -10,3 +10,6 @@
 
 # 开发工具脚本（不部署）
 /tools/
+
+# macOS 系统文件
+.DS_Store
