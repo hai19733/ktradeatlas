@@ -37,6 +37,7 @@
 - [빗썸](https://ktradeatlas.com/exchanges/bithumb/)
 - [OKX](https://ktradeatlas.com/exchanges/okx/)
 - [OKX 가입 방법](https://ktradeatlas.com/exchanges/okx/signup/): 이메일 가입부터 KYC·2FA 설정까지
+- [OKX 수수료 총정리](https://ktradeatlas.com/exchanges/okx/fees/): 현물·선물·출금 요율과 거래량·자산 등급·추천코드 할인
 
 ## 비교
 
