@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>바이낸스 출금 방법 총정리 2026: 수수료·최소 출금액·한도·실패 해결 | KTradeAtlas</title>
+  <meta name="description" content="2026년 바이낸스 출금 방법을 총정리합니다. 코인 출금 단계, 네트워크별 수수료·최소 출금액 비교, 출금 한도와 소요 시간, 실패 원인 해결법, 한국인 KRW 출금 대안까지 확인하세요.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://ktradeatlas.com/exchanges/binance/withdraw/">
+  <meta property="og:site_name" content="KTradeAtlas">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="바이낸스 출금 방법 총정리 2026: 수수료·최소 출금액·한도·실패 해결 | KTradeAtlas">
+  <meta property="og:description" content="2026년 바이낸스 출금 방법을 총정리합니다. 코인 출금 단계, 네트워크별 수수료·최소 출금액 비교, 출금 한도와 소요 시간, 실패 원인 해결법, 한국인 KRW 출금 대안까지 확인하세요.">
+  <meta property="og:url" content="https://ktradeatlas.com/exchanges/binance/withdraw/">
+  <meta property="og:image" content="https://ktradeatlas.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="KTradeAtlas — 한국 이용자를 위한 가상자산 거래소 · 전송 가이드">
+<!-- structured-data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ktradeatlas.com/exchanges/binance/withdraw/#article",
+      "headline": "바이낸스 출금 방법 총정리 2026: 수수료·최소 출금액·한도·실패 해결 | KTradeAtlas",
+      "description": "2026년 바이낸스 출금 방법을 총정리합니다. 코인 출금 단계, 네트워크별 수수료·최소 출금액 비교, 출금 한도와 소요 시간, 실패 원인 해결법, 한국인 KRW 출금 대안까지 확인하세요.",
+      "dateModified": "2026-09-27",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ktradeatlas.com/exchanges/binance/withdraw/"
+      },
+      "image": "https://ktradeatlas.com/assets/og-image.png",
+      "inLanguage": "ko-KR",
+      "author": {
+        "@type": "Person",
+        "@id": "https://ktradeatlas.com/author/#person",
+        "name": "김민준",
+        "url": "https://ktradeatlas.com/author/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "KTradeAtlas",
+        "url": "https://ktradeatlas.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ktradeatlas.com/assets/og-image.png"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ktradeatlas.com/exchanges/binance/withdraw/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "바이낸스에서 코인을 출금하는 방법은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "바이낸스 앱 또는 웹사이트에서 출금 메뉴로 이동한 뒤 출금할 코인을 선택하고, 받는 주소와 네트워크, 수량을 입력합니다. 마지막으로 Passkey 또는 2FA 등 보안 인증을 완료하면 출금 요청이 접수됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "USDT 출금 네트워크는 어떤 것을 선택해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가장 싼 네트워크를 고르는 것이 아니라 받는 거래소 또는 지갑이 지원하는 네트워크를 선택해야 합니다. 받는 곳에서 TRC20 주소를 만들었다면 Binance에서도 TRC20을 선택하는 식입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "바이낸스 출금 수수료는 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "고정된 하나의 수수료가 없습니다. 암호화폐와 네트워크에 따라 다르고 네트워크 상태에 따라 변경될 수 있습니다. 출금 직전 Binance 화면에 표시되는 Network Fee를 확인하는 것이 가장 정확합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "바이낸스 최소 출금액은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "코인과 네트워크마다 다릅니다. 최소 출금액 역시 변경될 수 있으므로 출금 화면에 표시되는 현재 값을 기준으로 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "출금이 Processing 상태에서 멈췄습니다. 어떻게 해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "우선 출금 내역에서 상태를 확인하세요. 아직 Processing이라면 Binance 처리 또는 블록체인 전송을 기다려야 할 수 있습니다. 6시간이 지나도 TxID가 생성되지 않는 경우 Binance 고객지원에 문의하라는 것이 공식 안내입니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Completed인데 국내 거래소에 입금되지 않았습니다. 어떻게 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Completed라면 먼저 TxID를 확인하세요. 블록체인에서 거래가 정상적으로 확인됐다면 받는 거래소의 입금 반영을 확인해야 합니다. 주소·네트워크·Memo/Tag 입력 여부도 함께 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "한국 원화(KRW)로 바로 출금할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "한국 국내 원화마켓 거래소처럼 Binance에서 KRW를 국내 은행계좌로 직접 출금하는 방식은 제공되지 않습니다. 일반적으로 지원되는 암호화폐를 국내 거래소로 전송한 뒤 해당 거래소에서 원화로 매도하는 과정을 거칩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "100만원 미만이면 트래블룰을 신경 쓰지 않아도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 9월 현재 기존 100만원 기준은 아직 적용되고 있습니다. 다만 국내 거래소는 해외 거래소 입금에 별도 확인 절차나 지원 거래소 정책을 적용할 수 있습니다. 또한 100만원 기준을 폐지하는 새 규정은 이미 확정됐으며 2027년 2월부터 적용될 예정이므로 최신 정책을 확인하는 것이 중요합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "바이낸스 출금 한도는 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "모든 이용자에게 동일한 하나의 숫자로 정해져 있다고 보기 어렵습니다. 계정 상태와 인증 수준 등에 따라 적용되는 한도가 달라질 수 있으므로 본인 계정에 표시되는 24시간 출금 가능 한도와 남은 한도를 확인하세요."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="logo" aria-label="KTradeAtlas 홈">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+          <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+          <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+          <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+        </svg>
+        <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/start/">시작하기</a></li>
+        <li class="has-dropdown"><a href="/exchanges/upbit/">국내 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/upbit/">업비트</a></li>
+            <li><a href="/exchanges/bithumb/">빗썸</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="/exchanges/binance/" class="active">해외 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/binance/">바이낸스</a></li>
+            <li><a href="/exchanges/okx/">OKX</a></li>
+          </ul>
+        </li>
+        <li><a href="/transfer/">입출금 &amp; 트래블룰</a></li>
+        <li><a href="/usdt-network/">USDT &amp; 네트워크</a></li>
+        <li><a href="/security/">보안</a></li>
+        <li class="nav-cta"><a href="/transfer/">전송 경로 보기</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="article-page">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="/">홈</a></li>
+          <li><a href="/exchanges/binance/">바이낸스</a></li>
+          <li aria-current="page">출금 방법</li>
+        </ol>
+      </nav>
+      <article>
+        <header class="article-header">
+          <span class="article-cat">해외 거래소 출금</span>
+          <h1>바이낸스 출금 방법 총정리 2026: 수수료·최소 출금액·한도·실패 해결</h1>
+          <div class="author-box">
+            <img class="author-box-photo" src="/assets/author-minjun.png" alt="김민준 KTradeAtlas 편집자" width="40" height="40">
+            <div class="author-box-body">
+              <span class="author-box-name"><a href="/author/">김민준</a> · KTradeAtlas 편집자</span>
+              <span class="author-box-desc">국내·해외 거래소 입출금·트래블룰 절차를 공식 문서와 실제 화면으로 확인해 작성합니다.</span>
+            </div>
+          </div>
+          <p class="article-lead">바이낸스에서 코인을 출금하려면 <strong>출금할 코인 → 받는 주소 → 네트워크 → 수량</strong> 순서로 입력한 뒤 보안 인증을 완료하면 됩니다. 여기서 가장 중요한 것은 수수료가 아닙니다. <strong>받는 거래소가 지원하는 네트워크와 바이낸스에서 선택한 출금 네트워크가 정확히 같아야 합니다.</strong> 네트워크를 잘못 선택하면 입금이 자동 반영되지 않거나, 경우에 따라 자산을 복구하지 못할 수도 있습니다. 바이낸스 역시 공식 출금 안내에서 가장 저렴한 네트워크가 아니라 <strong>받는 플랫폼과 호환되는 네트워크를 선택</strong>하라고 안내합니다.</p>
+          <p class="article-lead"><strong>2026년 9월 현재 Binance는 금융정보분석원(FIU)이 공개한 국내 가상자산사업자 신고 수리 명단에 포함된 국내 신고 거래소가 아닙니다.</strong> 따라서 한국 이용자가 업비트·빗썸 등 국내 거래소로 자산을 옮길 때는 해당 국내 거래소의 해외 거래소 입금 정책과 트래블룰 기준을 함께 확인해야 합니다.</p>
+          <div class="article-facts">
+            <span>마지막 확인 <b>2026.09.27</b></span>
+            <span>난이도 <b>초보자</b></span>
+            <span>예상 읽기 시간 <b>8분</b></span>
+          </div>
+          <div class="disclaimer">이 글은 투자 권유가 아니라 바이낸스의 암호화폐 출금 절차와 수수료, 네트워크 선택, 한국 이용자가 확인해야 할 사항을 설명하기 위한 정보입니다.</div>
+        </header>
+        <div class="quick-answer">
+          <strong>빠른 답변</strong>
+          <ul>
+            <li>바이낸스 출금은 <strong>Assets(자산) → Send/Withdraw(보내기·출금)</strong> 메뉴에서 진행합니다.</li>
+            <li>출금할 코인, 받는 주소, 네트워크, 수량을 입력한 뒤 <strong>Passkey 또는 2FA 등 보안 인증</strong>을 완료합니다.</li>
+            <li>출금 수수료는 코인과 네트워크에 따라 다르며 <strong>네트워크 상황에 따라 변경될 수 있습니다.</strong></li>
+            <li>최소 출금액 역시 코인·네트워크별로 다르므로 <strong>출금 직전 화면의 수치가 최종 기준</strong>입니다.</li>
+            <li>가장 싼 네트워크보다 <strong>받는 거래소가 실제 지원하는 네트워크를 먼저 확인</strong>해야 합니다.</li>
+            <li>한국 원화(KRW)를 국내 은행계좌로 직접 출금하는 기능은 한국 원화마켓 거래소처럼 제공되지 않으므로, 일반적으로 코인을 국내 거래소로 전송한 뒤 해당 거래소에서 원화로 매도하는 과정을 거칩니다.</li>
+            <li>2026년 9월 현재 국내 트래블룰의 <strong>100만원 기준은 아직 적용 중</strong>이며, 해당 기준 폐지는 2027년 2월 시행 예정입니다.</li>
+          </ul>
+        </div>
+        <div class="article-prose">
+          <h2>바이낸스 출금 한눈에 보기</h2>
+          <table>
+            <thead><tr><th>항목</th><th>2026년 9월 기준</th></tr></thead>
+            <tbody>
+              <tr><td>출금 경로</td><td>Assets → Send/Withdraw</td></tr>
+              <tr><td>출금 방식</td><td>외부 지갑·거래소 주소로 블록체인 전송</td></tr>
+              <tr><td>출금 수수료</td><td>코인·네트워크별 상이, 네트워크 상황에 따라 변동</td></tr>
+              <tr><td>최소 출금액</td><td>코인·네트워크별 상이</td></tr>
+              <tr><td>출금 한도</td><td>계정 상태·인증 수준·지역 등에 따라 다름</td></tr>
+              <tr><td>소요 시간</td><td>블록체인 및 받는 거래소 확인 시간에 따라 달라짐</td></tr>
+              <tr><td>KRW 은행 직접 출금</td><td>국내 원화마켓 거래소 방식은 지원하지 않음</td></tr>
+            </tbody>
+          </table>
+          <p>바이낸스는 암호화폐 출금 수수료를 네트워크 상황에 따라 조정할 수 있다고 안내합니다. 따라서 특정 네트워크의 수수료를 <strong>“항상 1 USDT”</strong>, <strong>“항상 0.01 USDT”</strong>처럼 기억해 두기보다는 출금할 때 표시되는 <strong>Network Fee</strong>를 직접 확인하는 편이 정확합니다. 최소 출금액도 같은 방식으로 변경될 수 있습니다.</p>
+
+          <h2>전체 과정 한눈에 보기</h2>
+          <div class="steps">
+            <div class="step"><h3>1. 출금 화면으로 이동</h3><p>바이낸스 앱이나 웹사이트에서 출금 메뉴로 이동합니다.</p></div>
+            <div class="step"><h3>2. 출금할 코인 선택</h3><p>USDT, BTC, ETH 등 보낼 자산을 선택합니다.</p></div>
+            <div class="step"><h3>3. 받는 주소 입력</h3><p>업비트·빗썸 또는 개인지갑에서 확인한 입금 주소를 붙여넣습니다.</p></div>
+            <div class="step"><h3>4. 네트워크 선택</h3><p>받는 쪽에서 지원하는 네트워크와 정확히 동일한 네트워크를 선택합니다.</p></div>
+            <div class="step"><h3>5. 수량·수수료 확인</h3><p>보낼 수량과 Network Fee, 실제 받는 수량을 확인합니다.</p></div>
+            <div class="step"><h3>6. 보안 인증</h3><p>Passkey 또는 2FA 등 계정에 설정된 보안 인증을 완료하면 출금 요청이 접수됩니다.</p></div>
+          </div>
+
+          <h2>1단계: 출금 화면 진입</h2>
+          <p>바이낸스는 앱 버전에 따라 메뉴 이름이 조금씩 달라질 수 있습니다. 2026년 9월 현재 Binance 공식 안내 기준으로 앱에서는 다음 순서로 접근합니다.</p>
+          <p><strong>Assets → Spot → Send → Withdraw Crypto</strong></p>
+          <p>웹에서는 보통:</p>
+          <p><strong>Wallet → Overview → Withdraw</strong></p>
+          <p>순서로 이동합니다. 바이낸스 UI는 업데이트에 따라 메뉴명이 달라질 수 있으므로 실제 화면에 표시되는 메뉴를 우선 확인하세요.</p>
+
+          <h2>2단계: 출금할 코인 선택</h2>
+          <p>보낼 암호화폐를 선택합니다. 예를 들어 USDT를 보내려면 <strong>USDT</strong>를 선택하면 됩니다.</p>
+          <p>문제는 여기서 끝이 아닙니다. USDT는 하나의 코인이지만 여러 블록체인에서 전송할 수 있습니다. 예를 들면:</p>
+          <ul>
+            <li>Ethereum — ERC20</li>
+            <li>TRON — TRC20</li>
+            <li>BNB Smart Chain — BEP20</li>
+          </ul>
+          <p>같은 USDT라도 네트워크가 다르면 서로 다른 전송 경로를 이용합니다. 그래서 <strong>코인을 먼저 고르고, 다음 단계에서 받는 쪽이 지원하는 네트워크를 확인하는 과정</strong>이 필요합니다.</p>
+
+          <h2>3단계: 네트워크 선택 — 가장 중요</h2>
+          <p>바이낸스 출금에서 가장 실수가 많이 발생하는 부분입니다. <strong>출금 네트워크와 받는 거래소·지갑의 입금 네트워크가 반드시 일치해야 합니다.</strong></p>
+          <p>예를 들어 받는 거래소에서 USDT 입금 주소를 만들 때 <strong>Ethereum (ERC20)</strong>을 선택했다면 바이낸스에서도 <strong>Ethereum (ERC20)</strong>을 선택해야 합니다. 받는 곳이 <strong>TRON (TRC20)</strong>이라면 바이낸스에서도 <strong>TRON (TRC20)</strong>을 선택해야 합니다.</p>
+          <p>바이낸스 역시 공식 가이드에서 단순히 수수료가 가장 싼 네트워크를 선택하지 말고, <strong>외부 플랫폼이 지원하는 네트워크와 일치시키라</strong>고 명시하고 있습니다. 잘못된 네트워크를 선택하면 자산을 잃을 수 있습니다.</p>
+          <h3>네트워크는 이 순서로 고르세요</h3>
+          <p><strong>받는 거래소 입금 화면 확인 → 지원 네트워크 확인 → 바이낸스에서 동일 네트워크 선택</strong></p>
+          <p>반대로 하면 안 됩니다. <strong>바이낸스에서 제일 싼 네트워크 선택 → 받는 거래소 확인</strong> 순서는 위험합니다. 자세한 차이는 <a href="/usdt-network/">USDT 네트워크 선택 가이드</a>에서 확인할 수 있습니다.</p>
+
+          <h2>4단계: 주소·수량 입력하고 수수료 확인</h2>
+          <p>받는 주소를 입력합니다. 주소는 직접 타이핑하지 말고 <strong>받는 거래소나 지갑에서 복사한 뒤 붙여넣기</strong>하는 것이 안전합니다. 입력 후 최소한 다음 세 가지를 다시 확인하세요.</p>
+          <ol>
+            <li>주소 앞뒤 몇 글자가 원본과 같은지</li>
+            <li>코인이 같은지</li>
+            <li>네트워크가 같은지</li>
+          </ol>
+          <p>출금 수량을 입력하면 바이낸스 화면에 보통 <strong>출금 수량, Network Fee, 실제 받는 수량</strong>이 표시됩니다. 여기 나온 값이 그 시점에 적용되는 실제 출금 조건입니다. 바이낸스는 공식적으로 암호화폐 출금 수수료와 최소 출금액이 네트워크 상태 등에 따라 변경될 수 있다고 안내하고 있으므로, 블로그에 적힌 오래된 수수료표보다 <strong>실제 출금 화면을 우선</strong>해서 확인하세요.</p>
+
+          <h2>5단계: 인증 후 출금 완료</h2>
+          <p>내용을 확인한 뒤 출금을 요청하면 계정 보안 설정에 따라 인증 절차가 진행됩니다. 예를 들어 <strong>Passkey, Google Authenticator 등 2FA, 이메일 등 추가 보안 확인</strong>이 사용될 수 있습니다. 바이낸스 공식 2026년 출금 가이드에서도 출금 요청을 최종 확인한 뒤 <strong>Passkey 또는 2FA를 이용해 거래를 인증</strong>하도록 안내하고 있습니다.</p>
+          <p>출금 요청이 처리되어 블록체인에 전송되면 <strong>TxID(Transaction ID)</strong>가 생성됩니다. TxID는 택배의 운송장 번호와 비슷합니다. 이 번호를 블록체인 탐색기에 입력하면 거래가 실제로 전송됐는지 확인할 수 있습니다.</p>
+
+          <h2>USDT 출금 네트워크 비교</h2>
+          <p>USDT를 보낼 때 자주 보게 되는 대표 네트워크는 다음과 같습니다.</p>
+          <table>
+            <thead><tr><th>네트워크</th><th>특징</th><th>주의할 점</th></tr></thead>
+            <tbody>
+              <tr><td>TRC20 (TRON)</td><td>거래소 지원 범위가 넓고 전송이 비교적 빠름</td><td>받는 거래소가 TRC20을 지원하는지 확인</td></tr>
+              <tr><td>BEP20 (BNB Smart Chain)</td><td>일반적으로 네트워크 비용이 낮은 편</td><td>일부 국내 거래소에서 지원하지 않을 수 있음</td></tr>
+              <tr><td>ERC20 (Ethereum)</td><td>Ethereum 생태계와 호환성이 높음</td><td>네트워크 상황에 따라 비용이 상대적으로 높을 수 있음</td></tr>
+            </tbody>
+          </table>
+          <p>여기서 중요한 점이 있습니다. <strong>“TRC20은 얼마, BEP20은 얼마”라는 숫자를 고정값처럼 보면 안 됩니다.</strong> 바이낸스는 암호화폐 출금 수수료를 네트워크 상황에 맞춰 조정하며, 실제 수수료와 최소 출금액은 출금 화면에서 확인하도록 안내하고 있습니다. 따라서 네트워크는 <strong>지원 여부 → 주소·네트워크 일치 → 수수료</strong> 순으로 비교하는 것이 안전합니다.</p>
+
+          <h2>최소 출금액은 얼마인가요?</h2>
+          <p>바이낸스 전체에 적용되는 하나의 최소 출금액은 없습니다. <strong>코인과 네트워크마다 최소 출금액이 다릅니다.</strong> 예를 들어 같은 USDT라도 TRON, Ethereum, BNB Smart Chain에서 최소 출금액과 수수료가 서로 다를 수 있습니다. 또한 바이낸스는 최소 출금액과 출금 수수료가 사전 고지 없이 변경될 수 있다고 안내합니다.</p>
+          <p>따라서 정확한 확인 방법은 간단합니다. <strong>USDT 선택 → 네트워크 선택 → 출금 화면의 Minimum Withdrawal / Network Fee 확인</strong>. 검색해서 나온 오래된 표보다 이 값이 우선입니다.</p>
+
+          <h2>바이낸스 출금 한도는 얼마인가요?</h2>
+          <p>인터넷에는 바이낸스 출금 한도를 하나의 숫자로 적어 놓은 글이 많습니다. 하지만 과거 수치를 그대로 적용하면 안 됩니다. 바이낸스는 계정에 적용되는 <strong>24시간 출금 가능 한도와 남은 출금 가능량을 계정 화면에서 확인할 수 있도록 표시</strong>해 왔으며, 실제 한도는 계정 상태와 인증 수준 등에 따라 달라질 수 있습니다.</p>
+          <p>따라서 <strong>“바이낸스 출금 한도는 무조건 ○ BTC다”</strong>처럼 외우지 마세요. 본인 계정에 표시되는 <strong>현재 24시간 출금 가능 한도</strong>를 확인하는 것이 가장 정확합니다.</p>
+
+          <h2>출금이 안 될 때 원인별 해결 방법</h2>
+          <p>출금 버튼을 눌렀는데 진행되지 않는다면 먼저 화면에 표시되는 상태와 오류 메시지를 확인하세요.</p>
+          <table>
+            <thead><tr><th>상황</th><th>가능한 원인</th><th>확인할 것</th></tr></thead>
+            <tbody>
+              <tr><td>출금 가능 잔고 부족</td><td>주문 등에 자산이 묶여 있음</td><td>Available Balance 확인</td></tr>
+              <tr><td>Invalid Address</td><td>주소 형식 또는 네트워크 오류</td><td>주소·네트워크 재확인</td></tr>
+              <tr><td>Minimum Withdrawal 미달</td><td>최소 출금액보다 적음</td><td>출금 화면 최소 수량 확인</td></tr>
+              <tr><td>출금 한도 초과</td><td>계정의 24시간 한도 도달</td><td>현재 남은 한도 확인</td></tr>
+              <tr><td>보안 인증 실패</td><td>Passkey·2FA 인증 오류</td><td>인증수단 재확인</td></tr>
+              <tr><td>Processing</td><td>바이낸스 처리 또는 블록체인 전송 대기</td><td>출금 내역 확인</td></tr>
+              <tr><td>Completed인데 미입금</td><td>받는 거래소 반영 대기 가능</td><td>TxID 확인 후 받는 거래소 문의</td></tr>
+            </tbody>
+          </table>
+          <p>특히 <strong>Processing</strong>과 <strong>Completed</strong>는 구분해서 봐야 합니다.</p>
+          <h3>Processing 상태</h3>
+          <p>아직 바이낸스에서 출금 처리가 진행 중인 상태입니다. 이 경우 우선 기다리면서 출금 내역을 확인합니다.</p>
+          <h3>Completed 상태</h3>
+          <p>Binance에서 블록체인으로 전송을 완료했다는 의미입니다. 이때는 <strong>TxID를 확인</strong>하세요. 블록체인에서는 이미 컨펌됐는데 받는 거래소 계정에 반영되지 않았다면, 바이낸스보다 <strong>받는 거래소 측 입금 처리 상태를 확인해야 할 가능성</strong>이 큽니다. 바이낸스 공식 FAQ도 Completed 상태에서는 TxID로 블록체인 거래를 확인한 뒤, 필요한 경우 수신 플랫폼에 문의하도록 안내합니다.</p>
+
+          <h2>TxID가 안 나오면 어떻게 하나요?</h2>
+          <p>출금 요청 후 바로 TxID가 생기지 않을 수 있습니다. 바이낸스는 공식 안내에서 보통 출금이 블록체인에 전송되면 TxID가 생성되지만 네트워크 상황 등에 따라 지연될 수 있다고 설명합니다. 특히 <strong>6시간이 지나도 TxID가 생성되지 않는 경우</strong>, 출금 내역 스크린샷 등 필요한 정보를 준비해 Binance 고객지원에 문의하라고 안내합니다.</p>
+          <p>따라서 <strong>Processing → 조금 기다림 → TxID 확인 → 6시간 이상 TxID 없음 → Binance 고객지원</strong> 순서로 확인하면 됩니다.</p>
+
+          <h2>한국인은 KRW로 바로 출금할 수 있나요?</h2>
+          <p>한국 이용자 입장에서 가장 많이 헷갈리는 부분입니다. 바이낸스는 지역별로 다양한 법정화폐 출금 기능을 제공하지만, 한국 국내 거래소처럼 <strong>KRW 원화마켓에서 매도한 뒤 본인 명의 국내 은행계좌로 바로 출금하는 구조를 제공하는 것은 아닙니다.</strong> 바이낸스의 법정화폐 출금 기능 자체도 국가와 통화에 따라 이용 가능 여부와 방법이 달라집니다.</p>
+          <p>그래서 한국 이용자가 바이낸스에 있는 암호화폐를 원화로 바꾸려는 경우에는 일반적으로 <strong>바이낸스 → 국내 거래소로 코인 전송 → 국내 거래소에서 매도 → 원화 출금</strong> 순서를 생각하게 됩니다.</p>
+          <p>다만 여기서 <strong>아무 코인이나 아무 네트워크로 바로 보내면 안 됩니다.</strong> 국내 거래소가 Binance 입금을 지원하는지, 해당 코인을 지원하는지, 해당 네트워크를 지원하는지, 본인확인 정보가 일치해야 하는지, 트래블룰 확인이 필요한지 먼저 확인해야 합니다. 자세한 절차는 <a href="/transfer/binance-to-upbit/">바이낸스에서 업비트로 코인 보내는 방법</a>과 <a href="/transfer/binance-to-bithumb/">바이낸스에서 빗썸으로 코인 보내는 방법</a>을 참고하세요.</p>
+
+          <h2>2026년 한국 트래블룰: 아직 100만원 기준입니다</h2>
+          <p>2026년 8월 11일 금융위원회는 「특정금융정보법 시행령」 개정안을 의결해 기존 <strong>100만원 이상</strong>에 적용되던 트래블룰 정보제공 의무를 금액과 관계없이 모든 가상자산 이전거래로 확대하기로 했습니다.</p>
+          <p>다만 개정 내용이 발표 즉시 적용되는 것은 아닙니다. 관련 규정에는 준비기간이 적용되므로 <strong>2026년 9월 27일 현재는 기존 100만원 기준이 적용되고 있으며, 새 기준은 2027년 2월부터 시행될 예정입니다.</strong></p>
+          <p>따라서 현재 바이낸스에서 업비트·빗썸 등 국내 거래소로 자산을 보낼 때는 기존 트래블룰 기준뿐 아니라 각 국내 거래소가 정한 해외 거래소 지원 여부, 본인확인 방식, 입금 심사 정책도 함께 확인해야 합니다. 자세한 내용은 <a href="/travel-rule/">트래블룰 완전 가이드</a>에서 정리했습니다.</p>
+
+          <h2>처음 보내는 주소라면 소액 테스트가 안전합니다</h2>
+          <p>처음 사용하는 주소라면 전액을 한 번에 보내기보다 <strong>가능한 범위에서 소액 테스트 전송을 먼저 하는 방법</strong>을 고려할 수 있습니다. 입금 주소 확인 → 네트워크 확인 → 최소 출금액 이상으로 소액 전송 → 실제 입금 확인 → 나머지 자산 전송 순서입니다. 다만 출금마다 네트워크 수수료가 발생할 수 있으므로 너무 작은 금액으로 여러 번 나누면 수수료 부담이 커질 수 있습니다.</p>
+
+          <h2>출금 전 체크리스트</h2>
+          <p>출금 버튼을 누르기 전에 이것만 확인하세요.</p>
+          <ol>
+            <li><strong>코인이 같은가?</strong> — USDT를 보내는데 받는 주소도 USDT 입금 주소인지 확인합니다.</li>
+            <li><strong>네트워크가 같은가?</strong> — TRC20이면 양쪽 모두 TRC20이어야 합니다.</li>
+            <li><strong>주소가 정확한가?</strong> — 복사·붙여넣기 후 앞뒤 몇 글자를 다시 확인합니다.</li>
+            <li><strong>Memo/Tag가 필요한 코인인가?</strong> — 일부 코인은 주소 외에 Memo 또는 Tag가 필요할 수 있습니다.</li>
+            <li><strong>최소 출금액 이상인가?</strong> — 바이낸스 출금 화면에서 확인합니다.</li>
+            <li><strong>수수료와 실제 수령액을 확인했는가?</strong> — Network Fee와 받는 수량을 확인합니다.</li>
+            <li><strong>국내 거래소가 Binance 입금을 지원하는가?</strong> — 업비트·빗썸 등 수신 거래소의 최신 정책을 확인합니다.</li>
+            <li><strong>처음 사용하는 주소인가?</strong> — 가능하면 소액 테스트 후 본 전송을 진행합니다.</li>
+          </ol>
+
+          <h2>아직 바이낸스 계정이 없다면</h2>
+          <p>출금 기능을 사용하려면 먼저 바이낸스 계정이 필요합니다. 가입 과정에서 추천 코드 <strong>CWGH2LVF</strong>를 사용할 수 있으며, 실제 적용되는 리베이트율과 조건은 <strong>가입 완료 전에 Binance 화면에 표시되는 내용을 기준으로 확인</strong>하세요. <a href="/exchanges/binance/signup/">바이낸스 가입 방법</a>에서 계정 생성과 본인인증 과정을 따로 정리했습니다.</p>
+          <ul>
+            <li><strong>추천 코드 CWGH2LVF</strong> — <a href="https://www.binance.com/en/join?ref=CWGH2LVF" target="_blank" rel="nofollow sponsored noopener">바이낸스 가입 페이지(영문)</a>에서 입력할 수 있습니다.</li>
+          </ul>
+          <p><strong>제휴 공개:</strong> 위 바이낸스 링크는 제휴 링크입니다. 이용자가 해당 링크를 통해 가입하거나 서비스를 이용하면 KTradeAtlas가 거래소로부터 보상을 받을 수 있습니다. 이용자에게 별도의 추가 비용이 발생하는 것은 아닙니다. 자세한 내용은 <a href="/affiliate-disclosure/">제휴 공개 페이지</a>를 확인하세요.</p>
+        </div>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">자주 묻는 질문</h2>
+          <div class="faq-list">
+            <details class="faq-item">
+              <summary>바이낸스에서 코인을 출금하는 방법은 무엇인가요?</summary>
+              <div class="faq-body">바이낸스 앱 또는 웹사이트에서 출금 메뉴로 이동한 뒤 출금할 코인을 선택하고, 받는 주소와 네트워크, 수량을 입력합니다. 마지막으로 Passkey 또는 2FA 등 보안 인증을 완료하면 출금 요청이 접수됩니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>USDT 출금 네트워크는 어떤 것을 선택해야 하나요?</summary>
+              <div class="faq-body">가장 싼 네트워크를 고르는 것이 아니라 받는 거래소 또는 지갑이 지원하는 네트워크를 선택해야 합니다. 받는 곳에서 TRC20 주소를 만들었다면 Binance에서도 TRC20을 선택하는 식입니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>바이낸스 출금 수수료는 얼마인가요?</summary>
+              <div class="faq-body">고정된 하나의 수수료가 없습니다. 암호화폐와 네트워크에 따라 다르고 네트워크 상태에 따라 변경될 수 있습니다. 출금 직전 Binance 화면에 표시되는 Network Fee를 확인하는 것이 가장 정확합니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>바이낸스 최소 출금액은 얼마인가요?</summary>
+              <div class="faq-body">코인과 네트워크마다 다릅니다. 최소 출금액 역시 변경될 수 있으므로 출금 화면에 표시되는 현재 값을 기준으로 확인하세요.</div>
+            </details>
+            <details class="faq-item">
+              <summary>출금이 Processing 상태에서 멈췄습니다. 어떻게 해야 하나요?</summary>
+              <div class="faq-body">우선 출금 내역에서 상태를 확인하세요. 아직 Processing이라면 Binance 처리 또는 블록체인 전송을 기다려야 할 수 있습니다. 6시간이 지나도 TxID가 생성되지 않는 경우 Binance 고객지원에 문의하라는 것이 공식 안내입니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>Completed인데 국내 거래소에 입금되지 않았습니다. 어떻게 하나요?</summary>
+              <div class="faq-body">Completed라면 먼저 TxID를 확인하세요. 블록체인에서 거래가 정상적으로 확인됐다면 받는 거래소의 입금 반영을 확인해야 합니다. 주소·네트워크·Memo/Tag 입력 여부도 함께 확인하세요.</div>
+            </details>
+            <details class="faq-item">
+              <summary>한국 원화(KRW)로 바로 출금할 수 있나요?</summary>
+              <div class="faq-body">한국 국내 원화마켓 거래소처럼 Binance에서 KRW를 국내 은행계좌로 직접 출금하는 방식은 제공되지 않습니다. 일반적으로 지원되는 암호화폐를 국내 거래소로 전송한 뒤 해당 거래소에서 원화로 매도하는 과정을 거칩니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>100만원 미만이면 트래블룰을 신경 쓰지 않아도 되나요?</summary>
+              <div class="faq-body">2026년 9월 현재 기존 100만원 기준은 아직 적용되고 있습니다. 다만 국내 거래소는 해외 거래소 입금에 별도 확인 절차나 지원 거래소 정책을 적용할 수 있습니다. 또한 100만원 기준을 폐지하는 새 규정은 이미 확정됐으며 2027년 2월부터 적용될 예정이므로 최신 정책을 확인하는 것이 중요합니다.</div>
+            </details>
+            <details class="faq-item">
+              <summary>바이낸스 출금 한도는 얼마인가요?</summary>
+              <div class="faq-body">모든 이용자에게 동일한 하나의 숫자로 정해져 있다고 보기 어렵습니다. 계정 상태와 인증 수준 등에 따라 적용되는 한도가 달라질 수 있으므로 본인 계정에 표시되는 24시간 출금 가능 한도와 남은 한도를 확인하세요.</div>
+            </details>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">공식 출처</h2>
+          <ul class="article-prose">
+            <li><a href="https://www.binance.com/en/support/faq/detail/85a1c394ac1d489fb0bfac0ef2fceafd" target="_blank" rel="noopener">Binance Support — How to Deposit/Withdraw Cryptocurrency on Binance</a></li>
+            <li><a href="https://www.binance.com/en/support/faq/detail/115003670492" target="_blank" rel="noopener">Binance Support — How to Withdraw Crypto from Binance</a></li>
+            <li><a href="https://www.binance.com/en/support/faq/" target="_blank" rel="noopener">Binance Support — Crypto Withdrawal Fees on Binance</a></li>
+            <li><a href="https://www.binance.com/en/support/faq/detail/115003743192" target="_blank" rel="noopener">Binance Support — Why Hasn't My Withdrawal Arrived?</a></li>
+            <li><a href="https://www.kofiu.go.kr/" target="_blank" rel="noopener">금융정보분석원(FIU) — 가상자산사업자 신고 현황</a></li>
+            <li><a href="https://www.fsc.go.kr/" target="_blank" rel="noopener">금융위원회 — 특정금융정보법 시행령 개정안</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">관련 가이드</h2>
+          <div class="related-grid">
+            <a href="/exchanges/binance/signup/" class="related-card">
+              <h3>바이낸스 가입 방법</h3>
+              <span class="related-date">2026.09.18 업데이트</span>
+            </a>
+            <a href="/transfer/binance-to-upbit/" class="related-card">
+              <h3>바이낸스에서 업비트로 코인 보내는 방법</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+            <a href="/usdt-network/" class="related-card">
+              <h3>USDT 네트워크 선택 방법</h3>
+              <span class="related-date">2026.09.05 업데이트</span>
+            </a>
+            <a href="/travel-rule/" class="related-card">
+              <h3>트래블룰 완전 가이드</h3>
+              <span class="related-date">2026.09.10 업데이트</span>
+            </a>
+          </div>
+        </section>
+        <section class="author-review">
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">이 글을 검토한 사람</h2>
+          <div class="author-box">
+            <img class="author-box-photo" src="/assets/author-minjun.png" alt="김민준 KTradeAtlas 편집자" width="56" height="56">
+            <div class="author-box-body">
+              <span class="author-box-name"><a href="/author/">김민준</a> · KTradeAtlas 편집자</span>
+              <span class="author-box-desc">국내·해외 거래소 전송과 트래블룰 관련 콘텐츠를 작성·검토합니다.</span>
+              <span class="author-box-link"><a href="/author/">작성자 소개</a> · <a href="/verification/">정보 검증 방식</a></span>
+            </div>
+          </div>
+        </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+              <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+              <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+              <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+              <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+            </svg>
+            <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+          </a>
+          <p>한국 이용자를 위한 글로벌 가상자산 거래소 · 전송 가이드. 업비트·빗썸에서 바이낸스·OKX까지, 실제 사용 흐름에 맞춰 설명합니다.</p>
+        </div>
+        <div class="footer-col">
+          <h4>거래소</h4>
+          <a href="/exchanges/upbit/">업비트</a>
+          <a href="/exchanges/bithumb/">빗썸</a>
+          <a href="/exchanges/binance/">바이낸스</a>
+          <a href="/exchanges/okx/">OKX</a>
+        </div>
+        <div class="footer-col">
+          <h4>가이드</h4>
+          <a href="/start/">시작하기</a>
+          <a href="/transfer/">입출금 &amp; 트래블룰</a>
+          <a href="/usdt-network/">USDT &amp; 네트워크</a>
+          <a href="/security/">보안</a>
+        </div>
+        <div class="footer-col">
+          <h4>사이트 &amp; 정책</h4>
+          <a href="/about/">소개</a>
+          <a href="/author/">작성자</a>
+          <a href="/editorial-policy/">편집 원칙</a>
+          <a href="/verification/">정보 검증 방식</a>
+          <a href="/affiliate-disclosure/">제휴 공개</a>
+          <a href="/disclaimer/">면책조항</a>
+          <a href="/privacy/">개인정보처리방침</a>
+          <a href="/contact/">문의</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KTradeAtlas. 정보 제공용이며 투자 권유가 아닙니다.</span>
+        <span>암호화폐는 변동성이 크며 원금 손실 위험이 있습니다.</span>
+        <span>모든 상표 및 로고는 각 소유자의 자산입니다.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
