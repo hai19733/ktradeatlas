@@ -977,6 +977,20 @@ ul { list-style: none; }
   color: var(--blue-900);
 }
 .article-prose h2:first-child { margin-top: 0; }
+.article-prose h2 .h2-logo {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  vertical-align: -5px;
+  margin-right: 10px;
+}
+.article-header h1 .h1-logo {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  vertical-align: -7px;
+  margin-right: 12px;
+}
 .article-prose h3 { font-size: 18px; font-weight: 800; margin: 26px 0 10px; }
 .article-prose p { font-size: 16px; line-height: 1.8; margin-bottom: 16px; }
 .article-prose ul, .article-prose ol { margin: 0 0 16px 0; padding-left: 22px; }
