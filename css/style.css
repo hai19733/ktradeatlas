@@ -1095,6 +1095,37 @@ ul { list-style: none; }
   content: "·"; position: absolute; left: 4px; color: var(--blue-500); font-weight: 800;
 }
 
+/* Registration card (under title) */
+.reco-card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(150deg, #F0F6FF, var(--white));
+  border: 1px solid var(--blue-100);
+  border-radius: 14px;
+  padding: 16px 18px;
+  margin: 18px 0 4px;
+}
+.reco-logo { width: 48px; height: 48px; flex-shrink: 0; }
+.reco-body { flex: 1; min-width: 0; }
+.reco-title { display: block; font-size: 15px; font-weight: 800; color: var(--blue-900); }
+.reco-desc { display: block; font-size: 13px; color: var(--muted); margin-top: 3px; line-height: 1.55; }
+.reco-desc b { color: var(--accent-dark); font-weight: 800; }
+.reco-btn {
+  flex-shrink: 0;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #3A2400;
+  font-size: 13.5px; font-weight: 800;
+  padding: 10px 18px; border-radius: 999px;
+  text-decoration: none; white-space: nowrap;
+  transition: background .15s, transform .15s, box-shadow .15s;
+}
+.reco-btn:hover { background: var(--accent-dark); transform: translateY(-2px); box-shadow: var(--shadow-md); }
+@media (max-width: 560px) {
+  .reco-card { flex-wrap: wrap; }
+  .reco-btn { width: 100%; }
+}
+
 /* Disclaimer */
 .disclaimer {
   font-size: 13px; color: var(--muted);
