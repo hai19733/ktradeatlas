@@ -37,6 +37,7 @@
 - [바이낸스 출금 방법](https://ktradeatlas.com/exchanges/binance/withdraw/): 코인 출금 단계·네트워크 선택·수수료·최소 출금액·한도·실패 해결
 - [바이낸스 추천인 코드](https://ktradeatlas.com/exchanges/binance/referral-code/): 현물·선물 20% 수수료 할인·입력 방법·기존 계정 재등록(Recall)
 - [업비트](https://ktradeatlas.com/exchanges/upbit/)
+- [업비트 출금 방법](https://ktradeatlas.com/exchanges/upbit/withdraw/): 원화·코인 출금 단계, 바로 출금·휴대폰번호 출금, 수수료, 해외 거래소 전송 트래블룰
 - [빗썸](https://ktradeatlas.com/exchanges/bithumb/)
 - [OKX](https://ktradeatlas.com/exchanges/okx/)
 - [OKX 가입 방법](https://ktradeatlas.com/exchanges/okx/signup/): 이메일 가입부터 KYC·2FA 설정까지
