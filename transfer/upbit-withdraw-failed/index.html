@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>업비트 출금이 안 될 때 원인 8가지와 해결 방법 완전 가이드 2026 | KTradeAtlas</title>
+  <meta name="description" content="업비트에서 코인·원화 출금이 안 될 때 원인 8가지(72시간·24시간 출금 지연제, 이상거래 모니터링, 2채널 인증, 카카오톡 인증 종료, 개인지갑 네트워크 불일치, 트래블룰, 출금 한도, 네트워크 일시중단)를 확인 순서대로 해결하는 방법을 정리했습니다.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://ktradeatlas.com/transfer/upbit-withdraw-failed/">
+  <meta property="og:site_name" content="KTradeAtlas">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="업비트 출금이 안 될 때 원인 8가지와 해결 방법 완전 가이드 2026 | KTradeAtlas">
+  <meta property="og:description" content="업비트에서 코인·원화 출금이 안 될 때 원인 8가지를 확인 순서대로 해결하는 방법을 정리했습니다.">
+  <meta property="og:url" content="https://ktradeatlas.com/transfer/upbit-withdraw-failed/">
+  <meta property="og:image" content="https://ktradeatlas.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="KTradeAtlas — 한국 이용자를 위한 가상자산 거래소 · 전송 가이드">
+<!-- structured-data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ktradeatlas.com/transfer/upbit-withdraw-failed/#article",
+      "headline": "업비트 출금이 안 될 때 원인 8가지와 해결 방법 완전 가이드 2026 | KTradeAtlas",
+      "description": "업비트에서 코인·원화 출금이 안 될 때 원인 8가지(72시간·24시간 출금 지연제, 이상거래 모니터링, 2채널 인증, 카카오톡 인증 종료, 개인지갑 네트워크 불일치, 트래블룰, 출금 한도, 네트워크 일시중단)를 확인 순서대로 해결하는 방법을 정리했습니다.",
+      "dateModified": "2026-10-05",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ktradeatlas.com/transfer/upbit-withdraw-failed/"
+      },
+      "image": "https://ktradeatlas.com/assets/og-image.png",
+      "inLanguage": "ko-KR",
+      "author": {
+        "@type": "Person",
+        "@id": "https://ktradeatlas.com/author/#person",
+        "name": "김민준",
+        "url": "https://ktradeatlas.com/author/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "KTradeAtlas",
+        "url": "https://ktradeatlas.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ktradeatlas.com/assets/og-image.png"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ktradeatlas.com/transfer/upbit-withdraw-failed/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "업비트 출금이 안 되면 내 코인이 사라진 건가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "대부분은 아닙니다. 출금 지연제, 인증 실패, 트래블룰 확인 실패, 네트워크 일시 중단처럼 블록체인 전송이 시작되기 전에 출금이 막힌 경우 자산은 업비트 계정에 남아 있습니다. 다만 출금 상태가 이미 완료됐고 TXID가 생성됐다면 단순 출금 제한과는 다른 문제입니다. 이 경우 출금 주소와 네트워크, TXID를 별도로 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 원화 입금 후 코인은 언제 출금할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "최초 원화 입금은 입금 시점부터 72시간, 이후 입금은 각 입금 건마다 24시간 출금 지연제가 적용될 수 있습니다. 두 번째 이후 입금의 경우 출금 신청 시점을 기준으로 직전 24시간 내 원화 입금액에 해당하는 디지털 자산이 제한됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 24시간 출금 제한은 모든 코인이 막히는 건가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "반드시 전체 자산이 막히는 것은 아닙니다. 기본적으로 직전 24시간 동안 입금한 원화 합계액에 해당하는 만큼의 디지털 자산 출금이 제한됩니다. 따라서 오래전부터 보유하던 자산이 있다면 일부 수량은 출금 가능할 수 있습니다. 실제 가능 수량은 출금 화면에서 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "최초 입금 72시간은 빨리 해제할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "일반적으로 최초 원화 입금 후 적용되는 제한은 72시간 경과 후 자동 해제되는 구조입니다. 다만 실제 계정별 적용 상태는 업비트가 표시하는 출금 가능 수량을 기준으로 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "원화 출금 인증은 몇 분 안에 해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2채널 인증 요청을 받은 뒤 3분 이내에 인증을 완료해야 합니다. 시간이 지나면 요청 만료 또는 유효시간 초과 메시지가 나타날 수 있으며, 새 인증 요청을 받아 다시 진행해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "카카오톡 인증을 했는데 출금이 안 됐어요.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "출금 신청 후 업비트 앱이나 PC 화면을 종료한 상태에서 카카오톡 인증을 진행하면 인증 결과가 업비트에 전달되지 않을 수 있습니다. 이 경우 자산은 변동되지 않으므로 업비트를 다시 실행한 뒤 출금을 재신청하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "개인지갑을 등록했는데 출금 주소가 없다고 나옵니다.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "등록한 개인지갑의 네트워크와 지금 출금하려는 디지털 자산의 네트워크가 일치하는지 확인하세요. 등록된 개인지갑 주소와 네트워크가 출금 조건과 일치해야 목록에 나타납니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ledger로 바로 출금할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업비트 공식 안내 기준 현재 하드웨어 지갑 연동을 통한 개인지갑 주소 등록은 지원하지 않습니다. 현재 지원되는 개인지갑 종류와 네트워크는 업비트 개인지갑 주소 등록 안내에서 최신 정보를 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "100만 원 미만으로 보내면 트래블룰을 피할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "100만 원 미만은 100만 원 이상 출금과 동일한 트래블룰 절차의 대상은 아니지만, 미신고 가상자산사업자와의 입출금 제한은 금액과 무관하게 적용될 수 있습니다. 따라서 단순히 출금 금액을 100만 원 미만으로 나눈다고 모든 거래소로 전송할 수 있는 것은 아닙니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "KuCoin이나 MEXC로 업비트에서 출금할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업비트가 공개한 미신고 불법 영업행위 가상자산사업자 목록에는 현재 KuCoin과 MEXC가 포함되어 있으며, 해당 사업자 관련 입출금은 제한될 수 있습니다. 사업자 목록은 바뀔 수 있으므로 출금 전에 업비트 최신 공식 목록을 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Binance나 OKX로 출금할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업비트 공식 VASP 목록 기준 Binance와 OKX는 현재 계정주 확인 연동 가상자산사업자 목록에 포함되어 있습니다. 다만 자산·네트워크·수취인 정보 등에 따라 실제 출금 가능 여부가 달라질 수 있으므로 출금 화면에서 다시 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "출금 한도는 어떻게 확인하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "먼저 업비트 출금 화면에 표시되는 출금 가능 수량을 확인하세요. 또한 업비트는 디지털 자산별로 별도의 1회 출금 한도를 운영하므로 많은 수량을 한 번에 출금한다면 해당 자산의 한도도 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "USDT 출금이 안 돼요.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "USDT는 최근 원화 입금에 따른 출금 지연제, 선택한 네트워크, 출금 대상 거래소, 개인지갑 등록 여부, 네트워크 점검 등 여러 원인으로 출금이 제한될 수 있습니다. 먼저 출금 가능 수량 → 최근 원화 입금 → 네트워크 → 출금 대상 → 입출금 현황 순서로 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "위 내용을 모두 확인했는데도 출금이 안 됩니다.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "오류 메시지를 캡처한 뒤 업비트 고객센터에 문의하세요. 문의할 때 자산명, 수량, 출금 시각, 네트워크, 오류 메시지, 최근 원화 입금 시각을 함께 전달하면 문제 파악에 도움이 됩니다."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="logo" aria-label="KTradeAtlas 홈">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+          <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+          <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+          <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+        </svg>
+        <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/start/">시작하기</a></li>
+        <li class="has-dropdown"><a href="/exchanges/upbit/">국내 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/upbit/">업비트</a></li>
+            <li><a href="/exchanges/bithumb/">빗썸</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="/exchanges/binance/">해외 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/binance/">바이낸스</a></li>
+            <li><a href="/exchanges/okx/">OKX</a></li>
+          </ul>
+        </li>
+        <li><a href="/transfer/" class="active">입출금 &amp; 트래블룰</a></li>
+        <li><a href="/usdt-network/">USDT &amp; 네트워크</a></li>
+        <li><a href="/security/">보안</a></li>
+        <li class="nav-cta"><a href="/transfer/">전송 경로 보기</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="article-page">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="/">홈</a></li>
+          <li><a href="/transfer/">입출금 &amp; 트래블룰</a></li>
+          <li aria-current="page">업비트 출금이 안 될 때</li>
+        </ol>
+      </nav>
+      <article>
+        <header class="article-header">
+          <span class="article-cat">문제 해결</span>
+          <h1>업비트 출금이 안 될 때: 원인 8가지와 확인 순서</h1>
+          <div class="author-box">
+            <img class="author-box-photo" src="/assets/author-minjun.png" alt="김민준 KTradeAtlas 편집자" width="40" height="40">
+            <div class="author-box-body">
+              <span class="author-box-name"><a href="/author/">김민준</a> · KTradeAtlas 편집자</span>
+              <span class="author-box-desc">국내·해외 거래소 입출금·트래블룰 절차를 공식 문서와 실제 화면으로 확인해 작성합니다.</span>
+            </div>
+          </div>
+          <p class="article-lead">업비트에서 <strong>코인 또는 원화 출금이 안 된다면</strong>, 먼저 <strong>코인 출금인지 원화 출금인지 구분한 뒤 최근 원화 입금 시점, 출금 가능 금액, 오류 메시지</strong>를 확인하세요.</p>
+          <p class="article-lead">업비트 출금 실패는 대부분 자산이 사라진 것이 아니라 <strong>출금 조건을 충족하지 못했거나 일시적으로 제한된 상태</strong>입니다.</p>
+          <p class="article-lead">특히 코인 출금은 <strong>최초 원화 입금 후 72시간·이후 입금 후 24시간 출금 지연제</strong>, 트래블룰, 개인지갑 주소·네트워크 불일치, 출금 한도, 네트워크 점검 때문에 막히는 경우가 많습니다.</p>
+          <p class="article-lead">반면 원화(KRW) 출금은 <strong>2채널 인증 시간 초과나 실명 정보 불일치</strong>를 먼저 확인하는 것이 빠릅니다.</p>
+          <p class="article-lead">이 글에서는 업비트 출금이 안 되는 대표적인 <strong>원인 8가지</strong>와 고객센터에 문의하기 전에 직접 확인할 순서를 정리합니다.</p>
+          <div class="article-facts">
+            <span>마지막 확인 <b>2026.10.05</b></span>
+            <span>난이도 <b>초보자</b></span>
+            <span>예상 읽기 시간 <b>8분</b></span>
+          </div>
+          <div class="disclaimer">이 글은 투자 권유가 아니라 실제 사용 절차와 위험을 설명하기 위한 정보입니다.</div>
+        </header>
+        <div class="reco-card">
+          <img class="reco-logo" src="/assets/img/binance-logo.png" alt="바이낸스 로고" width="48" height="48">
+          <div class="reco-body">
+            <strong class="reco-title">바이낸스 신규 회원 혜택</strong>
+            <span class="reco-desc">현물 20% + 선물 20% 수수료 리베이트 · 추천 코드 <b>CWGH2LVF</b></span>
+          </div>
+          <a class="reco-btn" href="https://www.binance.com/en/join?ref=CWGH2LVF" rel="nofollow sponsored noopener" target="_blank">바이낸스 가입하기</a>
+        </div>
+        <div class="quick-answer">
+          <strong>빠른 답변</strong>
+          <p>업비트 출금이 안 될 때는 아래 순서대로 확인하면 됩니다.</p>
+          <ol>
+            <li><strong>최근 원화 입금이 있었는지 확인</strong> — 최초 입금은 72시간, 이후 입금은 건별 24시간 출금 지연제가 적용될 수 있습니다.</li>
+            <li><strong>출금 가능 금액 확인</strong> — 보유 수량 전체가 항상 출금 가능한 것은 아닙니다.</li>
+            <li><strong>화면의 오류 메시지 확인</strong> — 인증 만료, 주소 미등록, 출금 제한 등의 원인을 바로 알 수 있습니다.</li>
+            <li><strong>출금 네트워크 확인</strong> — 코인과 받는 곳의 네트워크가 반드시 같아야 합니다.</li>
+            <li><strong>거래소·개인지갑 출금 조건 확인</strong> — 100만 원 이상은 트래블룰 조건을 확인해야 합니다.</li>
+            <li><strong>1회 출금 한도 확인</strong> — 자산별로 1회 출금 한도가 설정될 수 있습니다.</li>
+            <li><strong>입출금 현황 확인</strong> — 특정 코인이나 네트워크가 일시 중단될 수 있습니다.</li>
+            <li>그래도 해결되지 않으면 <strong>오류 화면과 출금 정보를 준비해 업비트 고객센터에 문의</strong>하세요.</li>
+          </ol>
+          <blockquote><strong>판단 기준:</strong> 원화를 최근에 입금했다면 <strong>72시간·24시간 지연제부터</strong>, 원화 출금이 안 된다면 <strong>2채널 인증부터</strong>, 외부 거래소나 지갑으로 코인이 안 나간다면 <strong>트래블룰·주소·네트워크부터</strong> 확인하세요.</blockquote>
+        </div>
+        <div class="article-prose">
+          <h2>업비트 출금이 안 되는 이유 한눈에 보기</h2>
+          <table>
+            <thead><tr><th>출금이 안 되는 상황</th><th>가능성이 높은 원인</th><th>먼저 확인할 것</th></tr></thead>
+            <tbody>
+              <tr><td>원화 입금 후 코인 출금 불가</td><td>72시간·24시간 출금 지연제</td><td>최근 원화 입금 시각</td></tr>
+              <tr><td>코인은 있는데 출금 가능 수량이 적음</td><td>출금 제한·대기 주문·한도</td><td>출금 화면의 출금 가능 수량</td></tr>
+              <tr><td>원화 출금 실패</td><td>2채널 인증·실명 정보 불일치</td><td>인증 완료 여부</td></tr>
+              <tr><td>카카오톡 인증 후 출금 안 됨</td><td>인증 중 업비트 종료</td><td>앱·PC 종료 여부</td></tr>
+              <tr><td>개인지갑이 목록에 안 보임</td><td>등록 네트워크 불일치</td><td>개인지갑 등록 네트워크</td></tr>
+              <tr><td>해외 거래소로 출금 안 됨</td><td>트래블룰·VASP 제한</td><td>출금 대상 거래소</td></tr>
+              <tr><td>큰 수량을 한 번에 출금 못 함</td><td>자산별 1회 출금 한도</td><td>해당 코인의 출금 한도</td></tr>
+              <tr><td>평소 되던 네트워크가 안 됨</td><td>네트워크 출금 일시 중단</td><td>업비트 입출금 현황</td></tr>
+            </tbody>
+          </table>
+          <p>이 표처럼 상황별로 확인할 것이 다릅니다. 아래에서 각 원인을 자세히 설명합니다.</p>
+
+          <h2>코인 출금인지 원화 출금인지 먼저 구분하세요</h2>
+          <p>업비트에서 말하는 출금은 크게 두 종류입니다.</p>
+          <table>
+            <thead><tr><th>출금 종류</th><th>의미</th><th>가장 먼저 확인할 것</th></tr></thead>
+            <tbody>
+              <tr><td><strong>디지털 자산 출금</strong></td><td>BTC·ETH·USDT 등 코인을 다른 거래소나 지갑으로 보내는 것</td><td>원화 입금 시점·출금 가능 수량·네트워크·트래블룰</td></tr>
+              <tr><td><strong>원화 출금</strong></td><td>업비트 KRW 잔액을 연결된 은행 계좌로 보내는 것</td><td>2채널 인증·실명 정보</td></tr>
+            </tbody>
+          </table>
+          <p>두 출금은 막히는 이유가 다릅니다. 따라서 <strong>"업비트 출금이 안 된다"는 것만으로 같은 해결 방법을 적용하면 안 됩니다.</strong></p>
+          <p>특히 원화를 입금한 직후 코인을 다른 거래소로 보내려고 했다면 가장 먼저 <strong>출금 지연제</strong>를 확인하세요.</p>
+
+          <h2>가장 먼저 확인할 5가지</h2>
+          <p>고객센터에 문의하기 전에 다음 다섯 가지를 순서대로 확인하세요.</p>
+          <table>
+            <thead><tr><th>확인 항목</th><th>확인할 내용</th></tr></thead>
+            <tbody>
+              <tr><td>최근 원화 입금</td><td>최초 입금 후 72시간 또는 최근 24시간 이내 입금이 있었는지</td></tr>
+              <tr><td>출금 가능 금액</td><td>출금 화면에 실제로 표시되는 출금 가능 수량</td></tr>
+              <tr><td>오류 메시지</td><td>화면에 표시된 정확한 오류 문구</td></tr>
+              <tr><td>네트워크</td><td>보내는 곳과 받는 곳의 네트워크가 같은지</td></tr>
+              <tr><td>입출금 상태</td><td>해당 자산·네트워크 출금이 현재 정상인지</td></tr>
+            </tbody>
+          </table>
+          <p>이 다섯 가지만 확인해도 대부분의 출금 문제는 원인을 좁힐 수 있습니다.</p>
+
+          <h2>1) 원화를 입금했다면 72시간·24시간 출금 지연제부터 확인하세요</h2>
+          <p>업비트에서 코인이 있는데 출금이 안 될 때 가장 먼저 확인해야 하는 것이 <strong>디지털 자산 출금 지연제</strong>입니다. 보이스피싱 등 금융사고 예방을 위해 원화를 입금한 직후에는 일정 금액의 디지털 자산 출금이 제한될 수 있습니다.</p>
+          <h3>최초 원화 입금: 72시간</h3>
+          <p>업비트 계정에 <strong>처음 원화를 입금했다면 입금 시점부터 72시간 동안 디지털 자산 출금이 제한</strong>됩니다. 72시간이 지나면 해당 제한은 자동으로 해제됩니다.</p>
+          <h3>두 번째 원화 입금부터: 24시간</h3>
+          <p>최초 입금 이후에는 <strong>원화 입금 건마다 24시간 출금 지연제</strong>가 적용될 수 있습니다. 출금 신청 시점을 기준으로 직전 24시간 동안 입금한 원화 합계액에 해당하는 만큼 디지털 자산 출금이 제한됩니다.</p>
+          <p>예를 들어 기존에 코인을 보유하고 있더라도 방금 원화를 추가 입금했다면 <strong>전체 코인이 아니라 최근 입금액에 해당하는 금액만큼 출금이 제한</strong>될 수 있습니다.</p>
+          <h3>72시간과 24시간 차이</h3>
+          <table>
+            <thead><tr><th>상황</th><th>출금 제한</th></tr></thead>
+            <tbody>
+              <tr><td>업비트 최초 원화 입금</td><td>입금 후 72시간</td></tr>
+              <tr><td>두 번째 이후 원화 입금</td><td>각 입금 건마다 24시간</td></tr>
+              <tr><td>제한되는 범위</td><td>최근 입금액에 해당하는 디지털 자산</td></tr>
+              <tr><td>해제 방법</td><td>원칙적으로 제한 시간 경과 후 자동 해제</td></tr>
+            </tbody>
+          </table>
+          <p>업비트 이상거래탐지시스템이 금융사고 위험이 낮다고 판단한 회원은 지연제 적용이 달라질 수 있으므로 <strong>실제 내 계정에 표시되는 출금 가능 수량을 기준으로 판단하는 것이 가장 정확합니다.</strong></p>
+          <blockquote><strong>결론:</strong> 최근 원화를 입금했다면 고객센터보다 먼저 <strong>입금 시각과 출금 가능 수량</strong>을 확인하세요.</blockquote>
+
+          <h2>2) 이상거래로 탐지되면 출금이 제한될 수 있어요</h2>
+          <p>72시간 또는 24시간이 이미 지났는데도 출금이 되지 않는다면 <strong>이상거래 모니터링에 따른 출금 제한</strong> 가능성도 확인해야 합니다. 업비트는 보이스피싱, 명의도용, 비정상적인 입출금 패턴 등 금융사고 위험을 확인하기 위해 이상거래탐지시스템을 운영합니다.</p>
+          <p>거래 패턴이 위험하다고 판단되면 계정에 <strong>출금 정지 또는 추가 확인 절차</strong>가 적용될 수 있습니다. 이 경우에는 단순히 출금을 반복해도 해결되지 않을 수 있습니다.</p>
+          <p>업비트에서 문자·전화·앱 알림 또는 고객센터를 통해 추가 확인이나 자금 출처 소명을 요청했다면 해당 절차를 먼저 진행하세요.</p>
+          <blockquote><strong>판단 기준:</strong> 24시간·72시간이 지났고 주소와 네트워크도 정상인데 계정 전체의 출금이 막혀 있다면 이상거래 제한 여부를 확인할 차례입니다.</blockquote>
+
+          <h2>3) 원화 출금 실패는 2채널 인증과 실명 정보를 확인하세요</h2>
+          <p>코인 출금이 아니라 <strong>원화(KRW)를 은행 계좌로 출금하지 못하는 상황</strong>이라면 원인이 다릅니다. 가장 먼저 확인할 것은 <strong>2채널 인증과 회원 정보 일치 여부</strong>입니다.</p>
+          <h3>2채널 인증은 3분 안에 완료해야 합니다</h3>
+          <p>업비트에서 원화 출금을 신청하고 인증 메시지를 받았다면 <strong>인증 요청 후 3분 이내</strong>에 인증을 완료해야 합니다. 시간이 지나면 다음과 같은 메시지가 표시될 수 있습니다.</p>
+          <ul>
+            <li>요청이 만료되었습니다.</li>
+            <li>유효시간이 초과되었습니다.</li>
+          </ul>
+          <p>이 경우 기존 요청을 계속 진행할 수 없으므로 <strong>새 인증 요청을 받은 뒤 다시 출금</strong>하면 됩니다.</p>
+          <h3>이름·생년월일·휴대전화 번호가 일치해야 합니다</h3>
+          <p>원화 출금 시에는 다음 정보가 서로 일치해야 합니다.</p>
+          <ul>
+            <li>케이뱅크 실명확인 입출금 계좌 정보</li>
+            <li>2채널 인증서 정보</li>
+            <li>업비트 회원정보(이름·생년월일·휴대전화 번호)</li>
+          </ul>
+          <p>어느 하나라도 다르면 인증을 완료했더라도 출금이 정상 처리되지 않을 수 있습니다.</p>
+          <blockquote><strong>결론:</strong> 원화 출금 실패라면 코인 네트워크를 확인할 필요 없이 <strong>3분 인증 제한 → 실명 정보</strong> 순서로 확인하는 것이 빠릅니다.</blockquote>
+
+          <h2>4) 카카오톡 인증 중 업비트를 종료하면 출금이 진행되지 않을 수 있어요</h2>
+          <p>카카오톡 인증 자체는 완료했는데 업비트에서 출금이 진행되지 않는 경우도 있습니다. 출금 신청 후 <strong>업비트 앱이나 PC 화면을 종료한 상태에서 카카오톡 인증을 진행하면</strong>, 인증 정보가 업비트로 정상 전달되지 않아 출금이 완료되지 않을 수 있습니다.</p>
+          <p>예를 들어 모바일에서:</p>
+          <ol>
+            <li>업비트에서 출금을 신청하고</li>
+            <li>카카오톡으로 이동해 인증한 뒤</li>
+            <li>인증이 끝나기 전에 업비트 앱을 완전히 종료했다면</li>
+          </ol>
+          <p>출금이 진행되지 않을 수 있습니다. 이 경우 실제 출금이 완료된 것이 아니므로 <strong>보유 자산은 변동되지 않습니다.</strong> 업비트를 다시 실행한 뒤 출금을 재신청하세요.</p>
+          <p>카카오톡 인증이 어렵다면 업비트에서 지원하는 다른 2채널 인증 수단을 사용할 수 있는지도 확인하세요.</p>
+
+          <h2>5) 개인지갑 출금이 안 되면 주소와 네트워크를 확인하세요</h2>
+          <p>개인지갑 주소를 등록했는데 출금 화면에서 <strong>"등록된 개인지갑 주소가 없습니다"</strong>와 비슷한 메시지가 표시된다면, 등록한 주소의 <strong>네트워크와 출금하려는 자산의 네트워크가 일치하는지</strong> 확인하세요.</p>
+          <p>개인지갑은 주소만 같다고 출금할 수 있는 것이 아닙니다.</p>
+          <blockquote>등록된 개인지갑 네트워크 = 업비트에서 선택한 출금 네트워크여야 합니다.</blockquote>
+          <p>예를 들어 특정 지갑 주소를 한 네트워크로 등록해 두었는데 다른 네트워크를 선택해 출금하려고 하면 등록된 출금 주소로 인식되지 않을 수 있습니다.</p>
+          <h3>현재 업비트가 지원하는 개인지갑</h3>
+          <p>업비트 공식 안내 기준 지원 개인지갑은 다음과 같습니다.</p>
+          <ul>
+            <li>MetaMask</li>
+            <li>Kaia</li>
+            <li>Phantom</li>
+            <li>Polkadot</li>
+            <li>Keplr</li>
+          </ul>
+          <p>모바일 앱에서는 MetaMask 주소 등록을 지원하며, 일부 다른 지갑은 PC 웹에서 등록해야 합니다. 또한 <strong>하드웨어 지갑을 직접 연동해 개인지갑 주소를 등록하는 방식은 현재 지원하지 않습니다.</strong></p>
+          <h3>개인지갑 출금 전 확인할 것</h3>
+          <table>
+            <thead><tr><th>확인 항목</th><th>확인 내용</th></tr></thead>
+            <tbody>
+              <tr><td>지갑 주소</td><td>등록한 주소와 실제 받는 주소가 같은지</td></tr>
+              <tr><td>네트워크</td><td>등록 네트워크와 출금 네트워크가 같은지</td></tr>
+              <tr><td>업비트 지원 여부</td><td>해당 자산·네트워크를 업비트가 지원하는지</td></tr>
+              <tr><td>지갑 지원 여부</td><td>받는 지갑에서도 동일 네트워크를 지원하는지</td></tr>
+            </tbody>
+          </table>
+          <p>네트워크를 잘못 선택해 실제 블록체인 전송까지 완료되면 단순 출금 실패와 달리 복구가 어려울 수 있습니다. 따라서 <strong>전송 버튼을 누르기 전에 양쪽 네트워크가 동일한지 확인하는 것이 가장 중요합니다.</strong></p>
+
+          <h2>6) 100만 원 이상 출금은 트래블룰을 확인하세요</h2>
+          <p>업비트에서 원화 환산가 <strong>100만 원 이상의 디지털 자산을 외부로 출금할 때는 <a href="/travel-rule/">트래블룰</a> 조건</strong>을 확인해야 합니다. 100만 원 판단은 출금 신청 시점의 업비트 시세를 기준으로 하며, 거래 지원이 종료된 자산은 별도 가격 기준이 적용될 수 있습니다.</p>
+          <h3>다른 거래소로 보내는 경우</h3>
+          <p>100만 원 이상을 거래소로 출금하려면 업비트가 지원하는 트래블룰 솔루션 연동 가상자산사업자, 계정주 확인 연동 가상자산사업자 등으로 출금해야 합니다. 수취인 이름 등 필요한 정보가 실제 해당 거래소 계정 정보와 일치하지 않으면 출금 신청이 진행되지 않을 수 있습니다.</p>
+          <h3>개인지갑으로 보내는 경우</h3>
+          <p>개인 회원은 업비트에 등록된 지원 개인지갑으로 출금할 수 있습니다. 따라서 개인지갑으로 큰 금액을 보낼 계획이라면 출금 직전에 주소를 입력하는 것보다 <strong>미리 개인지갑 등록 상태와 네트워크를 확인</strong>하는 것이 좋습니다.</p>
+          <h3>100만 원 미만이면 아무 거래소로 보내도 되나요?</h3>
+          <p>아닙니다. <strong>100만 원 미만은 100만 원 이상 출금과 같은 트래블룰 절차를 적용받지 않더라도, 미신고 가상자산사업자에 대한 입출금 제한은 금액과 무관하게 적용될 수 있습니다.</strong></p>
+          <p>업비트 공식 미신고 사업자 목록에는 현재 KuCoin, MEXC, Phemex 등을 포함한 여러 해외 사업자가 안내되어 있습니다. 따라서 금액을 100만 원 미만으로 나누면 모든 거래소로 출금할 수 있다고 생각하면 안 됩니다.</p>
+          <blockquote><strong>결론:</strong> 100만 원 이상이면 트래블룰 지원 여부를 확인하고, 100만 원 미만이라도 <strong>출금 대상 거래소가 업비트에서 허용되는 곳인지 별도로 확인</strong>하세요.</blockquote>
+
+          <h2>7) 출금 가능 수량과 1회 출금 한도를 확인하세요</h2>
+          <p>코인을 실제로 보유하고 있더라도 <strong>보유 수량 전체를 항상 한 번에 출금할 수 있는 것은 아닙니다.</strong> 다음과 같은 상황에서는 화면에 표시되는 출금 가능 수량이 줄어들 수 있습니다.</p>
+          <ul>
+            <li>원화 입금 후 24시간·72시간 출금 지연제가 적용 중인 경우</li>
+            <li>미체결 주문에 자산이 사용 중인 경우</li>
+            <li>이미 다른 출금 신청이 처리 중인 경우</li>
+            <li>출금 수수료가 필요한 경우</li>
+            <li>계정별 출금 제한이 적용된 경우</li>
+            <li>자산별 1회 출금 한도를 초과한 경우</li>
+          </ul>
+          <p>특히 업비트는 디지털 자산별로 <strong>1회 출금 한도</strong>를 별도로 운영하고 있습니다. 따라서 많은 수량을 한 번에 보내려다가 출금되지 않는다면 해당 자산의 <strong>1회 출금 한도</strong>도 확인해야 합니다.</p>
+          <h3>무엇을 기준으로 보면 되나요?</h3>
+          <p>가장 안전한 판단 기준은 임의로 계산한 보유액이 아니라 <strong>업비트 출금 화면에 표시되는 실제 '출금 가능' 수량</strong>입니다.</p>
+          <blockquote><strong>결론:</strong> "코인을 100개 가지고 있으니 100개를 보낼 수 있다"가 아니라, <strong>출금 화면에 지금 몇 개까지 가능하다고 표시되는지</strong>를 확인하세요.</blockquote>
+
+          <h2>8) 특정 코인이나 네트워크 출금이 일시 중단됐는지 확인하세요</h2>
+          <p>주소도 맞고 계정 제한도 없는데 출금이 안 된다면 마지막으로 <strong>업비트의 입출금 현황</strong>을 확인하세요. 거래소는 네트워크 업그레이드, 메인넷 작업, 지갑 점검, 입출금 시스템 점검, 네트워크 장애, 처리량 급증 등의 이유로 특정 디지털 자산이나 네트워크의 입출금을 일시 중단할 수 있습니다.</p>
+          <p>이 경우 사용자가 직접 해결할 수 있는 문제가 아닐 수 있습니다.</p>
+          <h3>현재 출금 가능한지 확인하는 위치</h3>
+          <p><strong>PC 웹:</strong> 고객센터 → 입출금 현황<br><strong>모바일 앱:</strong> 더보기 → 입출금 현황</p>
+          <p>에서 자산별 입출금 가능 여부와 지원 네트워크를 확인할 수 있습니다. 특히 USDT처럼 여러 네트워크를 지원할 수 있는 자산은 <strong>TRON, Ethereum 등 네트워크별 상태가 다를 수 있으므로 반드시 네트워크 단위로 확인</strong>하세요.</p>
+          <blockquote>과거 특정 네트워크가 중단됐다는 사실보다 중요한 것은 <strong>지금 내가 출금하려는 순간의 입출금 현황</strong>입니다.</blockquote>
+
+          <h2>오류 메시지별 해결 방법</h2>
+          <p>업비트 출금 화면에 오류 문구가 나온다면 그 문구가 가장 중요한 단서입니다.</p>
+          <table>
+            <thead><tr><th>오류·상황</th><th>가능성이 높은 원인</th><th>먼저 할 일</th></tr></thead>
+            <tbody>
+              <tr><td>출금 가능 금액 부족</td><td>지연제·주문 대기·출금 제한·수수료</td><td>출금 가능 수량 확인</td></tr>
+              <tr><td>요청이 만료되었습니다</td><td>2채널 인증 시간 초과</td><td>새 인증 요청 후 3분 내 완료</td></tr>
+              <tr><td>유효시간이 초과되었습니다</td><td>인증 제한시간 초과</td><td>인증 다시 요청</td></tr>
+              <tr><td>등록된 개인지갑 주소가 없음</td><td>등록 주소의 네트워크 불일치</td><td>주소 관리에서 네트워크 확인</td></tr>
+              <tr><td>거래소 출금이 진행되지 않음</td><td>트래블룰 또는 VASP 제한</td><td>지원 거래소 여부 확인</td></tr>
+              <tr><td>큰 수량을 한 번에 못 보냄</td><td>자산별 1회 출금 한도</td><td>해당 자산 한도 확인</td></tr>
+              <tr><td>네트워크 선택이 안 됨</td><td>해당 네트워크 일시 중단 가능</td><td>입출금 현황 확인</td></tr>
+              <tr><td>24시간·72시간 관련 제한</td><td>최근 원화 입금</td><td>입금 시각과 출금 가능 수량 확인</td></tr>
+            </tbody>
+          </table>
+          <p>오류 메시지가 이 표에 없다면 <strong>문구를 그대로 캡처하거나 기록</strong>해 두세요. 고객센터에 "출금이 안 됩니다"라고만 설명하는 것보다 실제 오류 문구를 전달하는 것이 원인 확인에 훨씬 도움이 됩니다.</p>
+
+          <h2>업비트에서 바이낸스로 출금이 안 될 때는 무엇을 확인해야 하나요?</h2>
+          <p>업비트에서 Binance 같은 해외 거래소로 코인을 보내려는데 출금이 안 된다면 다음 순서로 확인하세요.</p>
+          <ol>
+            <li>최근 원화 입금으로 24시간·72시간 제한이 걸려 있는지 확인합니다.</li>
+            <li>출금 가능 수량을 확인합니다.</li>
+            <li>Binance에서 선택한 <strong>입금 네트워크</strong>를 확인합니다.</li>
+            <li>업비트의 <strong>출금 네트워크와 동일한지</strong> 확인합니다.</li>
+            <li>100만 원 이상이라면 계정주 확인 및 수취인 정보 조건을 확인합니다.</li>
+            <li>업비트 입출금 현황에서 해당 네트워크가 정상인지 확인합니다.</li>
+          </ol>
+          <p>업비트 공식 VASP 안내 기준 Binance는 계정주 확인 연동 사업자 목록에 포함되어 있습니다. 다만 지원 정책은 변경될 수 있으므로 실제 출금 시 업비트 화면에 표시되는 지원 여부와 수취인 확인 절차를 다시 확인하세요.</p>
+
+          <h2>고객센터 문의 전에 준비할 것</h2>
+          <p>위 내용을 모두 확인했는데도 출금되지 않는다면 업비트 고객센터에 문의하세요. 다음 정보를 미리 준비하면 문제를 설명하기 쉽습니다.</p>
+          <ul>
+            <li>출금하려는 디지털 자산명</li>
+            <li>출금 수량</li>
+            <li>출금 신청 시각</li>
+            <li>출금 주소</li>
+            <li>선택한 네트워크</li>
+            <li>오류 메시지</li>
+            <li>출금 화면 캡처</li>
+            <li>최근 원화 입금 시각</li>
+            <li>보내려는 거래소 또는 개인지갑 종류</li>
+          </ul>
+          <p>개인지갑 주소나 거래소 계정 정보는 필요한 범위에서만 제공하고, <strong>비밀번호·OTP 번호·개인지갑 시드 문구·개인키는 누구에게도 전달하면 안 됩니다.</strong></p>
+          <p>업비트 고객센터 대표번호는 <strong>1588-5682</strong>이며, 공식 안내 기준 상담 시간은 <strong>평일 09:00~18:00, 주말 및 공휴일 휴무</strong>입니다. 금융사고 전담 콜센터는 일반 고객센터와 별도로 운영되므로 보이스피싱 등 금융사고가 의심된다면 업비트 공식 고객센터에서 최신 연락처를 확인하세요.</p>
+        </div>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">자주 묻는 질문</h2>
+          <div class="faq-list">
+            <div class="faq-item faq-open">
+              <h3>업비트 출금이 안 되면 내 코인이 사라진 건가요?</h3>
+              <p>대부분은 아닙니다. 출금 지연제, 인증 실패, 트래블룰 확인 실패, 네트워크 일시 중단처럼 블록체인 전송이 시작되기 전에 출금이 막힌 경우 자산은 업비트 계정에 남아 있습니다. 다만 출금 상태가 이미 완료됐고 TXID가 생성됐다면 단순 출금 제한과는 다른 문제입니다. 이 경우 출금 주소와 네트워크, TXID를 별도로 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 원화 입금 후 코인은 언제 출금할 수 있나요?</h3>
+              <p>최초 원화 입금은 입금 시점부터 72시간, 이후 입금은 각 입금 건마다 24시간 출금 지연제가 적용될 수 있습니다. 두 번째 이후 입금의 경우 출금 신청 시점을 기준으로 직전 24시간 내 원화 입금액에 해당하는 디지털 자산이 제한됩니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 24시간 출금 제한은 모든 코인이 막히는 건가요?</h3>
+              <p>반드시 전체 자산이 막히는 것은 아닙니다. 기본적으로 직전 24시간 동안 입금한 원화 합계액에 해당하는 만큼의 디지털 자산 출금이 제한됩니다. 따라서 오래전부터 보유하던 자산이 있다면 일부 수량은 출금 가능할 수 있습니다. 실제 가능 수량은 출금 화면에서 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>최초 입금 72시간은 빨리 해제할 수 있나요?</h3>
+              <p>일반적으로 최초 원화 입금 후 적용되는 제한은 72시간 경과 후 자동 해제되는 구조입니다. 다만 실제 계정별 적용 상태는 업비트가 표시하는 출금 가능 수량을 기준으로 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>원화 출금 인증은 몇 분 안에 해야 하나요?</h3>
+              <p>2채널 인증 요청을 받은 뒤 3분 이내에 인증을 완료해야 합니다. 시간이 지나면 요청 만료 또는 유효시간 초과 메시지가 나타날 수 있으며, 새 인증 요청을 받아 다시 진행해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>카카오톡 인증을 했는데 출금이 안 됐어요.</h3>
+              <p>출금 신청 후 업비트 앱이나 PC 화면을 종료한 상태에서 카카오톡 인증을 진행하면 인증 결과가 업비트에 전달되지 않을 수 있습니다. 이 경우 자산은 변동되지 않으므로 업비트를 다시 실행한 뒤 출금을 재신청하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>개인지갑을 등록했는데 출금 주소가 없다고 나옵니다.</h3>
+              <p>등록한 개인지갑의 네트워크와 지금 출금하려는 디지털 자산의 네트워크가 일치하는지 확인하세요. 등록된 개인지갑 주소와 네트워크가 출금 조건과 일치해야 목록에 나타납니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>Ledger로 바로 출금할 수 있나요?</h3>
+              <p>업비트 공식 안내 기준 현재 하드웨어 지갑 연동을 통한 개인지갑 주소 등록은 지원하지 않습니다. 현재 지원되는 개인지갑 종류와 네트워크는 업비트 개인지갑 주소 등록 안내에서 최신 정보를 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>100만 원 미만으로 보내면 트래블룰을 피할 수 있나요?</h3>
+              <p>100만 원 미만은 100만 원 이상 출금과 동일한 트래블룰 절차의 대상은 아니지만, 미신고 가상자산사업자와의 입출금 제한은 금액과 무관하게 적용될 수 있습니다. 따라서 단순히 출금 금액을 100만 원 미만으로 나눈다고 모든 거래소로 전송할 수 있는 것은 아닙니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>KuCoin이나 MEXC로 업비트에서 출금할 수 있나요?</h3>
+              <p>업비트가 공개한 미신고 불법 영업행위 가상자산사업자 목록에는 현재 KuCoin과 MEXC가 포함되어 있으며, 해당 사업자 관련 입출금은 제한될 수 있습니다. 사업자 목록은 바뀔 수 있으므로 출금 전에 업비트 최신 공식 목록을 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>Binance나 OKX로 출금할 수 있나요?</h3>
+              <p>업비트 공식 VASP 목록 기준 Binance와 OKX는 현재 계정주 확인 연동 가상자산사업자 목록에 포함되어 있습니다. 다만 자산·네트워크·수취인 정보 등에 따라 실제 출금 가능 여부가 달라질 수 있으므로 출금 화면에서 다시 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>출금 한도는 어떻게 확인하나요?</h3>
+              <p>먼저 업비트 출금 화면에 표시되는 출금 가능 수량을 확인하세요. 또한 업비트는 디지털 자산별로 별도의 1회 출금 한도를 운영하므로 많은 수량을 한 번에 출금한다면 해당 자산의 한도도 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>USDT 출금이 안 돼요.</h3>
+              <p>USDT는 최근 원화 입금에 따른 출금 지연제, 선택한 네트워크, 출금 대상 거래소, 개인지갑 등록 여부, 네트워크 점검 등 여러 원인으로 출금이 제한될 수 있습니다. 먼저 출금 가능 수량 → 최근 원화 입금 → 네트워크 → 출금 대상 → 입출금 현황 순서로 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>위 내용을 모두 확인했는데도 출금이 안 됩니다.</h3>
+              <p>오류 메시지를 캡처한 뒤 업비트 고객센터에 문의하세요. 문의할 때 자산명, 수량, 출금 시각, 네트워크, 오류 메시지, 최근 원화 입금 시각을 함께 전달하면 문제 파악에 도움이 됩니다.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">정리: 업비트 출금이 안 되면 이 순서대로 확인하세요</h2>
+          <div class="article-prose">
+            <p>업비트 출금 문제는 같은 버튼을 반복해서 누르는 것보다 <strong>어디에서 제한되고 있는지 찾는 것이 중요합니다.</strong></p>
+            <h3>코인 출금이라면</h3>
+            <ol>
+              <li><strong>최근 원화 입금 확인</strong> — 최초 입금은 72시간, 이후 입금은 24시간</li>
+              <li><strong>출금 가능 수량 확인</strong> — 실제 출금 화면에 표시되는 수량을 기준으로 확인</li>
+              <li><strong>오류 메시지 확인</strong> — 화면 문구를 그대로 기록</li>
+              <li><strong>주소와 네트워크 확인</strong> — 보내는 곳과 받는 곳의 네트워크가 동일한지 확인</li>
+              <li><strong>출금 대상 확인</strong> — 거래소인지 개인지갑인지 구분, 트래블룰·VASP 조건 확인</li>
+              <li><strong>1회 출금 한도 확인</strong> — 자산별 제한 여부 확인</li>
+              <li><strong>입출금 현황 확인</strong> — 해당 코인·네트워크가 정상 운영 중인지 확인</li>
+            </ol>
+            <h3>원화 출금이라면</h3>
+            <ol>
+              <li>2채널 인증을 3분 안에 완료했는지 확인</li>
+              <li>케이뱅크·인증서·업비트 실명 정보가 일치하는지 확인</li>
+              <li>인증 도중 업비트 앱이나 화면을 종료하지 않았는지 확인</li>
+              <li>해결되지 않으면 오류 메시지를 준비해 고객센터에 문의</li>
+            </ol>
+            <p><strong>결론적으로 업비트 출금이 안 될 때 가장 먼저 볼 것은 "내가 코인을 얼마나 가지고 있느냐"가 아니라 "지금 실제로 얼마가 출금 가능한 상태인가"입니다.</strong> 그다음 최근 원화 입금, 오류 메시지, 네트워크, 트래블룰 순서로 확인하면 대부분의 원인을 좁힐 수 있습니다.</p>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">공식 출처</h2>
+          <ul class="article-prose">
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005806486" target="_blank" rel="noopener">업비트 고객센터 — 원화 입금 후 디지털 자산 출금이 안돼요</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/4401940403993" target="_blank" rel="noopener">업비트 고객센터 — 원화 출금에 실패했어요</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005955686" target="_blank" rel="noopener">업비트 고객센터 — 24시간 디지털 자산 출금 지연제가 무엇인가요?</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/5048002559897" target="_blank" rel="noopener">업비트 고객센터 — 입출금 가능 가상자산사업자(VASP) 리스트</a></li>
+            <li>업비트 고객센터 — 디지털 자산 출금 방법</li>
+            <li>업비트 고객센터 — 개인지갑 주소 등록 방법</li>
+            <li>업비트 고객센터 — 등록 가능한 개인지갑</li>
+            <li>업비트 고객센터 — 미신고 불법 영업행위 가상자산사업자 리스트</li>
+            <li>업비트 고객센터 — 디지털 자산별 1회 출금 한도 안내</li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">관련 가이드</h2>
+          <div class="related-grid">
+            <a href="/transfer/upbit-deposit-pending/" class="related-card">
+              <h3>업비트 입금대기 해결 방법</h3>
+              <span class="related-date">2026.10.01 업데이트</span>
+            </a>
+            <a href="/travel-rule/" class="related-card">
+              <h3>트래블룰이란?</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+            <a href="/transfer/english-name-mismatch/" class="related-card">
+              <h3>영문 이름 불일치로 송금이 막혔을 때</h3>
+              <span class="related-date">2026.09.16 업데이트</span>
+            </a>
+            <a href="/usdt-network/" class="related-card">
+              <h3>USDT 네트워크 선택 가이드</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+          </div>
+        </section>
+            <section class="author-review">
+        <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">이 글을 검토한 사람</h2>
+        <div class="author-box">
+          <img class="author-box-photo" src="/assets/author-minjun.png" alt="김민준 KTradeAtlas 편집자" width="56" height="56">
+          <div class="author-box-body">
+            <span class="author-box-name"><a href="/author/">김민준</a> · KTradeAtlas 편집자</span>
+            <span class="author-box-desc">국내·해외 거래소 전송과 트래블룰 관련 콘텐츠를 작성·검토합니다.</span>
+            <span class="author-box-link"><a href="/author/">작성자 소개</a> · <a href="/verification/">정보 검증 방식</a></span>
+          </div>
+        </div>
+      </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+          <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+          <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+          <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+        </svg>
+            <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+          </a>
+          <p>한국 이용자를 위한 글로벌 가상자산 거래소 · 전송 가이드. 업비트·빗썸에서 바이낸스·OKX까지, 실제 사용 흐름에 맞춰 설명합니다.</p>
+        </div>
+        <div class="footer-col">
+          <h4>거래소</h4>
+          <a href="/exchanges/upbit/">업비트</a>
+          <a href="/exchanges/bithumb/">빗썸</a>
+          <a href="/exchanges/binance/">바이낸스</a>
+          <a href="/exchanges/okx/">OKX</a>
+        </div>
+        <div class="footer-col">
+          <h4>가이드</h4>
+          <a href="/start/">시작하기</a>
+          <a href="/transfer/">입출금 &amp; 트래블룰</a>
+          <a href="/usdt-network/">USDT &amp; 네트워크</a>
+          <a href="/security/">보안</a>
+        </div>
+        <div class="footer-col">
+          <h4>사이트 &amp; 정책</h4>
+          <a href="/about/">소개</a>
+          <a href="/author/">작성자</a>
+          <a href="/editorial-policy/">편집 원칙</a>
+          <a href="/verification/">정보 검증 방식</a>
+          <a href="/affiliate-disclosure/">제휴 공개</a>
+          <a href="/disclaimer/">면책조항</a>
+          <a href="/privacy/">개인정보처리방침</a>
+          <a href="/contact/">문의</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KTradeAtlas. 정보 제공용이며 투자 권유가 아닙니다.</span>
+        <span>암호화폐는 변동성이 크며 원금 손실 위험이 있습니다.</span>
+        <span>모든 상표 및 로고는 각 소유자의 자산입니다.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
