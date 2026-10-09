@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>업비트 입금 안됨 해결: 코인·원화 미반영 원인과 확인 순서 (2026) | KTradeAtlas</title>
+  <meta name="description" content="업비트에 코인이나 원화를 입금했는데 잔고에 안 보이나요? TXID·컨펌·네트워크 오류·최소 입금 수량·케이뱅크 인증·100만원 이상 트래블룰 입금대기까지 원인별 해결 순서를 확인하세요.">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+  <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="canonical" href="https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/">
+  <meta property="og:site_name" content="KTradeAtlas">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="업비트 입금 안됨 해결: 코인·원화 미반영 원인과 확인 순서 (2026) | KTradeAtlas">
+  <meta property="og:description" content="업비트에 코인이나 원화를 입금했는데 잔고에 안 보이나요? TXID·컨펌·네트워크 오류·최소 입금 수량·케이뱅크 인증·100만원 이상 트래블룰 입금대기까지 원인별 해결 순서를 확인하세요.">
+  <meta property="og:url" content="https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/">
+  <meta property="og:image" content="https://ktradeatlas.com/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="KTradeAtlas — 한국 이용자를 위한 가상자산 거래소 · 전송 가이드">
+<!-- structured-data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/#article",
+      "headline": "업비트 입금이 안 될 때: 코인·원화 미반영 원인과 확인 순서",
+      "description": "업비트에 코인이나 원화를 입금했는데 잔고에 안 보이는 원인을 TXID·컨펌·네트워크·최소 입금 수량·케이뱅크 인증·트래블룰 입금대기까지 원인별로 확인하고 해결하는 순서를 정리했습니다.",
+      "dateModified": "2026-10-09",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/"
+      },
+      "image": "https://ktradeatlas.com/assets/og-image.png",
+      "inLanguage": "ko-KR",
+      "author": {
+        "@type": "Person",
+        "@id": "https://ktradeatlas.com/author/#person",
+        "name": "김민준",
+        "url": "https://ktradeatlas.com/author/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "KTradeAtlas",
+        "url": "https://ktradeatlas.com/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://ktradeatlas.com/assets/og-image.png"
+        }
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "업비트 입금이 안 되는 가장 흔한 원인은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "코인 입금에서는 필요한 컨펌(승인) 수에 도달하지 않은 상태가 대표적인 원인 중 하나입니다. 다만 실제 미반영 원인은 네트워크, 주소, 최소 입금 수량, 송금처 제한 등에 따라 달라집니다. TXID를 먼저 조회해 전송 상태를 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 입금 지연은 보통 얼마나 걸리나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "모든 코인에 공통으로 적용되는 입금 시간은 없습니다. 블록체인 네트워크와 필요한 컨펌 수, 거래소 내부 처리 상태에 따라 달라집니다. 컨펌을 충족했는데도 반영되지 않는다면 주소와 입금 조건을 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "출금 완료인데 업비트에 코인이 안 보이면 어떻게 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "보낸 거래소에서 TXID를 확인하고 블록체인 탐색기에서 전송 성공 여부를 조회하세요. 이후 업비트 입금 네트워크와 주소, 최소 입금 수량, 입금대기 여부를 순서대로 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "TXID가 없는데 코인을 다시 보내도 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "먼저 송금처의 출금 진행 상태를 확인하세요. 내부 처리 중이거나 아직 블록체인에 전송되지 않은 상태일 수 있습니다. 첫 거래의 상태를 확인하지 않고 반복 송금하는 것은 권하지 않습니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트에 USDT를 보냈는데 잔고에 표시되지 않아요.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "USDT의 실제 입금 지원 여부와 네트워크를 먼저 확인하세요. 동일한 USDT라도 네트워크가 다르면 정상 입금되지 않을 수 있습니다. TXID와 업비트 입금 화면의 자산·네트워크 정보를 비교해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 최소 입금 수량보다 적게 보냈다면 복구할 수 있나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "업비트 공식 안내에 따르면 최소 입금 수량 이상을 블록체인 일반 출금 방식으로 한 건 추가 입금하면 기존 미반영 수량과 함께 반영될 수 있습니다. 여러 소액 입금을 단순 합산하는 방식과는 다릅니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "100만 원 미만인데도 업비트 입금이 안 되나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "가능합니다. 100만 원은 트래블룰의 주요 금액 기준이지만, 입금 가능한 거래소·지갑인지 여부나 네트워크·주소 오류 등은 별도의 문제입니다. 금액만으로 입금 가능 여부를 판단해서는 안 됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 입금대기 상태는 자동으로 풀리나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "원인에 따라 다릅니다. 송금인 확인이나 입금 반영 신청이 필요한 경우 추가 절차를 진행해야 할 수 있습니다. 업비트에서 허용하지 않는 송금처 또는 제3자 명의 입금이라면 반환 절차를 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "케이뱅크에 돈을 넣었는데 업비트 원화 잔고가 0원이에요.",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "케이뱅크 계좌 잔고와 업비트 원화 잔고는 다릅니다. 업비트에서 별도의 원화 입금 신청과 인증을 완료했는지 확인하세요."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 원화 입금 인증 알림이 오지 않으면 어떻게 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "사용 중인 인증 수단의 알림 설정과 인증서 발급 기기를 확인하세요. 카카오톡 인증을 이용한다면 관련 알림톡 차단 여부를, 네이버·하나인증서를 이용한다면 인증 알림이 전달되는 기기를 확인해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "원화 입금 후 코인 출금이 24시간 제한되는 이유는 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "금융사고 예방을 위한 디지털 자산 출금 지연제 때문입니다. 다만 최초 원화 입금은 원칙적으로 72시간 출금 제한이 적용되므로, 최초 입금인지 이후 입금인지 구분해야 합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "업비트 입금이 안 될 때 어느 고객센터에 문의해야 하나요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "출금 거래소에서 아직 전송을 완료하지 않았다면 보낸 거래소에 먼저 문의하세요. 블록체인에서 전송이 완료됐고 업비트 입금 조건도 충족했는데 반영되지 않는다면 TXID 등 거래 정보를 준비해 업비트 고객센터에 문의하세요."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="/" class="logo" aria-label="KTradeAtlas 홈">
+        <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+          <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+          <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+          <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+        </svg>
+        <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+      </a>
+      <button class="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="/start/">시작하기</a></li>
+        <li class="has-dropdown"><a href="/exchanges/upbit/">국내 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/upbit/">업비트</a></li>
+            <li><a href="/exchanges/bithumb/">빗썸</a></li>
+          </ul>
+        </li>
+        <li class="has-dropdown"><a href="/exchanges/binance/">해외 거래소</a>
+          <ul class="dropdown-menu">
+            <li><a href="/exchanges/binance/">바이낸스</a></li>
+            <li><a href="/exchanges/okx/">OKX</a></li>
+          </ul>
+        </li>
+        <li><a href="/transfer/" class="active">입출금 &amp; 트래블룰</a></li>
+        <li><a href="/usdt-network/">USDT &amp; 네트워크</a></li>
+        <li><a href="/security/">보안</a></li>
+        <li class="nav-cta"><a href="/transfer/">전송 경로 보기</a></li>
+      </ul>
+    </div>
+  </header>
+  <main class="article-page">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="breadcrumb">
+        <ol>
+          <li><a href="/">홈</a></li>
+          <li><a href="/transfer/">입출금 &amp; 트래블룰</a></li>
+          <li aria-current="page">업비트 입금이 안 될 때</li>
+        </ol>
+      </nav>
+      <article>
+        <header class="article-header">
+          <span class="article-cat">문제 해결</span>
+          <h1>업비트 입금이 안 될 때: 코인·원화 미반영 원인과 확인 순서</h1>
+          <div class="author-box">
+            <img class="author-box-photo" src="/assets/author-minjun.png" alt="김민준 KTradeAtlas 편집자" width="40" height="40">
+            <div class="author-box-body">
+              <span class="author-box-name"><a href="/author/">김민준</a> · KTradeAtlas 편집자</span>
+              <span class="author-box-desc">국내·해외 거래소 입출금·트래블룰 절차를 공식 문서와 실제 화면으로 확인해 작성합니다.</span>
+            </div>
+          </div>
+          <p class="article-lead"><strong>업비트에 코인이나 원화를 보냈는데 잔고가 그대로인가요?</strong> 같은 입금 미반영이라도 해결 방법은 다릅니다. 코인은 TXID와 블록체인 승인 상태를, 원화는 케이뱅크 계좌와 입금 신청 상태를 먼저 확인해야 합니다.</p>
+          <p class="article-lead">특히 <strong>보낸 거래소에서 '출금 완료'로 표시되는데 업비트에는 입금되지 않는 경우</strong>, 단순히 기다릴 문제가 아닐 수 있습니다. 네트워크 착오전송, 최소 입금 수량 미달, 트래블룰 확인 대상인지 구분해야 합니다.</p>
+          <div class="article-facts">
+            <span>마지막 확인 <b>2026.10.09</b></span>
+            <span>난이도 <b>초보자</b></span>
+            <span>예상 읽기 시간 <b>9분</b></span>
+          </div>
+          <div class="disclaimer">이 글은 투자 권유가 아닌 입금 오류와 이용 절차에 관한 정보입니다. 서비스 정책과 화면은 변경될 수 있으므로 실제 계정의 안내를 우선 확인하세요.</div>
+        </header>
+        <div class="reco-card">
+          <img class="reco-logo" src="/assets/img/binance-logo.png" alt="바이낸스 로고" width="48" height="48">
+          <div class="reco-body">
+            <strong class="reco-title">바이낸스 신규 회원 혜택</strong>
+            <span class="reco-desc">현물 20% + 선물 20% 수수료 리베이트 · 추천 코드 <b>CWGH2LVF</b></span>
+          </div>
+          <a class="reco-btn" href="https://www.binance.com/en/join?ref=CWGH2LVF" rel="nofollow sponsored noopener" target="_blank">바이낸스 가입하기</a>
+        </div>
+        <div class="quick-answer">
+          <strong>빠른 답변</strong>
+          <ul>
+            <li><strong>코인을 보냈다면:</strong> TXID가 있는지, 블록체인에서 전송이 완료됐는지 확인하세요.</li>
+            <li><strong>100만 원 이상의 코인이라면:</strong> 업비트 입출금내역에 '입금대기'가 표시되는지 확인하세요.</li>
+            <li><strong>원화를 입금했다면:</strong> 케이뱅크에 돈이 있다는 사실과 업비트 입금 신청이 완료됐다는 사실은 다릅니다.</li>
+            <li>원인을 확인하기 전에는 <strong>같은 코인이나 원화를 반복해서 보내지 마세요</strong>. 잘못된 네트워크나 주소로 추가 전송하면 손실이 커질 수 있습니다.</li>
+          </ul>
+        </div>
+        <div class="article-prose">
+          <h2>업비트 입금 안됨: 먼저 현재 상태부터 확인하세요</h2>
+          <p>업비트 입금 미반영이란 외부 거래소·개인지갑에서 보낸 디지털 자산이나 입금을 신청한 원화가 업비트 계정의 잔고에 정상적으로 반영되지 않은 상태를 말합니다.</p>
+          <p>다만 <strong>전송 지연, 입금대기, 입금 실패는 서로 다른 상태</strong>입니다. 상태를 구분해야 해결 방법도 정확해집니다.</p>
+          <table>
+            <thead><tr><th>현재 보이는 상태</th><th>먼저 확인할 사항</th></tr></thead>
+            <tbody>
+              <tr><td>출금 신청 후 TXID가 없음</td><td>보낸 거래소의 출금 처리 상태</td></tr>
+              <tr><td>TXID는 있지만 입금이 안 됨</td><td>컨펌 수·네트워크·입금 주소</td></tr>
+              <tr><td>업비트에 '입금대기' 표시</td><td>트래블룰·송금인 확인·입금 가능 출처</td></tr>
+              <tr><td>코인 전송 완료, 잔고는 0</td><td>최소 입금 수량·주소·메모 태그</td></tr>
+              <tr><td>원화 입금 실패</td><td>케이뱅크 계좌·입금 신청·추가 인증</td></tr>
+            </tbody>
+          </table>
+          <p>TXID가 없다면 먼저 보내는 쪽을 확인하고, TXID가 정상이라면 업비트 입금 조건을 확인하세요. '입금대기'로 표시된다면 단순한 블록체인 지연과 구분해야 합니다.</p>
+
+          <h2>1. 코인 입금이 안 될 때: TXID부터 확인하세요</h2>
+          <p>업비트 코인 입금이 안 보일 때는 자산이 실제로 블록체인에 전송됐는지 확인하는 것이 첫 단계입니다.</p>
+          <p>TXID(Transaction ID)는 블록체인에 기록된 거래를 식별하는 고유한 값입니다. 이 값을 이용하면 전송 여부와 처리 상태를 확인할 수 있습니다.</p>
+          <h3>출금 완료인데 업비트에 입금이 안 된다면?</h3>
+          <p>다음 순서로 확인하세요.</p>
+          <ol>
+            <li>코인을 보낸 거래소 또는 지갑의 출금 내역을 엽니다.</li>
+            <li>해당 출금 건의 상태와 TXID를 확인합니다.</li>
+            <li>전송한 네트워크에 맞는 블록체인 탐색기에서 TXID를 조회합니다.</li>
+            <li>거래 성공 여부, 수취 주소, 컨펌 수를 확인합니다.</li>
+            <li>업비트 입금 화면에서 동일한 네트워크와 입금 주소를 사용했는지 비교합니다.</li>
+          </ol>
+          <p><strong>TXID가 없다고 해서 반드시 전송 실패라는 뜻은 아닙니다.</strong> 거래소 내부의 출금 심사 또는 전송 준비 단계일 수 있습니다.</p>
+          <p>반대로 블록체인 탐색기에서 거래가 성공했다고 표시되더라도, 업비트 잔고 반영까지 완료됐다는 뜻은 아닙니다.</p>
+          <h3>TXID 결과에 따라 무엇을 해야 하나요?</h3>
+          <table>
+            <thead><tr><th>TXID 조회 결과</th><th>다음 행동</th></tr></thead>
+            <tbody>
+              <tr><td>TXID 없음</td><td>송금처의 출금 진행 상태 확인</td></tr>
+              <tr><td>Pending 또는 미확정</td><td>네트워크 처리 및 컨펌 대기</td></tr>
+              <tr><td>Success, 컨펌 부족</td><td>업비트 요구 승인 수 확인</td></tr>
+              <tr><td>Success, 컨펌 충족</td><td>업비트 입금내역·네트워크·입금 조건 확인</td></tr>
+              <tr><td>Failed 또는 Reverted</td><td>송금처의 거래 실패·잔액 처리 상태 확인</td></tr>
+            </tbody>
+          </table>
+          <p>TXID가 성공이라고 표시되면 블록체인 전송 자체는 성공한 것이지만, 거래소 내부 확인과 입금 반영 절차는 별도로 진행될 수 있습니다.</p>
+          <h3>업비트 코인 입금은 얼마나 걸리나요?</h3>
+          <p>모든 코인에 동일한 입금 시간이 적용되는 것은 아닙니다. 비트코인, 이더리움, XRP 등 디지털 자산은 네트워크 구조와 업비트가 요구하는 컨펌 수가 다르며, 같은 자산이라도 네트워크에 따라 확인 조건이 달라질 수 있습니다.</p>
+          <p>현재 필요한 컨펌 수는 다음 메뉴에서 확인할 수 있습니다.</p>
+          <blockquote>업비트 → 입출금 → 해당 코인 선택 → 입금 → 입금 주의 사항 → '입금 전 꼭 알아두세요'</blockquote>
+          <p>블록체인에서 필요한 컨펌 수에 도달한 이후에도 업비트 내부 입금 처리 시간이 추가로 걸릴 수 있습니다. 컨펌을 충족했고 주소와 입금 조건도 정상인데 반영되지 않는다면, TXID를 준비해 업비트 고객센터에 문의하세요.</p>
+
+          <h2>2. 네트워크를 잘못 선택했다면 기다려도 해결되지 않을 수 있습니다</h2>
+          <p>코인 입금에서 특히 주의해야 할 문제는 <strong>네트워크 착오전송</strong>입니다. 네트워크 착오전송이란 받는 거래소가 안내한 네트워크와 다른 네트워크로 디지털 자산을 전송한 경우를 말합니다.</p>
+          <p>예를 들어 송금처에서 USDT를 보낼 수 있다고 해도, 업비트에서 해당 USDT 입금에 같은 네트워크를 지원하는지는 별도로 확인해야 합니다. 같은 코인 이름만 보고 전송하면 안 됩니다.</p>
+          <h3>반드시 비교할 3가지</h3>
+          <ul>
+            <li><strong>디지털 자산:</strong> 보내는 코인과 받는 코인이 같은가?</li>
+            <li><strong>네트워크:</strong> 출금 시 선택한 네트워크를 업비트도 지원하는가?</li>
+            <li><strong>입금 주소:</strong> 업비트에서 실제 발급받은 주소와 정확히 일치하는가?</li>
+          </ul>
+          <table>
+            <thead><tr><th>오류 유형</th><th>대처 방법</th></tr></thead>
+            <tbody>
+              <tr><td>업비트 미지원 네트워크 사용</td><td>TXID를 준비해 복구·반환 가능 여부 문의</td></tr>
+              <tr><td>입금 주소 오입력</td><td>실제 수취 주소 확인 후 고객센터 문의</td></tr>
+              <tr><td>메모·태그 누락 또는 오입력</td><td>전송 내역과 2차 주소 정보를 제출</td></tr>
+              <tr><td>이전에 저장한 입금 주소 사용</td><td>현재 유효한 주소인지 확인</td></tr>
+            </tbody>
+          </table>
+          <p>네트워크나 주소가 잘못됐다면 단순 지연이 아닐 수 있습니다. 자동 복구를 기대하거나 추가 송금하지 말고, 해당 입금 건에 대한 확인 절차를 진행하세요. 복구 가능 여부는 자산과 전송 경로에 따라 달라지며 복구를 보장할 수 없습니다.</p>
+          <p>코인 전송 네트워크 선택은 <a href="/usdt-network/">USDT 네트워크 선택 가이드</a>에서 자세히 다룹니다.</p>
+
+          <h2>3. 최소 입금 수량보다 적게 보냈다면 어떻게 해야 하나요?</h2>
+          <p>업비트는 일부 디지털 자산에 최소 입금 수량을 적용합니다. 최소 입금 수량이란 거래소가 잔고에 반영하기 위해 요구하는 한 건의 최소 전송 수량입니다.</p>
+          <p>최소 수량 미만으로 전송하면 블록체인에서 거래가 성공했더라도 업비트 잔고에 반영되지 않을 수 있습니다.</p>
+          <h3>소액 입금 미반영 해결 방법</h3>
+          <p>업비트 공식 안내에 따르면, 최소 입금 수량 이상을 추가로 한 건 입금하면 기존 미반영 수량과 함께 반영될 수 있습니다.</p>
+          <p><strong>주의할 점은 여러 건의 소액 입금을 합산해 최소 수량을 충족하는 방식이 아니라는 것입니다.</strong></p>
+          <p>예를 들어 특정 자산의 최소 입금 수량이 10개라고 가정하겠습니다.</p>
+          <table>
+            <thead><tr><th>전송 사례</th><th>처리 기준</th></tr></thead>
+            <tbody>
+              <tr><td>첫 입금 3개</td><td>최소 수량 미달로 미반영 가능</td></tr>
+              <tr><td>이후 4개 + 4개</td><td>여러 소액 건의 단순 합산으로 해결되지 않음</td></tr>
+              <tr><td>이후 한 건으로 10개</td><td>기존 미반영 수량과 함께 반영 가능</td></tr>
+            </tbody>
+          </table>
+          <p>위 수량은 설명용 예시이며 실제 코인별 최소 입금 수량은 다릅니다. 추가 입금은 블록체인을 통한 일반 출금 방식이어야 하며, 업비트의 '바로 출금' 방식으로는 기존 미반영 건이 처리되지 않습니다.</p>
+          <p>추가 전송에는 비용과 위험이 있으므로 업비트에 표시된 최신 최소 입금 수량, 네트워크, 주소를 다시 확인하세요. 추가 입금 후에도 미반영이라면 고객센터에 문의해야 합니다.</p>
+
+          <h2>4. 업비트 '입금대기'가 뜬다면 트래블룰을 확인하세요</h2>
+          <p>업비트 입금대기는 블록체인 전송이 아직 진행 중인 상태와 다릅니다. <strong>트래블룰에 따른 입금대기란 입금 출처나 송금인 정보 등에 대한 확인이 필요하여 디지털 자산이 잔고에 반영되지 않은 상태</strong>를 말합니다.</p>
+          <p>업비트는 원화 환산가 <strong>100만 원 이상의 디지털 자산 입출금에 <a href="/travel-rule/">트래블룰</a>을 적용</strong>합니다.</p>
+          <h3>100만 원 기준은 언제 계산하나요?</h3>
+          <p>입금은 업비트 주소에 자산이 도착한 시점의 업비트 시세로 계산한 원화 환산가를 기준으로 판단합니다. 따라서 송금 버튼을 누른 시점의 가격과 업비트에 도착한 시점의 가격이 다르면 적용 여부도 달라질 수 있습니다. 100만 원은 기준 금액에 포함됩니다.</p>
+          <h3>입금대기 상태별 처리 방법</h3>
+          <table>
+            <thead><tr><th>입금 출처·상태</th><th>확인할 절차</th></tr></thead>
+            <tbody>
+              <tr><td>계정주 확인이 필요한 거래소</td><td>추가 확인 및 동일인 확인</td></tr>
+              <tr><td>허용된 거래소에서 본인이 송금</td><td>입금 반영 신청 가능 여부 확인</td></tr>
+              <tr><td>등록되지 않은 개인지갑</td><td>지원 지갑 등록 가능 여부·반환 절차 확인</td></tr>
+              <tr><td>제3자 명의로 송금</td><td>입금 불가 여부 확인 후 반환 신청</td></tr>
+              <tr><td>지원하지 않는 송금처</td><td>입금 반환 절차 확인</td></tr>
+            </tbody>
+          </table>
+          <p>모든 입금대기 건이 '추가 확인'만으로 해결되는 것은 아닙니다. 송금처나 계정 명의가 조건에 맞지 않으면 입금 반영 대신 반환 절차를 진행해야 할 수 있습니다.</p>
+          <p><strong>입금 가능 여부는 송금 거래소의 유형에 따라 다릅니다.</strong> 트래블룰 솔루션 연동 거래소는 타인 계정 입금이 가능한 경우가 있지만, 계정주 확인 연동 거래소와 위험평가 통과 해외 거래소는 본인 명의 계정 입금 조건이 적용됩니다. 송금 전 업비트의 최신 VASP 목록을 확인하세요.</p>
+          <p><strong>입금대기 상태라고 해서 모든 거래를 반환할 수 있는 것은 아닙니다.</strong> 입금 가능한 거래소에서 본인이 직접 송금한 거래는 반환이 제한될 수 있으므로, 입금대기 상세 화면의 안내를 먼저 확인하세요.</p>
+          <h3>입금대기 해결 순서</h3>
+          <ol>
+            <li>업비트의 입출금 메뉴에서 해당 자산을 선택합니다.</li>
+            <li>입금대기로 표시된 거래를 선택합니다.</li>
+            <li>'추가 확인' 또는 입금 관련 안내를 엽니다.</li>
+            <li>송금한 거래소·개인지갑과 계정 명의를 확인합니다.</li>
+            <li>화면에서 허용하는 입금 반영 신청 또는 반환 절차를 진행합니다.</li>
+            <li>신청 이후 실제 잔고 반영 또는 처리 결과까지 확인합니다.</li>
+          </ol>
+          <p>입금 반영 신청이 승인되더라도 이상 거래 모니터링 결과에 따라 추가 지연이나 반려가 발생할 수 있습니다. 구체적인 절차는 <a href="/transfer/upbit-deposit-pending/">업비트 입금대기 해결 방법: 원인별 대처법과 확인 순서</a>를 참고하세요.</p>
+          <h3>100만 원 미만이면 아무 거래소에서나 입금할 수 있나요?</h3>
+          <p>그렇지 않습니다. 100만 원 미만의 디지털 자산 입금은 일반적인 트래블룰 금액 기준과 구분되지만, 업비트에서 허용하지 않는 송금처나 미신고 가상자산사업자와 관련된 제한은 별도로 적용될 수 있습니다.</p>
+          <p>100만 원 미만이라도 TXID만 정상이라고 안심하지 말고, 송금처가 업비트에서 허용되는지 확인하세요.</p>
+
+          <h2>5. 업비트 원화 입금이 안 될 때: 케이뱅크부터 확인하세요</h2>
+          <p>업비트 원화 입금은 디지털 자산 전송과 달리 블록체인 TXID를 이용하지 않습니다. 원화 입금 실패는 연결된 은행 계좌, 입금 신청, 실명확인 또는 인증 과정에서 발생할 수 있습니다.</p>
+          <h3>케이뱅크에는 돈이 있는데 업비트 잔고가 0원이라면?</h3>
+          <p>케이뱅크 계좌에 원화가 들어 있다고 해서 업비트 잔고로 자동 충전되지는 않습니다. 업비트에서 별도로 원화 입금 신청을 진행해야 합니다.</p>
+          <ol>
+            <li>업비트에 로그인합니다.</li>
+            <li>입출금 메뉴에서 원화(KRW)를 선택합니다.</li>
+            <li>입금 신청을 진행합니다.</li>
+            <li>입금 금액과 연결된 케이뱅크 계좌를 확인합니다.</li>
+            <li>안내되는 추가 인증을 완료합니다.</li>
+            <li>입출금내역에서 처리 결과를 확인합니다.</li>
+          </ol>
+          <p>업비트 공식 안내에는 카카오톡 인증, 네이버 인증, 하나인증서 인증 등이 소개되어 있습니다. 실제 사용할 수 있는 수단은 계정과 현재 화면을 기준으로 확인하세요.</p>
+          <h3>원화 입금 오류 문구별 해결 방법</h3>
+          <table>
+            <thead><tr><th>오류 문구·상태</th><th>해결 방법</th></tr></thead>
+            <tbody>
+              <tr><td>잔액 또는 지불가능잔액 부족</td><td>케이뱅크 계좌의 사용 가능 잔액 확인</td></tr>
+              <tr><td>자동이체 해지</td><td>연결 계좌 초기화 후 재인증</td></tr>
+              <tr><td>실명 미확인</td><td>업비트·케이뱅크 명의 일치 여부 확인</td></tr>
+              <tr><td>한도제한 고객계좌</td><td>케이뱅크 출금 한도 및 제한 확인</td></tr>
+              <tr><td>요청 만료·인증 시간 초과</td><td>입금 신청 및 추가 인증 재진행</td></tr>
+              <tr><td>추가 고객확인 필요</td><td>은행 고객확인 절차 진행</td></tr>
+            </tbody>
+          </table>
+          <p>원화 입금은 오류 문구를 중심으로 확인하는 것이 가장 빠릅니다. 동일한 오류가 반복된다면 무작정 입금 신청을 반복하지 말고 케이뱅크 계좌 또는 업비트 인증 상태부터 확인하세요.</p>
+          <h3>은행 점검 시간에는 입금이 안 될 수 있나요?</h3>
+          <p>업비트 공식 안내에 따르면 은행 점검 시간인 <strong>매일 23:56~00:06</strong>에는 원화 입출금 서비스 이용이 원활하지 않을 수 있으며, 별도 시스템 점검 시에도 제한될 수 있습니다.</p>
+          <p>다만 이 시간대에 입금이 지연됐다는 사실만으로 은행 점검이 원인이라고 단정할 수는 없습니다. 실제 계좌 출금 여부, 업비트 입금 신청 결과, 서비스 공지를 함께 확인해야 합니다.</p>
+
+          <h2>6. 원화 입금은 됐는데 코인 출금이 안 되는 경우는 다른 문제입니다</h2>
+          <p>원화 입금 미반영과 원화 입금 후 디지털 자산 출금 제한은 별개의 문제입니다. 업비트는 금융사고 예방을 위해 원화 입금 후 디지털 자산 출금에 시간 제한을 적용할 수 있습니다.</p>
+          <table>
+            <thead><tr><th>상황</th><th>디지털 자산 출금 제한</th></tr></thead>
+            <tbody>
+              <tr><td>최초 원화 입금</td><td>원칙적으로 최초 입금 시점부터 72시간</td></tr>
+              <tr><td>두 번째 이후 원화 입금</td><td>직전 24시간 원화 입금액 상당에 대한 출금 제한</td></tr>
+              <tr><td>이상 거래 감지</td><td>별도 모니터링에 따른 제한 가능</td></tr>
+            </tbody>
+          </table>
+          <p>두 번째 이후 원화 입금에 적용되는 24시간 제한은 해당 기간의 원화 입금액 상당에 대한 디지털 자산 출금 제한이며, 모든 이용자에게 항상 동일하게 적용된다고 단정할 수는 없습니다.</p>
+          <p><strong>원화 잔고가 정상적으로 표시된다면 입금 실패가 아닙니다.</strong> 이 경우에는 입금 문제가 아니라 디지털 자산 출금 가능 금액과 제한 사유를 확인해야 합니다.</p>
+
+          <h2>7. 업비트 입금 지연: 지금 기다려야 할까, 문의해야 할까?</h2>
+          <p>같은 입금 미반영이라도 기다려야 하는 상황과 즉시 확인해야 하는 상황은 다릅니다.</p>
+          <table>
+            <thead><tr><th>확인된 상태</th><th>다음 행동</th></tr></thead>
+            <tbody>
+              <tr><td>컨펌 수 부족</td><td>네트워크 승인 대기</td></tr>
+              <tr><td>출금처 내부 처리 중</td><td>보낸 거래소에 문의</td></tr>
+              <tr><td>컨펌 충족·주소 정상·미반영</td><td>업비트 고객센터 문의</td></tr>
+              <tr><td>네트워크 또는 주소 오류</td><td>복구·반환 가능 여부 확인</td></tr>
+              <tr><td>최소 입금 수량 미달</td><td>공식 조건 확인 후 추가 입금 여부 결정</td></tr>
+              <tr><td>트래블룰 입금대기</td><td>입금 반영 신청 또는 반환 절차 확인</td></tr>
+              <tr><td>원화 인증 실패</td><td>계좌·인증 상태 확인 후 재시도</td></tr>
+            </tbody>
+          </table>
+          <p>블록체인 승인이 아직 끝나지 않았다면 진행 상태를 확인하며 기다릴 수 있습니다. 그러나 네트워크 오류, 출처 제한, 최소 입금 수량 미달은 시간이 지나도 자동으로 해결된다고 보장할 수 없습니다.</p>
+          <p>'1시간이 지나면 반드시 고객센터에 문의해야 한다'처럼 모든 자산에 적용되는 고정 기준도 없습니다. 입금 지연 시간보다 <strong>현재 상태와 요구 조건을 충족했는지</strong>가 더 중요합니다.</p>
+
+          <h2>8. 바이낸스에서 업비트로 보냈는데 입금이 안 될 때</h2>
+          <p>바이낸스 등 해외 거래소에서 업비트로 코인을 보낸 경우에도 기본 확인 순서는 동일합니다. 다만 해외 거래소 출금에서는 지원 네트워크와 송금인 확인 조건을 함께 확인하는 것이 중요합니다.</p>
+          <ol>
+            <li>바이낸스 출금 내역에서 출금 상태와 TXID를 확인합니다.</li>
+            <li>선택한 코인과 출금 네트워크를 확인합니다.</li>
+            <li>업비트가 해당 코인과 네트워크의 입금을 지원하는지 확인합니다.</li>
+            <li>업비트 입금내역에서 처리 중 또는 입금대기 여부를 확인합니다.</li>
+            <li>원화 환산가 100만 원 이상이라면 트래블룰에 따른 송금인·송금처 확인 조건을 확인합니다.</li>
+          </ol>
+          <p><strong>바이낸스에서 출금이 완료됐다는 사실만으로 업비트 입금이 승인되는 것은 아닙니다.</strong> 업비트에 정상 반영되려면 네트워크, 입금 주소, 자산별 조건, 송금 출처 관련 요건을 충족해야 합니다.</p>
+          <p>거래소별 입금 가능 여부와 확인 방식은 변경될 수 있으므로 송금 전에 업비트의 최신 입금 가능 거래소 목록과 실제 입금 화면을 확인하세요. 관련해서 <a href="/travel-rule/">업비트 트래블룰과 100만 원 이상 입출금 안내</a>도 참고하세요.</p>
+
+          <h2>9. 고객센터 문의 전 준비할 정보</h2>
+          <p>앞서 소개한 방법으로도 문제가 해결되지 않았다면 업비트 고객센터에 문의하세요. 코인 입금과 원화 입금은 필요한 정보가 다릅니다.</p>
+          <h3>코인 입금 문의</h3>
+          <ul>
+            <li>디지털 자산명과 수량</li>
+            <li>TXID(거래 ID)</li>
+            <li>출금에 사용한 네트워크</li>
+            <li>수취 지갑 주소</li>
+            <li>전송 일시</li>
+            <li>송금한 거래소 또는 개인지갑</li>
+            <li>출금 내역 및 블록체인 탐색기 조회 결과</li>
+            <li>메모·태그 등 2차 주소 정보(해당하는 경우)</li>
+          </ul>
+          <h3>원화 입금 문의</h3>
+          <ul>
+            <li>입금 신청 일시와 금액</li>
+            <li>오류 메시지</li>
+            <li>업비트 입금 신청 처리 상태</li>
+            <li>케이뱅크 연결 계좌 상태</li>
+            <li>추가 인증 완료 여부</li>
+          </ul>
+          <p>계좌번호 전체, 비밀번호, 인증번호 또는 지갑 개인키를 외부 채팅이나 비공식 상담 채널에 보내지 마세요. 민감한 자료는 업비트 공식 고객센터가 안내하는 안전한 제출 절차를 이용해야 합니다.</p>
+        </div>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">자주 묻는 질문</h2>
+          <div class="faq-list">
+            <div class="faq-item faq-open">
+              <h3>업비트 입금이 안 되는 가장 흔한 원인은 무엇인가요?</h3>
+              <p>코인 입금에서는 필요한 컨펌(승인) 수에 도달하지 않은 상태가 대표적인 원인 중 하나입니다. 다만 실제 미반영 원인은 네트워크, 주소, 최소 입금 수량, 송금처 제한 등에 따라 달라집니다. TXID를 먼저 조회해 전송 상태를 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 입금 지연은 보통 얼마나 걸리나요?</h3>
+              <p>모든 코인에 공통으로 적용되는 입금 시간은 없습니다. 블록체인 네트워크와 필요한 컨펌 수, 거래소 내부 처리 상태에 따라 달라집니다. 컨펌을 충족했는데도 반영되지 않는다면 주소와 입금 조건을 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>출금 완료인데 업비트에 코인이 안 보이면 어떻게 하나요?</h3>
+              <p>보낸 거래소에서 TXID를 확인하고 블록체인 탐색기에서 전송 성공 여부를 조회하세요. 이후 업비트 입금 네트워크와 주소, 최소 입금 수량, 입금대기 여부를 순서대로 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>TXID가 없는데 코인을 다시 보내도 되나요?</h3>
+              <p>먼저 송금처의 출금 진행 상태를 확인하세요. 내부 처리 중이거나 아직 블록체인에 전송되지 않은 상태일 수 있습니다. 첫 거래의 상태를 확인하지 않고 반복 송금하는 것은 권하지 않습니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트에 USDT를 보냈는데 잔고에 표시되지 않아요.</h3>
+              <p>USDT의 실제 입금 지원 여부와 네트워크를 먼저 확인하세요. 동일한 USDT라도 네트워크가 다르면 정상 입금되지 않을 수 있습니다. TXID와 업비트 입금 화면의 자산·네트워크 정보를 비교해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 최소 입금 수량보다 적게 보냈다면 복구할 수 있나요?</h3>
+              <p>업비트 공식 안내에 따르면 최소 입금 수량 이상을 블록체인 일반 출금 방식으로 한 건 추가 입금하면 기존 미반영 수량과 함께 반영될 수 있습니다. 여러 소액 입금을 단순 합산하는 방식과는 다릅니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>100만 원 미만인데도 업비트 입금이 안 되나요?</h3>
+              <p>가능합니다. 100만 원은 트래블룰의 주요 금액 기준이지만, 입금 가능한 거래소·지갑인지 여부나 네트워크·주소 오류 등은 별도의 문제입니다. 금액만으로 입금 가능 여부를 판단해서는 안 됩니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 입금대기 상태는 자동으로 풀리나요?</h3>
+              <p>원인에 따라 다릅니다. 송금인 확인이나 입금 반영 신청이 필요한 경우 추가 절차를 진행해야 할 수 있습니다. 업비트에서 허용하지 않는 송금처 또는 제3자 명의 입금이라면 반환 절차를 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>케이뱅크에 돈을 넣었는데 업비트 원화 잔고가 0원이에요.</h3>
+              <p>케이뱅크 계좌 잔고와 업비트 원화 잔고는 다릅니다. 업비트에서 별도의 원화 입금 신청과 인증을 완료했는지 확인하세요.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 원화 입금 인증 알림이 오지 않으면 어떻게 하나요?</h3>
+              <p>사용 중인 인증 수단의 알림 설정과 인증서 발급 기기를 확인하세요. 카카오톡 인증을 이용한다면 관련 알림톡 차단 여부를, 네이버·하나인증서를 이용한다면 인증 알림이 전달되는 기기를 확인해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>원화 입금 후 코인 출금이 24시간 제한되는 이유는 무엇인가요?</h3>
+              <p>금융사고 예방을 위한 디지털 자산 출금 지연제 때문입니다. 다만 최초 원화 입금은 원칙적으로 72시간 출금 제한이 적용되므로, 최초 입금인지 이후 입금인지 구분해야 합니다.</p>
+            </div>
+            <div class="faq-item faq-open">
+              <h3>업비트 입금이 안 될 때 어느 고객센터에 문의해야 하나요?</h3>
+              <p>출금 거래소에서 아직 전송을 완료하지 않았다면 보낸 거래소에 먼저 문의하세요. 블록체인에서 전송이 완료됐고 업비트 입금 조건도 충족했는데 반영되지 않는다면 TXID 등 거래 정보를 준비해 업비트 고객센터에 문의하세요.</p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">정리: 업비트 입금이 안 되면 이 순서대로 확인하세요</h2>
+          <div class="article-prose">
+            <p><strong>업비트 입금 미반영 문제는 기다려야 하는 상황과 직접 처리해야 하는 상황을 구분하는 것이 핵심입니다.</strong></p>
+            <ol>
+              <li><strong>코인인지 원화인지 확인:</strong> 코인은 블록체인, 원화는 케이뱅크와 입금 신청부터 확인합니다.</li>
+              <li><strong>코인이라면 TXID 조회:</strong> 실제 전송 여부와 컨펌 상태를 확인합니다.</li>
+              <li><strong>네트워크·주소 비교:</strong> 업비트에서 지원하는 네트워크와 정확히 일치하는지 확인합니다.</li>
+              <li><strong>최소 입금 수량 확인:</strong> 한 건의 전송이 최소 조건을 충족했는지 확인합니다.</li>
+              <li><strong>입금대기 확인:</strong> 100만 원 이상 송금 등으로 추가 확인이 필요한지 확인합니다.</li>
+              <li><strong>문제가 해결되지 않으면 문의:</strong> TXID, 송금처, 주소, 수량과 처리 상태를 준비합니다.</li>
+            </ol>
+            <p>컨펌 대기라면 전송 상태를 확인하고 기다릴 수 있지만, 잘못된 네트워크나 출처 제한은 별도 조치가 필요할 수 있습니다. 무엇보다 같은 금액을 다시 보내기 전에 기존 전송이 어디에서 멈춰 있는지 확인하세요.</p>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">공식 출처</h2>
+          <ul class="article-prose">
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005909106" target="_blank" rel="noopener">업비트 — 입금 반영이 되지 않아요</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005929106" target="_blank" rel="noopener">업비트 — 입금이 지연되는 이유가 무엇인가요?</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900006890963" target="_blank" rel="noopener">업비트 — 최소 입금 수량 미만으로 입금했어요</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/4498679629337" target="_blank" rel="noopener">업비트 — 트래블룰 알아보기</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/5126987484185" target="_blank" rel="noopener">업비트 — 100만원 이상 입금했는데 계속 입금대기라고 뜹니다</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900006764386" target="_blank" rel="noopener">업비트 — 원화 입금에 실패했어요</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005596266" target="_blank" rel="noopener">업비트 — 원화 입출금 방법 (모바일)</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005806486" target="_blank" rel="noopener">업비트 — 원화 입금 후 디지털 자산 출금이 안돼요</a></li>
+          </ul>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">관련 가이드</h2>
+          <div class="related-grid">
+            <a href="/transfer/upbit-deposit-pending/" class="related-card">
+              <h3>업비트 입금대기 해결 방법</h3>
+              <span class="related-date">2026.10.01 업데이트</span>
+            </a>
+            <a href="/travel-rule/" class="related-card">
+              <h3>트래블룰이란?</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+            <a href="/usdt-network/" class="related-card">
+              <h3>USDT 네트워크 선택 가이드</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+            <a href="/transfer/english-name-mismatch/" class="related-card">
+              <h3>영문 이름 불일치로 송금이 막혔을 때</h3>
+              <span class="related-date">2026.09.16 업데이트</span>
+            </a>
+            <a href="/transfer/binance-deposit-not-arrived/" class="related-card">
+              <h3>바이낸스 입금이 안 될 때</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+            <a href="/exchanges/upbit/" class="related-card">
+              <h3>업비트 사용법 전체 가이드</h3>
+              <span class="related-date">2026.09.15 업데이트</span>
+            </a>
+          </div>
+        </section>
+            <section class="author-review">
+        <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">이 글을 검토한 사람</h2>
+        <div class="author-box">
+          <img class="author-box-photo" src="/assets/author-minjun.png" alt="김민준 KTradeAtlas 편집자" width="56" height="56">
+          <div class="author-box-body">
+            <span class="author-box-name"><a href="/author/">김민준</a> · KTradeAtlas 편집자</span>
+            <span class="author-box-desc">국내·해외 거래소 전송과 트래블룰 관련 콘텐츠를 작성·검토합니다.</span>
+            <span class="author-box-link"><a href="/author/">작성자 소개</a> · <a href="/verification/">정보 검증 방식</a></span>
+          </div>
+        </div>
+      </section>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" aria-hidden="true">
+          <circle cx="16" cy="16" r="15" fill="#133A7A"/>
+          <path d="M16 4.5 L18.2 16 L16 27.5 L13.8 16 Z" fill="#fff"/>
+          <path d="M4.5 16 L16 13.8 L27.5 16 L16 18.2 Z" fill="#fff"/>
+          <circle cx="16" cy="16" r="2.6" fill="#F0A500"/>
+        </svg>
+            <span><span class="logo-k">K</span><span class="logo-rest">TradeAtlas</span></span>
+          </a>
+          <p>한국 이용자를 위한 글로벌 가상자산 거래소 · 전송 가이드. 업비트·빗썸에서 바이낸스·OKX까지, 실제 사용 흐름에 맞춰 설명합니다.</p>
+        </div>
+        <div class="footer-col">
+          <h4>거래소</h4>
+          <a href="/exchanges/upbit/">업비트</a>
+          <a href="/exchanges/bithumb/">빗썸</a>
+          <a href="/exchanges/binance/">바이낸스</a>
+          <a href="/exchanges/okx/">OKX</a>
+        </div>
+        <div class="footer-col">
+          <h4>가이드</h4>
+          <a href="/start/">시작하기</a>
+          <a href="/transfer/">입출금 &amp; 트래블룰</a>
+          <a href="/usdt-network/">USDT &amp; 네트워크</a>
+          <a href="/security/">보안</a>
+        </div>
+        <div class="footer-col">
+          <h4>사이트 &amp; 정책</h4>
+          <a href="/about/">소개</a>
+          <a href="/author/">작성자</a>
+          <a href="/editorial-policy/">편집 원칙</a>
+          <a href="/verification/">정보 검증 방식</a>
+          <a href="/affiliate-disclosure/">제휴 공개</a>
+          <a href="/disclaimer/">면책조항</a>
+          <a href="/privacy/">개인정보처리방침</a>
+          <a href="/contact/">문의</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 KTradeAtlas. 정보 제공용이며 투자 권유가 아닙니다.</span>
+        <span>암호화폐는 변동성이 크며 원금 손실 위험이 있습니다.</span>
+        <span>모든 상표 및 로고는 각 소유자의 자산입니다.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
