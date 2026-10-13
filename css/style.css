@@ -1016,6 +1016,7 @@ ul { list-style: none; }
   line-height: 1.7;
 }
 .callout strong { display: block; margin-bottom: 6px; font-size: 15px; }
+.callout p { margin: 0; }
 .callout-warn { background: var(--accent-soft); border: 1px solid #F4E2B3; }
 .callout-warn strong { color: var(--accent-dark); }
 .callout-danger { background: #FDECEC; border: 1px solid #F5C6C6; }
