@@ -33,7 +33,7 @@
       "@id": "https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/#article",
       "headline": "업비트 입금이 안 될 때: 코인·원화 미반영 원인과 확인 순서",
       "description": "업비트에 코인이나 원화를 입금했는데 잔고에 안 보이는 원인을 TXID·컨펌·네트워크·최소 입금 수량·케이뱅크 인증·트래블룰 입금대기까지 원인별로 확인하고 해결하는 순서를 정리했습니다.",
-      "dateModified": "2026-10-09",
+      "dateModified": "2026-10-16",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ktradeatlas.com/transfer/upbit-deposit-not-arrived/"
@@ -220,12 +220,23 @@
           </div>
           <p class="article-lead"><strong>업비트에 코인이나 원화를 보냈는데 잔고가 그대로인가요?</strong> 같은 입금 미반영이라도 해결 방법은 다릅니다. 코인은 TXID와 블록체인 승인 상태를, 원화는 케이뱅크 계좌와 입금 신청 상태를 먼저 확인해야 합니다.</p>
           <p class="article-lead">특히 <strong>보낸 거래소에서 '출금 완료'로 표시되는데 업비트에는 입금되지 않는 경우</strong>, 단순히 기다릴 문제가 아닐 수 있습니다. 네트워크 착오전송, 최소 입금 수량 미달, 트래블룰 확인 대상인지 구분해야 합니다.</p>
-          <div class="article-facts">
-            <span>마지막 확인 <b>2026.10.09</b></span>
-            <span>난이도 <b>초보자</b></span>
-            <span>예상 읽기 시간 <b>9분</b></span>
+          <p class="article-lead">이 글의 순서대로 확인하면 <b>약 10분이면</b> 코인 입금인지 원화 입금인지, 그리고 기다릴 문제인지 직접 조치할 문제인지 구분할 수 있습니다.</p>
+          <div class="callout callout-warn">
+            <strong>가장 많이 걸리는 곳 2가지</strong>
+            <p>① 코인 입금과 원화 입금을 <b>같은 원인으로 보고 같은 방법을 적용하는 것</b>(원화는 블록체인 TXID가 아니라 케이뱅크 계좌·입금 신청·추가 인증 문제입니다), ② 네트워크 착오전송이나 <b>최소 입금 수량 미달</b>처럼 기다려도 반영되지 않는 경우를 단순 지연으로 보고 계속 기다리는 것입니다. 이 두 가지는 <b>기다려도 해결되지 않습니다.</b></p>
           </div>
-          <div class="disclaimer">이 글은 투자 권유가 아닌 입금 오류와 이용 절차에 관한 정보입니다. 서비스 정책과 화면은 변경될 수 있으므로 실제 계정의 안내를 우선 확인하세요.</div>
+          <div class="article-facts">
+            <span>마지막 확인 <b>2026.10.16</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>난이도 <b>초보자</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>예상 읽기 시간 <b>9분</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>확인한 자료 <b>거래소 공식 문서 6건</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>검증 기준 <b>공식 문서 · 교차 확인</b></span>
+          </div>
+          <div class="disclaimer">이 글은 투자 권유가 아닌 입금 오류와 이용 절차에 관한 정보입니다. 서비스 정책과 화면은 변경될 수 있으므로 실제 계정의 안내를 우선 확인하세요. <a href="/verification/">정보 검증 방식</a>에 따라 작성했습니다.</div>
         </header>
         <div class="reco-card">
           <img class="reco-logo" src="/assets/img/binance-logo.png" alt="바이낸스 로고" width="48" height="48">
@@ -312,9 +323,14 @@
           </table>
           <p>네트워크나 주소가 잘못됐다면 단순 지연이 아닐 수 있습니다. 자동 복구를 기대하거나 추가 송금하지 말고, 해당 입금 건에 대한 확인 절차를 진행하세요. 복구 가능 여부는 자산과 전송 경로에 따라 달라지며 복구를 보장할 수 없습니다.</p>
           <p>코인 전송 네트워크 선택은 <a href="/usdt-network/">USDT 네트워크 선택 가이드</a>에서 자세히 다룹니다.</p>
+          <h3>이미 발생했다면 — 같은 전송을 반복하지 마세요</h3>
+          <div class="callout callout-danger">
+            <strong>먼저 할 일</strong>
+            <p>추가 송금이나 재전송은 하지 말고, 출금한 거래소·지갑에서 <b>TXID</b>를 복사해 블록체인 탐색기에서 <b>어느 네트워크에 기록됐는지</b>를 확인하세요. 그다음 <b>TXID·사용한 네트워크·업비트 입금 주소</b>를 함께 준비해 업비트 고객센터에 복구·반환 가능 여부를 문의해야 합니다. 자산과 네트워크 구조에 따라 복구가 어려울 수 있고, 처리에 시간이 걸릴 수 있습니다.</p>
+          </div>
 
           <h2>3. 최소 입금 수량보다 적게 보냈다면 어떻게 해야 하나요?</h2>
-          <p>업비트는 일부 디지털 자산에 최소 입금 수량을 적용합니다. 최소 입금 수량이란 거래소가 잔고에 반영하기 위해 요구하는 한 건의 최소 전송 수량입니다.</p>
+          <p>업비트는 일부 디지털 자산에 최소 입금 수량을 적용합니다<sup><a href="#fn1">[1]</a></sup>. 최소 입금 수량이란 거래소가 잔고에 반영하기 위해 요구하는 한 건의 최소 전송 수량입니다.</p>
           <p>최소 수량 미만으로 전송하면 블록체인에서 거래가 성공했더라도 업비트 잔고에 반영되지 않을 수 있습니다.</p>
           <h3>소액 입금 미반영 해결 방법</h3>
           <p>업비트 공식 안내에 따르면, 최소 입금 수량 이상을 추가로 한 건 입금하면 기존 미반영 수량과 함께 반영될 수 있습니다.</p>
@@ -332,10 +348,10 @@
           <p>추가 전송에는 비용과 위험이 있으므로 업비트에 표시된 최신 최소 입금 수량, 네트워크, 주소를 다시 확인하세요. 추가 입금 후에도 미반영이라면 고객센터에 문의해야 합니다.</p>
 
           <h2>4. 업비트 '입금대기'가 뜬다면 트래블룰을 확인하세요</h2>
-          <p>업비트 입금대기는 블록체인 전송이 아직 진행 중인 상태와 다릅니다. <strong>트래블룰에 따른 입금대기란 입금 출처나 송금인 정보 등에 대한 확인이 필요하여 디지털 자산이 잔고에 반영되지 않은 상태</strong>를 말합니다.</p>
-          <p>업비트는 원화 환산가 <strong>100만 원 이상의 디지털 자산 입출금에 <a href="/travel-rule/">트래블룰</a>을 적용</strong>합니다.</p>
+          <p>업비트 입금대기는 블록체인 전송이 아직 진행 중인 상태와 다릅니다. <strong>트래블룰에 따른 입금대기란 입금 출처나 송금인 정보 등에 대한 확인이 필요하여 디지털 자산이 잔고에 반영되지 않은 상태</strong>를 말합니다<sup><a href="#fn2">[2]</a></sup>.</p>
+          <p>업비트는 원화 환산가 <strong>100만 원 이상의 디지털 자산 입출금에 <a href="/travel-rule/">트래블룰</a>을 적용</strong>합니다<sup><a href="#fn3">[3]</a></sup>.</p>
           <h3>100만 원 기준은 언제 계산하나요?</h3>
-          <p>입금은 업비트 주소에 자산이 도착한 시점의 업비트 시세로 계산한 원화 환산가를 기준으로 판단합니다. 따라서 송금 버튼을 누른 시점의 가격과 업비트에 도착한 시점의 가격이 다르면 적용 여부도 달라질 수 있습니다. 100만 원은 기준 금액에 포함됩니다.</p>
+          <p>입금은 업비트 주소에 자산이 도착한 시점의 업비트 시세로 계산한 원화 환산가를 기준으로 판단합니다<sup><a href="#fn4">[4]</a></sup>. 따라서 송금 버튼을 누른 시점의 가격과 업비트에 도착한 시점의 가격이 다르면 적용 여부도 달라질 수 있습니다. 100만 원은 기준 금액에 포함됩니다.</p>
           <h3>입금대기 상태별 처리 방법</h3>
           <table>
             <thead><tr><th>입금 출처·상태</th><th>확인할 절차</th></tr></thead>
@@ -367,7 +383,7 @@
           <h2>5. 업비트 원화 입금이 안 될 때: 케이뱅크부터 확인하세요</h2>
           <p>업비트 원화 입금은 디지털 자산 전송과 달리 블록체인 TXID를 이용하지 않습니다. 원화 입금 실패는 연결된 은행 계좌, 입금 신청, 실명확인 또는 인증 과정에서 발생할 수 있습니다.</p>
           <h3>케이뱅크에는 돈이 있는데 업비트 잔고가 0원이라면?</h3>
-          <p>케이뱅크 계좌에 원화가 들어 있다고 해서 업비트 잔고로 자동 충전되지는 않습니다. 업비트에서 별도로 원화 입금 신청을 진행해야 합니다.</p>
+          <p>케이뱅크 계좌에 원화가 들어 있다고 해서 업비트 잔고로 자동 충전되지는 않습니다. 업비트에서 별도로 원화 입금 신청을 진행해야 합니다<sup><a href="#fn5">[5]</a></sup>.</p>
           <ol>
             <li>업비트에 로그인합니다.</li>
             <li>입출금 메뉴에서 원화(KRW)를 선택합니다.</li>
@@ -395,7 +411,7 @@
           <p>다만 이 시간대에 입금이 지연됐다는 사실만으로 은행 점검이 원인이라고 단정할 수는 없습니다. 실제 계좌 출금 여부, 업비트 입금 신청 결과, 서비스 공지를 함께 확인해야 합니다.</p>
 
           <h2>6. 원화 입금은 됐는데 코인 출금이 안 되는 경우는 다른 문제입니다</h2>
-          <p>원화 입금 미반영과 원화 입금 후 디지털 자산 출금 제한은 별개의 문제입니다. 업비트는 금융사고 예방을 위해 원화 입금 후 디지털 자산 출금에 시간 제한을 적용할 수 있습니다.</p>
+          <p>원화 입금 미반영과 원화 입금 후 디지털 자산 출금 제한은 별개의 문제입니다. 업비트는 금융사고 예방을 위해 원화 입금 후 디지털 자산 출금에 시간 제한을 적용할 수 있습니다<sup><a href="#fn6">[6]</a></sup>.</p>
           <table>
             <thead><tr><th>상황</th><th>디지털 자산 출금 제한</th></tr></thead>
             <tbody>
@@ -528,17 +544,32 @@
           </div>
         </section>
         <section>
-          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">공식 출처</h2>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">데이터 확인 기록</h2>
+          <div class="article-prose">
+            <ol>
+              <li id="fn1"><strong>사실</strong> 업비트는 일부 디지털 자산에 최소 입금 수량을 적용하고, 최소 수량 미만 전송은 블록체인에서 성공했더라도 잔고에 반영되지 않을 수 있으며, 최소 입금 수량 이상을 블록체인 일반 출금 방식으로 한 건 추가 입금하면 기존 미반영 수량과 함께 반영될 수 있음 <span aria-hidden="true">→</span> <strong>결론</strong> 여러 소액 건을 합산하는 방식으로는 해결되지 않으므로, 추가 입금 전에 해당 자산의 최신 최소 입금 수량·네트워크·주소를 확인해야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 업비트 고객센터 — 최소 입금 수량 미만으로 입금했어요 (2026.10.16 확인)</li>
+              <li id="fn2"><strong>사실</strong> 트래블룰에 따른 입금대기는 입금 출처나 송금인 정보 등에 대한 확인이 필요해 디지털 자산이 잔고에 반영되지 않은 상태 <span aria-hidden="true">→</span> <strong>결론</strong> 블록체인 지연과 원인이 다르므로, 입금대기로 표시되면 대기보다 입금 출처·송금인 확인 절차를 먼저 봐야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 업비트 고객센터 — 100만원 이상 입금했는데 계속 입금대기라고 뜹니다 (2026.10.16 확인)</li>
+              <li id="fn3"><strong>사실</strong> 업비트는 원화 환산가 100만 원 이상의 디지털 자산 입출금에 트래블룰을 적용 <span aria-hidden="true">→</span> <strong>결론</strong> 100만 원 이상 송금은 입금 반영 신청이나 반환 절차가 붙을 수 있으므로, 금액이 기준을 넘을 수 있다면 입금 전에 출금 대상 거래소의 VASP 조건까지 함께 확인해야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 업비트 고객센터 — 트래블룰 알아보기 (2026.10.16 확인)</li>
+              <li id="fn4"><strong>사실</strong> 입금 금액은 업비트 주소에 자산이 도착한 시점의 업비트 시세로 계산한 원화 환산가를 기준으로 판단하고, 출금은 출금 신청 시점 시세를 기준으로 계산 <span aria-hidden="true">→</span> <strong>결론</strong> 보낼 때 100만 원 미만이었더라도 도착 시점 가격이 오르면 적용 대상이 될 수 있으므로, 금액만으로 트래블룰 대상이 아니라고 판단하면 안 됨 <span aria-hidden="true">→</span> <strong>출처</strong> 업비트 고객센터 — 트래블룰 알아보기 · 100만원 이상 입금했는데 계속 입금대기라고 뜹니다 (2026.10.16 확인)</li>
+              <li id="fn5"><strong>사실</strong> 케이뱅크 계좌 잔고와 업비트 원화 잔고는 별개이며, 업비트에서 별도의 원화 입금 신청과 추가 인증(카카오톡·네이버·하나인증서 등)을 완료해야 원화 입금이 처리됨 <span aria-hidden="true">→</span> <strong>결론</strong> 계좌에 돈이 보인다는 이유로 입금이 완료된 것이 아니므로, 입금 신청 처리 상태와 인증 완료 여부를 확인해야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 업비트 고객센터 — 원화 입출금 방법 (모바일) · 원화 입금에 실패했어요 (2026.10.16 확인)</li>
+              <li id="fn6"><strong>사실</strong> 업비트는 금융사고 예방을 위해 원화 입금 후 디지털 자산 출금에 시간 제한을 적용하며, 최초 원화 입금은 입금 시점부터 72시간, 이후 입금은 직전 24시간 원화 입금액 상당에 대한 제한이 적용될 수 있음 <span aria-hidden="true">→</span> <strong>결론</strong> 원화 잔고가 정상 표시된다면 입금 실패가 아니라 출금 제한 문제이므로, 출금 가능 수량과 제한 사유를 확인해야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 업비트 고객센터 — 원화 입금 후 디지털 자산 출금이 안돼요 (2026.10.16 확인)</li>
+            </ol>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">자료와 확인 기록</h2>
           <ul class="article-prose">
-            <li><a href="https://support.upbit.com/hc/ko/articles/900005909106" target="_blank" rel="noopener">업비트 — 입금 반영이 되지 않아요</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/900005929106" target="_blank" rel="noopener">업비트 — 입금이 지연되는 이유가 무엇인가요?</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/900006890963" target="_blank" rel="noopener">업비트 — 최소 입금 수량 미만으로 입금했어요</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/4498679629337" target="_blank" rel="noopener">업비트 — 트래블룰 알아보기</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/5126987484185" target="_blank" rel="noopener">업비트 — 100만원 이상 입금했는데 계속 입금대기라고 뜹니다</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/900006764386" target="_blank" rel="noopener">업비트 — 원화 입금에 실패했어요</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/900005596266" target="_blank" rel="noopener">업비트 — 원화 입출금 방법 (모바일)</a></li>
-            <li><a href="https://support.upbit.com/hc/ko/articles/900005806486" target="_blank" rel="noopener">업비트 — 원화 입금 후 디지털 자산 출금이 안돼요</a></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005909106" target="_blank" rel="noopener">업비트 — 입금 반영이 되지 않아요</a><br><span class="ph">참고 자료: 입금 미반영 시 확인 항목</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005929106" target="_blank" rel="noopener">업비트 — 입금이 지연되는 이유가 무엇인가요?</a><br><span class="ph">참고 자료: 입금 지연 원인과 대기 기준</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900006890963" target="_blank" rel="noopener">업비트 — 최소 입금 수량 미만으로 입금했어요</a><br><span class="ph">확인한 사실: 최소 입금 수량 적용, 한 건 추가 입금 시 함께 반영, 일반 출금 방식 필요 (본문 [1])</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/4498679629337" target="_blank" rel="noopener">업비트 — 트래블룰 알아보기</a><br><span class="ph">확인한 사실: 원화 환산가 100만 원 이상 입출금에 트래블룰 적용, 입금 도착 시점·출금 신청 시점 시세 기준 (본문 [3], [4])</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/5126987484185" target="_blank" rel="noopener">업비트 — 100만원 이상 입금했는데 계속 입금대기라고 뜹니다</a><br><span class="ph">확인한 사실: 트래블룰 입금대기 정의, 입금은 도착 시점 시세 기준, 송금처 유형별 입금 조건 (본문 [2], [4])</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900006764386" target="_blank" rel="noopener">업비트 — 원화 입금에 실패했어요</a><br><span class="ph">확인한 사실: 원화 입금 실패 시 오류 문구·인증 상태 확인 절차 (본문 [5])</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005596266" target="_blank" rel="noopener">업비트 — 원화 입출금 방법 (모바일)</a><br><span class="ph">확인한 사실: 업비트에서 별도 원화 입금 신청과 추가 인증 진행 (본문 [5])</span></li>
+            <li><a href="https://support.upbit.com/hc/ko/articles/900005806486" target="_blank" rel="noopener">업비트 — 원화 입금 후 디지털 자산 출금이 안돼요</a><br><span class="ph">확인한 사실: 최초 72시간·이후 24시간 출금 지연제 (본문 [6])</span></li>
           </ul>
+          <p><strong>업데이트 기록</strong> 2026.10.16 최소 입금 수량·트래블룰 100만 원 기준·원화 입금 및 출금 지연제 재확인 및 인용·출처 표기 추가</p>
+          <p>위 내용은 모두 <strong>2026.10.16</strong>에 업비트 고객센터 공식 문서에서 직접 확인한 내용입니다. 정책·화면·지원 범위는 변경될 수 있으므로 실제 입금 전 업비트 화면의 안내를 다시 확인하세요.</p>
         </section>
         <section>
           <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">관련 가이드</h2>

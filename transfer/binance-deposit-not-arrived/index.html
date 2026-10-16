@@ -33,7 +33,7 @@
       "@id": "https://ktradeatlas.com/transfer/binance-deposit-not-arrived/#article",
       "headline": "바이낸스 입금이 안 될 때: 원인 7가지와 확인 순서 (2026) | KTradeAtlas",
       "description": "바이낸스 입금이 바로 보이지 않을 때 컨펌 대기·네트워크·주소·메모·최소 입금액을 순서대로 확인하는 방법과 셀프 리커버리(Self-Service Recovery) 신청까지 정리했습니다.",
-      "dateModified": "2026-09-15",
+      "dateModified": "2026-10-16",
       "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://ktradeatlas.com/transfer/binance-deposit-not-arrived/"
@@ -172,12 +172,23 @@
           </div>
           <p class="article-lead">바이낸스에 코인을 보냈는데 잔고에 보이지 않으면, 대부분은 아직 블록체인 확인(컨펌)을 기다리는 중이거나 네트워크·주소·메모를 잘못 입력한 경우입니다. 아래 순서대로 확인하면 원인을 거의 찾을 수 있습니다.</p>
           <p class="article-lead"><strong>입금이 바로 보이지 않아도 자산이 사라진 것은 아닙니다.</strong> 먼저 TXID로 블록체인 상태를 확인하고, 컨펌 대기 중인지 아니면 네트워크·주소가 잘못됐는지를 구분하는 게 핵심입니다.</p>
-          <div class="article-facts">
-            <span>마지막 확인 <b>2026.09.15</b></span>
-            <span>난이도 <b>초보자</b></span>
-            <span>예상 읽기 시간 <b>6분</b></span>
+          <p class="article-lead">이 글의 순서대로 확인하면 <b>약 7분이면</b> 입금이 보이지 않는 원인을 <b>컨펌 대기 / 네트워크·주소·메모 오류 / 최소 입금액 미달</b> 중 어디인지 좁힐 수 있습니다.</p>
+          <div class="callout callout-warn">
+            <strong>가장 많이 걸리는 곳 2가지</strong>
+            <p>① 받는 쪽의 <b>입금 네트워크·주소·메모</b>를 확인하지 않고 보내는 것, ② 컨펌 대기 중인 입금을 미도착으로 오해하고 <b>같은 코인을 다시 보내는 것</b>입니다. 이 두 가지는 기다리거나 다시 보내는 것으로 해결되지 않습니다.</p>
           </div>
-          <div class="disclaimer">이 글은 투자 권유가 아니라 실제 사용 절차와 위험을 설명하기 위한 정보입니다.</div>
+          <div class="article-facts">
+            <span>마지막 확인 <b>2026.10.16</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>난이도 <b>초보자</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>예상 읽기 시간 <b>6분</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>확인한 자료 <b>거래소 공식 문서 4건</b></span>
+            <span class="fact-sep" aria-hidden="true">·</span>
+            <span>검증 기준 <b>공식 문서 · 교차 확인</b></span>
+          </div>
+          <div class="disclaimer">이 글은 투자 권유가 아니라 실제 사용 절차와 위험을 설명하기 위한 정보입니다. <a href="/verification/">정보 검증 방식</a>에 따라 작성했습니다.</div>
         </header>
         <div class="reco-card">
           <img class="reco-logo" src="/assets/img/binance-logo.png" alt="바이낸스 로고" width="48" height="48">
@@ -212,18 +223,24 @@
 
           <h2>원인 1: 아직 블록체인 확인(컨펌) 중</h2>
           <p>가장 흔한 경우입니다. 바이낸스에서 <strong>지갑 → 입출금 내역</strong>을 열어 해당 입금이 <strong>'처리 중(Processing)'</strong>으로 표시되면, 블록체인 확인을 기다리는 중입니다. 목록에 아예 없다면 블록체인 처리 자체가 아직 완료되지 않았을 수 있습니다.</p>
-          <p>입금이 반영되려면 바이낸스가 요구하는 <strong>최소 확인(컨펌) 수</strong>를 채워야 합니다. 요구 확인 수는 코인마다 다르며, 네트워크가 혼잡하면 더 오래 걸릴 수 있습니다. 대부분의 메이저 코인은 수 분 안에 도착하지만, 정확한 요구 확인 수는 바이낸스 입금 페이지에 표시된 값을 기준으로 하세요. 컨펌만 부족한 경우에는 기다리면 자동으로 반영됩니다.</p>
+          <p>입금이 반영되려면 바이낸스가 요구하는 <strong>최소 확인(컨펌) 수</strong>를 채워야 합니다<sup><a href="#fn1">[1]</a></sup>. 요구 확인 수는 코인마다 다르며, 네트워크가 혼잡하면 더 오래 걸릴 수 있습니다. 대부분의 메이저 코인은 수 분 안에 도착하지만, 정확한 요구 확인 수는 바이낸스 입금 페이지에 표시된 값을 기준으로 하세요. 컨펌만 부족한 경우에는 기다리면 자동으로 반영됩니다.</p>
 
           <h2>원인 2: 네트워크가 다름(미지원 네트워크)</h2>
           <p>입금이 반영되지 않는 가장 심각한 원인입니다. 예를 들어 바이낸스가 USDT 입금을 특정 네트워크로만 받는데, 보내는 쪽에서 다른 네트워크를 선택하면 체인상으로는 전송이 완료돼도 바이낸스 계정에는 반영되지 않습니다.</p>
-          <p><strong>보내는 쪽과 바이낸스의 입금 네트워크가 반드시 일치해야 합니다.</strong> 입금 전에 바이낸스 <strong>입출금 상태(Deposit &amp; Withdrawal Status) 페이지</strong>에서 해당 코인과 네트워크가 지원되는지 확인하세요. 미지원 네트워크나 미상장 토큰으로 보낸 경우 복구가 어렵거나 불가능할 수 있습니다.</p>
+          <p><strong>보내는 쪽과 바이낸스의 입금 네트워크가 반드시 일치해야 합니다.</strong> 입금 전에 바이낸스 <strong>입출금 상태(Deposit &amp; Withdrawal Status) 페이지</strong>에서 해당 코인과 네트워크가 지원되는지 확인하세요. 미지원 네트워크나 미상장 토큰으로 보낸 경우 복구가 어렵거나 불가능할 수 있습니다<sup><a href="#fn2">[2]</a></sup>.</p>
+
+          <h3>이미 발생했다면 — 추가 전송 대신 복구 신청부터</h3>
+          <div class="callout callout-danger">
+            <strong>먼저 할 일</strong>
+            <p>같은 코인을 <b>다시 보내지 말고</b>, 보낸 쪽에서 <b>TXID</b>를 복사해 블록체인 탐색기에서 <b>어느 네트워크·주소로 기록됐는지</b>를 확인하세요. 바이낸스 <b>지갑 → 입출금 내역</b>에서 해당 입금 건의 <b>복구 신청(Self-Service Recovery)</b> 대상인지 확인하고, 신청이 어렵다면 TXID·네트워크·주소를 함께 정리해 고객지원에 문의해야 합니다. 미지원 네트워크나 미상장 토큰으로 보낸 건은 복구가 어려울 수 있습니다.</p>
+          </div>
 
           <h2>원인 3: Memo/Tag 누락</h2>
           <p>리플(XRP), 스텔라루멘(XLM), 이오스(EOS), 코스모스(ATOM), 톤(TON) 등 일부 코인은 <strong>메모(Memo) 또는 태그(Tag)</strong>가 필수입니다. 같은 거래소가 여러 사용자에게 하나의 공용 주소를 쓰는 구조라, 메모가 있어야 '누구 계정에 넣을지'를 구분할 수 있습니다.</p>
           <p>메모를 빠뜨리거나 잘못 적으면 체인상 전송은 성공해도 내 바이낸스 계정에 연결되지 않습니다. 입금 전에 바이낸스 입금 화면에 표시된 메모·태그를 정확히 복사해 입력했는지 확인하세요.</p>
 
           <h2>원인 4: 입금 최소 금액 미만</h2>
-          <p>바이낸스는 코인마다 <strong>최소 입금액</strong>을 정해 두고 있습니다. 입금 페이지 하단에 표시된 최소 입금액보다 적게 보내면, 체인상으로는 성공해도 바이낸스 잔고에 반영되지 않습니다. 입금 전에 최소 입금액을 확인하고, 소수점 자릿수까지 정확한 금액을 보냈는지 점검하세요.</p>
+          <p>바이낸스는 코인마다 <strong>최소 입금액</strong>을 정해 두고 있습니다. 입금 페이지 하단에 표시된 최소 입금액보다 적게 보내면, 체인상으로는 성공해도 바이낸스 잔고에 반영되지 않습니다<sup><a href="#fn3">[3]</a></sup>. 입금 전에 최소 입금액을 확인하고, 소수점 자릿수까지 정확한 금액을 보냈는지 점검하세요.</p>
 
           <h2>원인 5: 거래소·지갑 점검(Maintenance)</h2>
           <p>특정 코인의 지갑이 점검 중이면 입금이 일시 중단되거나 지연될 수 있습니다. 바이낸스 <strong>입출금 상태 페이지</strong>나 해당 코인의 입금 화면에서 점검 여부를 확인하세요. 점검 때문에 지연된 경우라면 점검 완료 후 자동으로 반영됩니다.</p>
@@ -233,7 +250,7 @@
           <p>주소는 복사-붙여넣기 과정에서도 바뀔 수 있으니, 붙여넣은 뒤 앞뒤 몇 자리를 육안으로 비교하는 습관이 안전합니다.</p>
 
           <h2>원인 7: 그래도 안 되면 셀프 리커버리(Self-Service Recovery)</h2>
-          <p>위 항목을 모두 확인했는데도 미반영이면, 블록체인에서 거래가 <strong>성공(confirmed/success)으로 확정</strong>됐는데 바이낸스에 반영되지 않는 경우 바이낸스의 <strong>셀프 리커버리(Self-Service Recovery)</strong> 기능으로 직접 복구를 신청할 수 있습니다.</p>
+          <p>위 항목을 모두 확인했는데도 미반영이면, 블록체인에서 거래가 <strong>성공(confirmed/success)으로 확정</strong>됐는데 바이낸스에 반영되지 않는 경우 바이낸스의 <strong>셀프 리커버리(Self-Service Recovery)</strong> 기능으로 직접 복구를 신청할 수 있습니다<sup><a href="#fn4">[4]</a></sup>.</p>
           <ul>
             <li><strong>신청 가능한 경우</strong> — 본인 바이낸스 계정으로의 입금 건이면서, 체인상 상태가 confirmed/success인 거래입니다.</li>
             <li><strong>신청 불가능한 경우</strong> — 출금 거래(이미 잘못된 주소로 출금된 경우), 본인이 보낸 사람인 입금, 체인상 unconfirmed 또는 failed 상태의 거래입니다.</li>
@@ -282,12 +299,25 @@
           </div>
         </section>
         <section>
-          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">공식 출처</h2>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">데이터 확인 기록</h2>
+          <div class="article-prose">
+            <ol>
+              <li id="fn1"><strong>사실</strong> 입금이 반영되려면 바이낸스가 요구하는 최소 확인(컨펌) 수를 채워야 하고, 요구 확인 수는 코인마다 다르며 네트워크가 혼잡하면 더 오래 걸릴 수 있음 <span aria-hidden="true">→</span> <strong>결론</strong> 컨펌만 부족한 경우에는 같은 코인을 다시 보내지 말고 입출금 내역의 '처리 중' 표시를 확인하며 기다리면 되지만, 정확한 요구 확인 수는 입금 페이지 표시값을 기준으로 봐야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 바이낸스 고객센터 — Why Hasn't My Crypto Deposit Been Credited? (2026.10.16 확인)</li>
+              <li id="fn2"><strong>사실</strong> 미지원 네트워크로 보내거나 미상장 토큰을 입금하면 체인상 전송이 완료돼도 계정에 반영되지 않으며 자산을 잃을 수 있음 <span aria-hidden="true">→</span> <strong>결론</strong> 보내기 전에 입출금 상태 페이지에서 해당 코인·네트워크 지원 여부를 확인하는 것이 사실상 유일한 예방이고, 발생한 뒤에는 복구가 어려울 수 있음 <span aria-hidden="true">→</span> <strong>출처</strong> 바이낸스 고객센터 — Why Hasn't My Crypto Deposit Been Credited? · 바이낸스 입출금 상태 및 점검 안내 (2026.10.16 확인)</li>
+              <li id="fn3"><strong>사실</strong> 입금 페이지에 표시된 최소 입금액보다 적게 보내면 체인상 성공해도 바이낸스 잔고에 반영되지 않음 <span aria-hidden="true">→</span> <strong>결론</strong> 최소 입금액은 코인·네트워크별로 다르므로 고정된 값으로 외우지 말고 입금 화면에 표시된 값을 기준으로 보내야 함 <span aria-hidden="true">→</span> <strong>출처</strong> 바이낸스 고객센터 — Why Hasn't My Crypto Deposit Been Credited? (2026.10.16 확인)</li>
+              <li id="fn4"><strong>사실</strong> 본인 바이낸스 계정으로의 입금이면서 체인상 confirmed/success로 확정된 거래는 셀프 리커버리 신청 대상이고, 출금 거래나 unconfirmed·failed 거래는 대상이 아니며 처리 기간은 영업일 기준 수일 이상 걸릴 수 있음 <span aria-hidden="true">→</span> <strong>결론</strong> 반영되지 않은 입금은 TXID로 직접 신청할 수 있으므로, 고객지원 문의 전에 신청 조건을 먼저 확인하는 편이 빠름 <span aria-hidden="true">→</span> <strong>출처</strong> 바이낸스 고객센터 — Self-Service Recovery로 미도착 입금 복구하기 (2026.10.16 확인)</li>
+            </ol>
+          </div>
+        </section>
+        <section>
+          <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">자료와 확인 기록</h2>
           <ul class="article-prose">
-            <li><a href="https://www.binance.com/en/support/faq/detail/115003736451" target="_blank" rel="noopener">바이낸스 고객센터 — Why Hasn't My Crypto Deposit Been Credited?</a></li>
-            <li><a href="https://www.binance.com/en/support/faq/detail/4d1347b4d6d44564ba44ea785703a4fd" target="_blank" rel="noopener">바이낸스 고객센터 — Self-Service Recovery로 미도착 입금 복구하기</a></li>
-            <li><a href="https://www.binance.com/en/support/announcement" target="_blank" rel="noopener">바이낸스 — 입출금 상태 및 점검 안내</a></li>
+            <li><a href="https://www.binance.com/en/support/faq/detail/115003736451" target="_blank" rel="noopener">바이낸스 고객센터 — Why Hasn't My Crypto Deposit Been Credited?</a><br><span class="ph">확인한 사실: 컨펌 대기·미지원 네트워크·주소/메모 오류·최소 입금액 미달·지갑 점검 등 미반영 원인 (본문 [1], [2], [3])</span></li>
+            <li><a href="https://www.binance.com/en/support/faq/detail/4d1347b4d6d44564ba44ea785703a4fd" target="_blank" rel="noopener">바이낸스 고객센터 — Self-Service Recovery로 미도착 입금 복구하기</a><br><span class="ph">확인한 사실: 셀프 리커버리 신청 조건(본인 계정 입금·confirmed/success)과 처리 기간 (본문 [4])</span></li>
+            <li><a href="https://www.binance.com/en/support/announcement" target="_blank" rel="noopener">바이낸스 — 입출금 상태 및 점검 안내</a><br><span class="ph">확인한 사실: 코인·네트워크별 입출금 지원 여부와 점검 상태 확인 (본문 [2])</span></li>
           </ul>
+          <p><strong>업데이트 기록</strong> 2026.10.16 컨펌 요구 수·미지원 네트워크·최소 입금액·셀프 리커버리 조건 재확인 및 인용·출처 표기 추가</p>
+          <p>위 내용은 모두 <strong>2026.10.16</strong>에 바이낸스 공식 고객센터 문서에서 직접 확인한 내용입니다. 요구 컨펌 수·최소 입금액·지원 네트워크는 코인과 시점에 따라 달라질 수 있으므로 실제 입금 전 입금 화면의 안내를 다시 확인하세요.</p>
         </section>
         <section>
           <h2 style="font-size:24px;font-weight:800;margin:40px 0 16px;">관련 가이드</h2>
